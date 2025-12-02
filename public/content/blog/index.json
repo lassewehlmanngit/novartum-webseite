@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "slug": "finops-cloud-kosten-optimieren",
+    "title": "FinOps 2025: Warum Cloud-Kosten explodieren und wie Sie gegensteuern",
+    "date": "2025-03-12",
+    "isoDate": "2025-03-12",
+    "author": "Dr. Michael Weber",
+    "authorRole": "Senior Consultant",
+    "category": "Cloud Strategy",
+    "readTime": "5 Min",
+    "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1080&auto=format&fit=crop",
+    "excerpt": "Die Cloud versprach Einsparungen, doch die Realität sieht oft anders aus. Wir zeigen Strategien, um die 'Cloud Waste' Falle zu vermeiden.",
+    "tags": ["FinOps", "AWS", "Azure", "Cost Management"]
+  },
+  {
+    "id": "2",
+    "slug": "eu-ai-act-compliance",
+    "title": "Der EU AI Act: Was Software-Hersteller jetzt wissen müssen",
+    "date": "2025-02-28",
+    "isoDate": "2025-02-28",
+    "author": "Sarah Linder",
+    "authorRole": "Legal Tech Expert",
+    "category": "Compliance",
+    "readTime": "7 Min",
+    "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1080&auto=format&fit=crop",
+    "excerpt": "Regulierung trifft Innovation. Welche Pflichten auf Entwickler von KI-Systemen zukommen und wie Sie Compliance sicherstellen.",
+    "tags": ["AI", "Law", "Compliance", "Software Engineering"]
+  },
+  {
+    "id": "3",
+    "slug": "oracle-java-audit-falle",
+    "title": "Vorsicht Falle: Die neue Oracle Java Metrik",
+    "date": "2025-01-15",
+    "isoDate": "2025-01-15",
+    "author": "Dr. Michael Weber",
+    "authorRole": "Senior Consultant",
+    "category": "Software Asset Management",
+    "readTime": "4 Min",
+    "imageUrl": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1080&auto=format&fit=crop",
+    "excerpt": "Seit dem Lizenzwechsel bebt der Markt. Warum die 'Employee'-Metrik für viele Unternehmen zur Kostenfalle wird.",
+    "tags": ["Oracle", "Java", "Audit", "Licensing"]
+  }
+]

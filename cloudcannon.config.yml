@@ -1,0 +1,511 @@
+collections_config:
+  pages:
+    path: public/content/pages
+    output: false
+    name: "Seiten"
+    icon: "wysiwyg"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/page.json
+  
+  blog:
+    path: public/content/blog
+    output: false
+    name: "Blog Beiträge"
+    icon: "article"
+    schemas:
+      default:
+        path: .cloudcannon/schemas/blog-post.md
+
+  team:
+    path: public/content/team
+    parser: json
+    name: "Team"
+
+  partners:
+    path: public/content/partners
+    parser: json
+    name: "Partner"
+
+  jobs:
+    path: public/content/jobs
+    parser: json
+    name: "Stellenangebote"
+
+  projects:
+    path: public/content/projects
+    output: false
+    name: "Projekte"
+    icon: "work"
+
+  legal:
+    path: public/content/legal
+    output: false
+    name: "Rechtliche Seiten"
+    icon: "gavel"
+
+  globals:
+    path: public/content/globals
+    parser: json
+    name: "Globale Einstellungen"
+
+  sam_calculator:
+    path: public/content/sam-calculator
+    parser: json
+    name: "SAM Calculator Konfiguration"
+
+_inputs:
+  _type:
+    type: select
+    options:
+      values:
+        - hero_slice
+        - services_slice
+        - about_slice
+        - case_studies_slice
+        - tech_stack_slice
+        - methodology_slice
+        - synergy_slice
+        - vendor_deep_dive_slice
+        - faq_slice
+        - sam_calculator_slice
+        - blog_slice
+        - team_grid_slice
+        - partner_grid_slice
+        - job_board_slice
+        - blog_overview_slice
+        - projects_overview_slice
+        - trustbar_slice
+
+  seo:
+    type: object
+    options:
+      header: "SEO Einstellungen"
+    fields:
+      metaTitle:
+        label: "Meta Title"
+        type: text
+      metaDescription:
+        label: "Meta Description"
+        type: textarea
+      metaKeywords:
+        label: "Keywords"
+        type: list
+      ogImage:
+        label: "Social Share Image"
+        type: image
+  
+  analyticsScripts:
+    type: object
+    options:
+      header: "Analyse Scripts (Statistik)"
+    fields:
+      head:
+        label: "Head Scripts"
+        type: code
+        comment: "Wird geladen wenn 'Statistik' akzeptiert wurde (z.B. Google Analytics)"
+        options:
+            language: html
+            height: 200
+      body:
+        label: "Body Scripts"
+        type: code
+        comment: "Wird geladen wenn 'Statistik' akzeptiert wurde"
+        options:
+            language: html
+            height: 150
+
+  marketingScripts:
+    type: object
+    options:
+      header: "Marketing Scripts (Werbung)"
+    fields:
+      head:
+        label: "Head Scripts"
+        type: code
+        comment: "Wird geladen wenn 'Marketing' akzeptiert wurde (z.B. Facebook Pixel, LinkedIn Insight)"
+        options:
+            language: html
+            height: 200
+      body:
+        label: "Body Scripts"
+        type: code
+        comment: "Wird geladen wenn 'Marketing' akzeptiert wurde"
+        options:
+            language: html
+            height: 150
+
+  emailSettings:
+    type: object
+    options:
+      header: "E-Mail Einstellungen"
+    fields:
+      senderName:
+        label: "Absender Name"
+        type: text
+        comment: "Name, der als Absender angezeigt wird (z.B. 'Novartum SAM Calculator')"
+      senderEmail:
+        label: "Absender E-Mail"
+        type: text
+        comment: "E-Mail-Adresse, von der gesendet wird (muss beim Provider verifiziert sein)"
+      receiverEmail:
+        label: "Empfänger E-Mail (Intern)"
+        type: text
+        comment: "An diese Adresse werden neue Leads/Anfragen gesendet"
+      smtpHost:
+        label: "SMTP Host"
+        type: text
+        hidden: true
+      smtpPort:
+        label: "SMTP Port"
+        type: number
+        hidden: true
+
+_structures:
+  content_blocks:
+    values:
+      - value:
+          _type: hero_slice
+          title: Neuer Hero
+          tagline: Tagline
+          description: Beschreibung
+          primaryButtonText: Button Text
+          primaryLink: "#"
+          secondaryButtonText: Mehr erfahren
+          secondaryLink: ""
+        _inputs:
+          description:
+            type: textarea
+          title:
+            type: text
+      
+      - value:
+          _type: services_slice
+          title: Unsere Services
+          subtitle: "Unsere Expertise"
+          description: "Beschreibung..."
+          items: []
+        _inputs:
+          description:
+            type: textarea
+          items:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      icon: Code2
+                      title: Service Title
+                      description: Short description
+                      link: /path
+                    _inputs:
+                      description:
+                        type: textarea
+                      icon:
+                        type: select
+                        options:
+                          values: [Code2, ShoppingCart, FileText, Users, Briefcase, Award, TrendingUp, Truck, Settings, Layers]
+
+      - value:
+          _type: about_slice
+          title: Über Uns
+          subtitle: "Über uns"
+          text: <p>Text hier...</p>
+          stats: []
+          features: []
+        _inputs:
+          text:
+            type: html
+            options:
+              toolbar: [bold, italic, link, ul, ol]
+          stats:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      value: "20+"
+                      label: "Jahre Erfahrung"
+          features:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      icon: Briefcase
+                      title: Feature Title
+                      description: Description
+                    _inputs:
+                      description:
+                        type: textarea
+                      icon:
+                        type: select
+                        options:
+                          values: [Briefcase, Award, TrendingUp, Users, Code2, CheckCircle2]
+        
+      - value:
+          _type: case_studies_slice
+          title: Case Studies
+          subtitle: "Referenzen"
+          items: []
+        _inputs:
+          items:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      icon: Truck
+                      category: Branche
+                      title: Projekt Titel
+                      challenge: Herausforderung...
+                      solution: Lösung...
+                      link: /projekte/slug
+                    _inputs:
+                      challenge:
+                        type: textarea
+                      solution:
+                        type: textarea
+                      icon:
+                        type: select
+                        options:
+                          values: [Truck, Settings, FileText, Code2, Users, Layers]
+
+      - value:
+          _type: tech_stack_slice
+          title: Tech Stack
+          subtitle: "State of the Art"
+          description: "Beschreibung..."
+          categories: []
+        _inputs:
+          description:
+            type: textarea
+          categories:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      title: Kategorie
+                      icon: Layers
+                      items: []
+                    _inputs:
+                      items:
+                        type: list
+                      icon:
+                        type: select
+                        options:
+                          values: [Layers, Code2, Settings, FileText]
+
+      - value:
+          _type: methodology_slice
+          title: Methodik
+          subtitle: "Unser Vorgehen"
+          description: "Beschreibung..."
+          steps: []
+          qualityTitle: "Unsere Qualitätsstandards"
+          qualityItems: []
+        _inputs:
+          description:
+            type: textarea
+          qualityItems:
+            type: list
+          steps:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      number: "01"
+                      title: Schritt
+                      description: Beschreibung
+                    _inputs:
+                      description:
+                        type: textarea
+
+      - value:
+          _type: synergy_slice
+          title: Synergie
+          subtitle: "Integration"
+          items: []
+        _inputs:
+          items:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      title: Synergie Punkt
+                      description: Beschreibung
+                      icon: Layers
+                    _inputs:
+                      description:
+                        type: textarea
+                      icon:
+                        type: select
+                        options:
+                          values: [Layers, Code2, ShoppingCart, FileText, Users, Briefcase, CheckCircle2]
+
+      - value:
+          _type: vendor_deep_dive_slice
+          title: Vendor Deep Dive
+          subtitle: "Tiefenwissen"
+          description: "Beschreibung..."
+          vendors: []
+        _inputs:
+          description:
+            type: textarea
+          vendors:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      vendor: Vendor Name
+                      logo: /path/to/logo.png
+                      color: bg-blue-600
+                      label: "Audit Fokus"
+                      risks: []
+                      solution: Unsere Lösung...
+                    _inputs:
+                      solution:
+                        type: textarea
+                      risks:
+                        type: list
+                      color:
+                        type: select
+                        options:
+                          values: [bg-blue-600, bg-red-600, bg-green-600, bg-orange-600, bg-purple-600, bg-slate-600]
+
+      - value:
+          _type: faq_slice
+          title: FAQ
+          subtitle: "Wissen kompakt"
+          items: []
+        _inputs:
+          items:
+            type: array
+            options:
+              structures:
+                values:
+                  - value:
+                      question: Frage?
+                      answer: <p>Antwort...</p>
+                    _inputs:
+                      answer:
+                        type: html
+                        options:
+                          toolbar: [bold, italic, link, ul, ol]
+
+      - value:
+          _type: sam_calculator_slice
+          title: SAM Calculator
+
+      - value:
+          _type: blog_slice
+          title: Blog Teaser
+          subtitle: "Insights"
+          count: 3
+
+      - value:
+          _type: team_grid_slice
+          title: Team Grid
+          members: []
+        _inputs:
+          members:
+             type: array
+             comment: "Optional: Wenn leer, werden alle Teammitglieder aus der globalen Liste angezeigt."
+             options:
+               structures:
+                 values:
+                   - value:
+                       name: Name
+                       role: Rolle
+                       image: /path/to/image.jpg
+                       bio: Bio...
+                       linkedin: https://linkedin.com/in/...
+                     _inputs:
+                       bio:
+                         type: textarea
+                       image:
+                         type: image
+
+      - value:
+          _type: partner_grid_slice
+          title: Partner Grid
+          subtitle: "Netzwerk"
+          description: "Beschreibung..."
+          partners: []
+        _inputs:
+          description:
+            type: textarea
+          partners:
+            type: array
+            comment: "Optional: Wenn leer, werden alle Partner aus der globalen Liste angezeigt."
+            options:
+               structures:
+                 values:
+                   - value:
+                       name: Partner Name
+                       type: Technologiepartner
+                       description: Beschreibung...
+                       logo: Name (Text) oder Pfad
+                       link: https://partner.com
+                     _inputs:
+                       description:
+                         type: textarea
+
+      - value:
+          _type: job_board_slice
+          title: Job Board
+          jobs: []
+        _inputs:
+           jobs:
+             type: array
+             comment: "Optional: Wenn leer, werden alle Jobs aus der globalen Liste angezeigt."
+             options:
+               structures:
+                 values:
+                   - value:
+                       id: job-id
+                       title: Job Title
+                       department: Department
+                       type: Vollzeit
+                       location: München
+                       description: Beschreibung
+                       tasks: []
+                       profile: []
+                     _inputs:
+                       description:
+                         type: textarea
+                       tasks:
+                         type: list
+                       profile:
+                         type: list
+                       type:
+                         type: select
+                         options:
+                           values: [Vollzeit, Teilzeit, Freelance]
+
+      - value:
+          _type: blog_overview_slice
+          title: Blog Overview
+
+      - value:
+          _type: projects_overview_slice
+          title: Projects Overview
+
+      - value:
+          _type: trustbar_slice
+          title: Trust Bar
+          clients: []
+        _inputs:
+           clients:
+             type: array
+             comment: "Optional: Wenn leer, werden die globalen Trustbar-Clients genutzt."
+             options:
+               structures:
+                 values:
+                   - value:
+                       name: Client Name
+                       logo: /path/to/logo.png

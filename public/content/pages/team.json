@@ -1,0 +1,47 @@
+{
+  "title": "Team",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Unser Team",
+      "title": "Menschen hinter der Technologie.",
+      "description": "Keine anonyme Beratung, sondern persönliche Ansprechpartner. Wir sind ein inhabergeführtes Team aus Experten, die Verantwortung übernehmen.",
+      "primaryButtonText": "Werde Teil des Teams",
+      "primaryLink": "/karriere",
+      "secondaryButtonText": "Kontakt aufnehmen",
+      "secondaryLink": "#contact"
+    },
+    {
+      "_type": "about_slice",
+      "subtitle": "Kultur",
+      "title": "Verantwortung. Exzellenz. Menschlichkeit.",
+      "text": "<p>Novartum wurde mit einer einfachen Vision gegründet: IT-Beratung, die wirklich unabhängig ist. Wir glauben daran, dass die besten Lösungen entstehen, wenn man ehrlich berät – auch wenn das bedeutet, einem Kunden von einem Kauf abzuraten.</p><p>Unsere Berater sind 'Überzeugungstäter'. Wir kommen von großen Herstellern und Konzernen, weil wir in einem agilen, wertorientierten Umfeld mehr bewegen können.</p>",
+      "stats": [
+        { "value": "20+", "label": "Jahre am Markt" },
+        { "value": "Senior", "label": "Level Expertise" },
+        { "value": "100%", "label": "Inhabergeführt" }
+      ],
+      "features": [
+        {
+          "icon": "Users",
+          "title": "Teamgeist",
+          "description": "Wir gewinnen und verlieren zusammen. Politik und Ellbogen haben bei uns keinen Platz."
+        },
+        {
+          "icon": "Heart",
+          "title": "Leidenschaft",
+          "description": "Wir lieben Technologie und komplexe Probleme. 'Geht nicht' ist für uns der Anfang."
+        },
+        {
+          "icon": "Lightbulb",
+          "title": "Innovation",
+          "description": "Wir ruhen uns nicht auf Erfahrung aus, sondern lernen jeden Tag neu dazu."
+        }
+      ]
+    },
+    {
+      "_type": "team_grid_slice",
+      "title": "Unser Team"
+    }
+  ]
+}

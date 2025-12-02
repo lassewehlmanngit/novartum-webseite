@@ -1,0 +1,27 @@
+{
+  "contact": {
+    "title": "Ihr persönlicher Ansprechpartner",
+    "name": "Dr. Michael Weber",
+    "role": "Senior IT Consultant",
+    "email": "michael.weber@novartum.com",
+    "phone": "+49 89 12345678",
+    "image": "https://picsum.photos/200/200?grayscale"
+  },
+  "nextSteps": {
+    "title": "Empfohlene nächste Schritte",
+    "steps": [
+      {
+        "title": "Datenbereinigung",
+        "description": "Prüfen Sie Ihre Installationsdaten auf Duplikate und inaktive Geräte."
+      },
+      {
+        "title": "Lizenzbilanz erstellen",
+        "description": "Vergleichen Sie installierte Software mit gekauften Lizenzen."
+      },
+      {
+        "title": "Optimierungspotenzial nutzen",
+        "description": "Kündigen Sie ungenutzte Abos und konsolidieren Sie Verträge."
+      }
+    ]
+  }
+}

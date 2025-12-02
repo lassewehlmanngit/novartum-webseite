@@ -1,0 +1,19 @@
+{
+  "title": "Partner",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Netzwerk",
+      "title": "Gemeinsam stärker.",
+      "description": "Niemand kann alles alleine. Wir setzen auf ein starkes Netzwerk aus Technologie-Partnern und Verbänden, um Ihnen die besten Lösungen zu bieten.",
+      "primaryButtonText": "Partner werden",
+      "primaryLink": "#contact"
+    },
+    {
+      "_type": "partner_grid_slice",
+      "title": "Unsere Partnerlandschaft",
+      "subtitle": "Ökosystem",
+      "description": "Wir arbeiten mit den führenden Herstellern zusammen, bewahren uns aber unsere Unabhängigkeit in der Beratung. Zertifizierungen nutzen wir als Kompetenznachweis, nicht als Verkaufsverpflichtung."
+    }
+  ]
+}

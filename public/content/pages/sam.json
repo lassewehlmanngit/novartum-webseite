@@ -1,0 +1,210 @@
+{
+  "title": "SAM",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Software Asset Management",
+      "title": "Lizenzmanagement & SAM Strategie.",
+      "description": "Vermeiden Sie Compliance-Risiken und reduzieren Sie Ihre laufenden Softwarekosten. Wir schaffen Transparenz in Ihrem Lizenzportfolio und sichern Sie gegen Hersteller-Audits ab.",
+      "primaryButtonText": "SAM-Potenzialanalyse",
+      "primaryLink": "#calculator",
+      "secondaryButtonText": "Hersteller-Expertise",
+      "secondaryLink": "#vendor-details"
+    },
+    {
+      "_type": "services_slice",
+      "title": "SAM Leistungen",
+      "subtitle": "Modular & Effektiv",
+      "items": [
+        {
+          "icon": "ShieldCheck",
+          "title": "Audit Defense & Compliance",
+          "description": "Professionelle Begleitung bei Hersteller-Audits (Microsoft, Oracle, SAP). Wir wehren unberechtigte Forderungen ab und stellen Compliance her."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Lizenzoptimierung & Einsparung",
+          "description": "Analyse Ihrer Verträge und Nutzung. Wir identifizieren Überlizenzierung (Shelfware) und verhandeln bessere Konditionen."
+        },
+        {
+          "icon": "Cloud",
+          "title": "Cloud FinOps & SaaS",
+          "description": "Kostenkontrolle für Azure, AWS und Microsoft 365. Wir optimieren Ihren Cloud-Spend durch passgenaue Zuweisung und Reserved Instances."
+        },
+        {
+          "icon": "Settings",
+          "title": "Managed SAM Service",
+          "description": "Auslagerung Ihres Lizenzmanagements an unsere Experten. Kontinuierliches Reporting, Compliance-Checks und Beratung zum Festpreis."
+        }
+      ]
+    },
+    {
+      "_type": "sam_calculator_slice",
+      "title": "SAM Calculator"
+    },
+    {
+      "_type": "synergy_slice",
+      "title": "Ein Haus. Kurze Wege. Maximale Wirkung.",
+      "subtitle": "Der Novartum Verbund-Vorteil",
+      "description": "<p>Ein Audit-Bericht allein spart kein Geld. Er zeigt nur Risiken auf. Echte Einsparungen entstehen erst, wenn SAM-Daten direkt in die Verhandlungsstrategie des Einkaufs einfließen.</p><p>Bei Novartum arbeiten Lizenz-Auditoren, Einkäufer und ITSM-Architekten Tür an Tür. Wir verhindern 'Stille Post' und übernehmen die Gesamtverantwortung.</p>",
+      "items": [
+        {
+          "title": "SAM + Einkauf",
+          "icon": "ShoppingCart",
+          "description": "Wir verhindern 'Shelfware' (Regalware), indem wir Ihrem Einkauf vor jeder Neubeschaffung Echtzeit-Daten liefern. Warum neu kaufen, wenn Lizenzen im Unternehmen brach liegen?"
+        },
+        {
+          "title": "SAM + ITSM",
+          "icon": "Activity",
+          "description": "Wir integrieren Compliance-Checks direkt in Ihren Service-Katalog. Eine Software wird gar nicht erst ausgerollt, wenn keine freie Lizenz verfügbar ist (Technical Compliance Enforcement)."
+        }
+      ]
+    },
+    {
+      "_type": "vendor_deep_dive_slice",
+      "title": "Problemlöser für Top-Hersteller",
+      "description": "Allgemeines Wissen reicht oft nicht. Wir kennen die vertraglichen Fallstricke der großen Player.",
+      "vendors": [
+        {
+          "vendor": "Microsoft",
+          "logo": "Microsoft",
+          "color": "bg-blue-600",
+          "risks": ["M365 E3 vs E5 Überlizenzierung", "Windows Server Core-Based Licensing", "Indirekte Nutzung über Multiplexing"],
+          "solution": "Wir analysieren Ihre Active Directory Nutzerprofile und optimieren Ihre M365 Abonnements. Durch hybride Nutzungsrechte (Azure Hybrid Benefit) senken wir Ihre Cloud-Kosten."
+        },
+        {
+          "vendor": "Oracle",
+          "logo": "Oracle",
+          "color": "bg-red-600",
+          "risks": ["Java SE kostenpflichtige Subscriptions", "VMware Virtualisierung (Soft-Partitioning)", "Datenbank-Optionen versehentlich aktiviert"],
+          "solution": "Wir erstellen eine verlässliche Oracle-Bilanz (ELP) vor dem Audit. Wir prüfen Alternativen zu Oracle Java und isolieren Oracle-Workloads, um Lizenzierungskosten zu begrenzen."
+        },
+        {
+          "vendor": "SAP",
+          "logo": "SAP",
+          "color": "bg-blue-800",
+          "risks": ["S/4HANA Migration & Contract Conversion", "Indirekte Nutzung (Digital Access)", "Ungenutzte Professional User Lizenzen"],
+          "solution": "Wir simulieren Ihre S/4HANA Lizenzkosten vor dem Umstieg. Durch Vermessung der tatsächlichen Transaktionen identifizieren wir das günstigste Lizenzmodell (Full Use vs. Digital Access)."
+        }
+      ]
+    },
+    {
+      "_type": "methodology_slice",
+      "title": "Strukturierte Optimierung",
+      "subtitle": "Der SAM-Lifecycle",
+      "description": "Unser bewährter Ansatz garantiert rechtssichere Ergebnisse und messbare Einsparungen in vier Phasen.",
+      "qualityTitle": "Ihr Mehrwert",
+      "qualityItems": ["100% Herstellerunabhängig", "Zertifizierte SAM-Consultants", "Erfolgsabhängige Vergütung möglich"],
+      "steps": [
+        {
+          "number": "01",
+          "title": "Inventory & Discovery",
+          "description": "Vollständige Erfassung der installierten Software und Hardware. Wir schaffen die notwendige Datenbasis ('Datatrust')."
+        },
+        {
+          "number": "02",
+          "title": "Compliance Check",
+          "description": "Abgleich der Installationen mit den gekauften Lizenzen (Bilanzierung). Identifikation von Unter- und Überlizenzierung."
+        },
+        {
+          "number": "03",
+          "title": "Optimierung",
+          "description": "Bereinigung von Risiken, Kündigung ungenutzter Wartung, Konsolidierung von Verträgen und Nutzung von Zweitnutzungsrechten."
+        },
+        {
+          "number": "04",
+          "title": "Governance & Betrieb",
+          "description": "Etablierung von Prozessen für Beschaffung und Deployment. Regelmäßige Reviews sichern den Status Quo dauerhaft."
+        }
+      ]
+    },
+    {
+      "_type": "faq_slice",
+      "items": [
+        {
+          "question": "Was ist der Unterschied zwischen SAM und Lizenzmanagement?",
+          "answer": "Lizenzmanagement ist die operative Aufgabe: Wer hat welche Lizenz? SAM (Software Asset Management) ist die strategische Klammer (ISO 19770): Wie kaufe ich effizient ein? Wie verbinde ich Technik und Einkauf? Novartum integriert beide Ebenen für maximale Rechtssicherheit."
+        },
+        {
+          "question": "Lohnt sich ein SAM-Projekt für den Mittelstand?",
+          "answer": "Ja, die Rentabilität (ROI) ist oft höher als im Konzern. Ab ca. 200 Mitarbeitern oder Softwarekosten >200.000 € rechnet sich ein Projekt meist in unter 6 Monaten. Allein durch die Kündigung ungenutzter Abos (SaaS-Waste) werden oft 20-30% des Budgets sofort frei."
+        },
+        {
+          "question": "Ist der Einsatz von gebrauchter Software legal?",
+          "answer": "Ja, der Handel mit gebrauchten Softwarelizenzen ist in der EU grundsätzlich legal (EuGH-Urteil 2012). Allerdings gibt es strikte Voraussetzungen: Die Software muss beim Erstbesitzer vollständig gelöscht sein und die Rechtekette muss lückenlos dokumentiert werden ('Chain of Custody'). Novartum prüft diese Risiken für Sie."
+        },
+        {
+          "question": "Reicht eine Excel-Liste für das Lizenzmanagement?",
+          "answer": "Nein, für moderne Umgebungen ist Excel zu fehleranfällig. Lizenzmodelle ändern sich ständig (z.B. User-based vs. Device-based), und Virtualisierung macht manuelle Zählung unmöglich. Ein professionelles SAM-Tool oder ein Managed Service verhindert teure Fehler bei Audits."
+        },
+        {
+          "question": "Welche Risiken gibt es bei Virtualisierung (z.B. Oracle auf VMware)?",
+          "answer": "Dies ist eine der größten Kostenfallen. Viele Hersteller (insb. Oracle) akzeptieren 'Soft-Partitioning' nicht. Das bedeutet: Wenn Sie eine Oracle-DB auf einem VMware-Cluster betreiben, müssen Sie oft ALLE physischen Kerne des Clusters lizenzieren, nicht nur die zugewiesenen. Hier drohen Nachforderungen in Millionenhöhe."
+        },
+        {
+          "question": "Was mache ich, wenn ein Audit-Brief (Compliance Letter) kommt?",
+          "answer": "1. Ruhe bewahren und nichts unterschreiben. 2. Interne Datenvalidierung starten, bevor Daten herausgegeben werden. 3. Kommunikation zentralisieren ('Single Point of Contact'). 4. Novartum als Experten hinzuziehen, um die Interpretationsspielräume der Verträge zu Ihren Gunsten zu nutzen."
+        }
+      ]
+    },
+    {
+      "_type": "about_slice",
+      "title": "Unabhängigkeit schafft Vertrauen.",
+      "subtitle": "Warum novartum?",
+      "text": "<p>Im Lizenzmanagement ist Neutralität das höchste Gut. Wir verkaufen keine Lizenzen – wir beraten ausschließlich in Ihrem Interesse. Dies garantiert Ihnen eine objektive Bewertung Ihrer Situation ohne Interessenkonflikte.</p><p>Unsere Berater kommen oft direkt von Herstellern oder Auditoren und kennen die 'Spielregeln' genau. Dieses Insider-Wissen nutzen wir, um für Sie das optimale Ergebnis zu verhandeln.</p>",
+      "stats": [
+        { "value": "100 Mio €+", "label": "Betreutes Volumen" },
+        { "value": "30%", "label": "Ø Einsparung" },
+        { "value": "0", "label": "Verkaufte Lizenzen" }
+      ],
+      "features": [
+        {
+          "icon": "Settings",
+          "title": "Neutralität",
+          "description": "Kein Lizenzvertrieb. Wir sind zu 100% auf der Seite des Kunden (Buy-Side)."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Rechtssicherheit",
+          "description": "Fundierte juristische und technische Expertise für wasserdichte Compliance."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "ROI Fokus",
+          "description": "SAM ist kein Selbstzweck. Wir finanzieren uns oft allein durch die erzielten Einsparungen."
+        }
+      ]
+    },
+    {
+      "_type": "case_studies_slice",
+      "title": "Projekte aus der Praxis",
+      "subtitle": "Referenzen",
+      "items": [
+        {
+          "icon": "ShieldCheck",
+          "category": "Audit Defense",
+          "title": "Oracle Audit Abwehr",
+          "challenge": "Angekündigtes Audit mit einer Nachforderung von 4,5 Mio. € wegen Virtualisierung.",
+          "solution": "Technische Analyse und vertragliche Argumentation reduzierten die Forderung auf 0 €.",
+          "link": "/projekte/oracle-audit-abwehr-grossbank"
+        },
+        {
+          "icon": "Cloud",
+          "category": "Cloud Optimierung",
+          "title": "M365 Kostenreduktion",
+          "challenge": "Explodierende Kosten durch unkontrollierte Zuweisung von E5-Plänen.",
+          "solution": "Profilbasierte Lizenzzuweisung und Bereinigung inaktiver User. Einsparung: 350k € p.a.",
+          "link": "/projekte/m365-azure-finops"
+        },
+        {
+          "icon": "FileText",
+          "category": "Vertragsmanagement",
+          "title": "EA Verhandlung",
+          "challenge": "Anstehende Verlängerung des Microsoft Enterprise Agreements unter Zeitdruck.",
+          "solution": "Strategische Vorbereitung und Verhandlungsführung führten zu 22% Rabatt auf Listenpreis.",
+          "link": "/projekte/strategic-ea-negotiation"
+        }
+      ]
+    }
+  ]
+}

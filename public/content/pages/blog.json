@@ -1,0 +1,17 @@
+{
+  "title": "Blog",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Novartum Insights",
+      "title": "Wissen für Entscheider.",
+      "description": "Trends, Analysen und Best Practices aus der Welt der Enterprise IT, Lizenzmanagement und Softwareentwicklung.",
+      "primaryButtonText": "Neueste Artikel",
+      "primaryLink": "#latest"
+    },
+    {
+      "_type": "blog_overview_slice",
+      "title": "Insights"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Microsoft",
+    "type": "Technology Partner",
+    "description": "Als Microsoft Solutions Partner verfügen wir über tiefe Expertise in Azure, Microsoft 365 und Modern Workplace Szenarien. Wir helfen bei Migration und Lizenzierung.",
+    "logo": "Microsoft"
+  },
+  {
+    "name": "SAP",
+    "type": "Ecosystem Partner",
+    "description": "Wir unterstützen bei der S/4HANA Transformation, insbesondere bei der kaufmännischen Bewertung der Migration und der Lizenzoptimierung.",
+    "logo": "SAP"
+  },
+  {
+    "name": "BVMID",
+    "type": "Verbandsmitgliedschaft",
+    "description": "Als geprüftes Mitglied im Bundesverband für mittelständische Wirtschaft e.V. stehen wir für seriöse Beratung und starke Vernetzung im Mittelstand.",
+    "logo": "BVMID"
+  },
+  {
+    "name": "Matrix42",
+    "type": "Implementation Partner",
+    "description": "Spezialisiert auf Enterprise Service Management. Wir implementieren Matrix42 Lösungen für ITSM und Asset Management.",
+    "logo": "Matrix42"
+  },
+  {
+    "name": "Oracle",
+    "type": "Expertise",
+    "description": "Tiefes Know-how in Oracle-Datenbanken und Java-Lizenzierung. Wir unterstützen bei der Abwehr von Audits und der Architekturoptimierung.",
+    "logo": "Oracle"
+  },
+  {
+    "name": "VMware",
+    "type": "Technology",
+    "description": "Virtualisierung ist der Kern vieler Infrastrukturen. Wir beraten zu Lizenzierungsfragen (Broadcom-Übernahme) und technischer Konsolidierung.",
+    "logo": "VMware"
+  },
+  {
+    "name": "ServiceNow",
+    "type": "Technology Partner",
+    "description": "Integration von Lizenzmanagement in ITSM-Workflows. Wir verbinden kaufmännische Compliance mit operativen Prozessen für maximale Automatisierung.",
+    "logo": "ServiceNow"
+  },
+  {
+    "name": "AWS",
+    "type": "Consulting Partner",
+    "description": "Cloud-Native Development und FinOps auf Amazon Web Services. Wir optimieren Ihre Cloud-Ausgaben und designen skalierbare Architekturen.",
+    "logo": "AWS"
+  },
+  {
+    "name": "IBM",
+    "type": "Expertise",
+    "description": "Beratung zu Passport Advantage und Sub-Capacity Licensing. Wir unterstützen bei der korrekten Konfiguration von ILMT und Audit-Abwehr.",
+    "logo": "IBM"
+  },
+  {
+    "name": "Adobe",
+    "type": "Advisory",
+    "description": "Optimierung von Creative Cloud Verträgen im Enterprise-Umfeld. Konsolidierung von Einzel-Abos zu Enterprise Term License Agreements (ETLA).",
+    "logo": "Adobe"
+  },
+  {
+    "name": "Snow Software",
+    "type": "Implementation",
+    "description": "Technische Implementierung und Managed Service für Snow License Manager. Wir machen die Daten aus dem Tool nutzbar für Entscheidungen.",
+    "logo": "Snow"
+  }
+]

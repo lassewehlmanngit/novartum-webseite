@@ -1,0 +1,45 @@
+{
+  "title": "Karriere",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Karriere bei Novartum",
+      "title": "Mach den nächsten großen Schritt.",
+      "description": "Wir suchen Talente, die Technologie lieben und Verantwortung übernehmen wollen. Flache Hierarchien, spannende Projekte und ein Team, das zusammenhält.",
+      "primaryButtonText": "Offene Stellen ansehen",
+      "primaryLink": "#jobs"
+    },
+    {
+      "_type": "about_slice",
+      "subtitle": "Benefits",
+      "title": "Warum Novartum?",
+      "text": "<p>Arbeit ist ein großer Teil des Lebens – sie sollte Spaß machen und erfüllend sein. Wir bieten ein Umfeld, in dem du wachsen kannst, ohne auszubrennen.</p><p>Bei uns zählst du als Mensch, nicht als 'Resource'. Wir fördern deine individuelle Weiterentwicklung und bieten dir die Flexibilität, die du brauchst.</p>",
+      "stats": [
+        { "value": "30", "label": "Urlaubstage" },
+        { "value": "100%", "label": "Remote-Option" },
+        { "value": "€", "label": "Faires Gehalt" }
+      ],
+      "features": [
+        {
+          "icon": "Laptop",
+          "title": "Modernes Equipment",
+          "description": "MacBook Pro oder ThinkPad, Monitore fürs Homeoffice – du wählst dein Werkzeug."
+        },
+        {
+          "icon": "Clock",
+          "title": "Flexible Zeiten",
+          "description": "Vertrauensarbeitszeit. Ob Frühaufsteher oder Nachteule – das Ergebnis zählt."
+        },
+        {
+          "icon": "GraduationCap",
+          "title": "Weiterbildung",
+          "description": "Großzügiges Budget für Konferenzen, Zertifikate und Schulungen."
+        }
+      ]
+    },
+    {
+      "_type": "job_board_slice",
+      "title": "Offene Stellen"
+    }
+  ]
+}

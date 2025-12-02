@@ -1,0 +1,186 @@
+{
+  "title": "Einkauf",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Unabhängiges IT-Sourcing",
+      "title": "Ihr Gewinn liegt im Einkauf.",
+      "description": "Wir verhandeln Ihre IT-Verträge nach dem 'Gain-Share'-Prinzip: Wir finanzieren uns aus den erzielten Einsparungen. 100% unabhängig von Systemhäusern und Herstellern.",
+      "primaryButtonText": "Kostenlosen Vertrags-Check anfragen",
+      "primaryLink": "#contact",
+      "secondaryButtonText": "Verhandlungs-Expertise",
+      "secondaryLink": "#vendor-details"
+    },
+    {
+      "_type": "services_slice",
+      "title": "Einkauf als Service",
+      "subtitle": "360° Beschaffung",
+      "description": "Vom operativen Einkauf bis zur strategischen Ausschreibung. Wir agieren als Ihre externe Einkaufsabteilung.",
+      "items": [
+        {
+          "icon": "BadgeEuro",
+          "title": "Gain-Share Verhandlungen",
+          "description": "Unser Versprechen: Kein Risiko für Sie. Unser Honorar orientiert sich direkt an der erzielten Einsparung (Savings). Ideal für Software-Renewals."
+        },
+        {
+          "icon": "FileSignature",
+          "title": "Vertrags-Checks (Second Opinion)",
+          "description": "Sie haben ein Angebot vorliegen? Wir prüfen in 48h Marktpreise, versteckte Margen und fehlende Schutzklauseln (Price-Caps)."
+        },
+        {
+          "icon": "Briefcase",
+          "title": "Ausschreibungs-Management",
+          "description": "Strukturierte RFPs für komplexe Projekte. Wir sorgen für Vergleichbarkeit und Wettbewerb, wo vorher Monopole waren."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Tail-End Management",
+          "description": "Wir bündeln Ihre C-Lieferanten (Mäuse, Toner, Spezialsoftware). Ein Kreditor, eine Rechnung, minimale Prozesskosten."
+        }
+      ]
+    },
+    {
+      "_type": "synergy_slice",
+      "title": "Kaufen Sie nicht nur billiger, sondern richtiger.",
+      "subtitle": "Technisch validierte Beschaffung",
+      "description": "<p>Externe Einkaufsberater verhandeln oft nur den Preis, übersehen aber technische Fallstricke. Ein günstiger Vertrag nützt nichts, wenn die Software technisch nicht zu Ihrer Architektur passt oder operative Folgekosten verursacht.</p><p>Da unsere Einkäufer Tür an Tür mit SAM-Experten und Architekten arbeiten, ist jeder Vertrag technisch validiert.</p>",
+      "items": [
+        {
+          "title": "Einkauf + SAM",
+          "icon": "FileCheck",
+          "description": "Wir prüfen vor der Unterschrift, ob die Metriken (User vs. Device vs. CPU) zu Ihrer Architektur passen. Ein günstiger Preis hilft nicht, wenn die Metrik in Ihrer VMware-Umgebung Millionenrisiken auslöst."
+        },
+        {
+          "title": "Einkauf + ITSM",
+          "icon": "LayoutTemplate",
+          "description": "Wir verhandeln Verträge so, dass sie operativ handhabbar sind. Keine komplexen Portale, die Ihren Service Desk lähmen. Wir sorgen dafür, dass Beschaffungsprozesse automatisiert ablaufen können."
+        }
+      ]
+    },
+    {
+      "_type": "vendor_deep_dive_slice",
+      "title": "Wo wir Budget freisetzen",
+      "subtitle": "Vendor Expertise",
+      "description": "Wir kennen die Preislisten, Rabattstaffeln und internen Zielvorgaben der Hersteller. Nutzen Sie unseren Informationsvorsprung.",
+      "vendors": [
+        {
+          "vendor": "Microsoft & Software",
+          "logo": "Enterprise Agreements",
+          "color": "bg-blue-600",
+          "label": "Einsparpotenzial: Hoch",
+          "risks": ["Intransparente Bundles (E3 vs E5)", "Versteckte Preiserhöhungen bei Renewal", "Unnötige On-Premise Altlasten"],
+          "solution": "Wir nutzen 'Architectural Amendments' zur Vertragsoptimierung. Wir verhandeln Reseller-Margen separat (Cost-Plus) und sichern Price-Protection für die Cloud-Migration."
+        },
+        {
+          "vendor": "Hardware",
+          "logo": "Infrastruktur & Clients",
+          "color": "bg-slate-700",
+          "label": "Einsparpotenzial: Mittel",
+          "risks": ["Mischkalkulationen der Systemhäuser", "Überdimensionierte Hardware-Specs", "Fehlende Open-Book Transparenz"],
+          "solution": "Entbündelung von Hardware und Services. Wir führen Benchmark-Analysen gegen tagesaktuelle Marktpreise durch und verhandeln Rahmenverträge direkt mit Dell, HP oder Lenovo."
+        },
+        {
+          "vendor": "SaaS",
+          "logo": "Salesforce / ServiceNow",
+          "color": "bg-orange-600",
+          "label": "Einsparpotenzial: Sehr Hoch",
+          "risks": ["Automatische 5-10% 'Uplifts' p.a.", "Renewal-Falle durch Auto-Renewal", "Bezahlen für Shelfware (Inaktive User)"],
+          "solution": "Durchsetzung von Ramping-Modellen (Zahlen nach Nutzungswachstum) und fixen Uplift-Caps. Bereinigung ungenutzter Lizenzen VOR der Vertragsverlängerung."
+        }
+      ]
+    },
+    {
+      "_type": "methodology_slice",
+      "title": "Der Weg zum besten Deal",
+      "subtitle": "Sourcing Lifecycle",
+      "description": "Unser strukturierter Sourcing-Prozess garantiert Objektivität und revisionssichere Ergebnisse.",
+      "qualityTitle": "Ihre Vorteile",
+      "qualityItems": ["Sofortige Kostensenkung", "100% Unabhängigkeit", "Rechtssichere Verträge"],
+      "steps": [
+        {
+          "number": "01",
+          "title": "Analyse",
+          "description": "Transparenz schaffen: Wer kauft was zu welchem Preis? Wir decken Maverick Buying auf und bündeln Volumina."
+        },
+        {
+          "number": "02",
+          "title": "Strategie",
+          "description": "Definition der Verhandlungsstrategie (BATNA). Aufbau von Wettbewerb durch Dual-Vendor-Ansätze oder Drohung mit Wechsel."
+        },
+        {
+          "number": "03",
+          "title": "Tender",
+          "description": "Erstellung leistungsstarker Lastenhefte (RFP). Durchführung des Wettbewerbs und objektive Bewertung der Angebote."
+        },
+        {
+          "number": "04",
+          "title": "Verhandlung",
+          "description": "Durchführung der Verhandlungen basierend auf Benchmarks. Wir sitzen auf Ihrer Seite des Tisches – bis zur Unterschrift."
+        },
+        {
+          "number": "05",
+          "title": "Vertrag",
+          "description": "Sicherung der Konditionen in wasserdichten Verträgen (SLAs, Exit-Klauseln). Integration in ERP-Systeme."
+        },
+        {
+          "number": "06",
+          "title": "Review",
+          "description": "Laufende Überwachung der Rechnungen und Leistung. Jährliche Reviews verhindern schleichende Preiserhöhungen."
+        }
+      ]
+    },
+    {
+      "_type": "about_slice",
+      "title": "Weshalb Sie bisher zu viel zahlen.",
+      "subtitle": "Das Systemhaus-Dilemma",
+      "text": "<p>Ihr Systemhaus ist nicht Ihr Freund. Es lebt von der Marge zwischen Einkauf und Verkauf. Je teurer Sie einkaufen, desto höher oft der Gewinn des Dienstleisters. Zusätzlich finanzieren sich viele 'kostenlose' Beratungen durch versteckte Backend-Rebates (Rückvergütungen) der Hersteller.</p><p><strong>Novartum dreht den Spieß um.</strong> Wir sind 100% unabhängig ('Buy-Side Only'). Wir akzeptieren keine Provisionen von Dritten. Unser Honorar finanziert sich oft komplett aus den Rückvergütungen, die wir für Sie sichtbar machen und an Sie zurückleiten.</p>",
+      "stats": [
+        { "value": "0€", "label": "Provisionen von Dritten" },
+        { "value": "Gain-Share", "label": "Erfolgsmodell" },
+        { "value": "Open-Book", "label": "Transparenz" }
+      ],
+      "features": [
+        {
+          "icon": "ShieldAlert",
+          "title": "Keine Interessenkonflikte",
+          "description": "Wir verkaufen keine Hardware. Wir optimieren Ihren Einkauf."
+        },
+        {
+          "icon": "TrendingDown",
+          "title": "Sofortiger ROI",
+          "description": "In 90% der Projekte übersteigen die Einsparungen unser Honorar deutlich."
+        },
+        {
+          "icon": "Lock",
+          "title": "Rechtssicherheit",
+          "description": "Wir prüfen AGBs und Lizenzbedingungen auf Fallstricke und Audit-Risiken."
+        }
+      ]
+    },
+    {
+      "_type": "faq_slice",
+      "items": [
+        {
+          "question": "Wie verhandelt man einen Microsoft EA Vertrag optimal?",
+          "answer": "1. Beginnen Sie 6-9 Monate vor Ablauf. 2. Nutzen Sie eine präzise Bestandsaufnahme (User-Profile), um unnötige E5-Bundles zu vermeiden. 3. Verhandeln Sie die Reseller-Marge separat ('Cost-Plus'). 4. Fordern Sie 'Price Protection' für zukünftige Zukäufe. Novartum begleitet diesen Prozess als technischer und kaufmännischer Anwalt."
+        },
+        {
+          "question": "Was ist der Unterschied: Operativer Einkauf vs. Strategic Sourcing?",
+          "answer": "Der operative Einkauf bestellt, was angefordert wird (Prozess-Fokus). Strategic Sourcing hinterfragt den Bedarf, bündelt Volumina, qualifiziert Lieferanten und verhandelt Rahmenverträge (Ergebnis-Fokus). Wir transformieren Ihren Einkauf von der Bestellschreiberei zum Wertschöpfer."
+        },
+        {
+          "question": "Wie funktioniert das 'Gain-Share' Modell?",
+          "answer": "Bei diesem Modell tragen Sie kein finanzielles Risiko. Wir vereinbaren ein Basishonorar (kostendeckend) und eine Erfolgsprämie, die nur fällig wird, wenn wir nachweisbare Einsparungen erzielen (z.B. 20% der Einsparung im ersten Jahr). Finden wir nichts, zahlen Sie auch keine Prämie."
+        },
+        {
+          "question": "Können Sie kurzfristig bei einem vorliegenden Angebot helfen?",
+          "answer": "Ja. Nutzen Sie unseren 'Second Opinion Check'. Senden Sie uns (geschwärzte) Angebote zu. Innerhalb von 48 Stunden geben wir Ihnen eine Einschätzung zum Preisniveau und identifizieren fehlende Schutzklauseln oder versteckte Margen."
+        },
+        {
+          "question": "Lohnt sich das auch für Hardware (Laptops, Server)?",
+          "answer": "Ja. Gerade bei Hardware arbeiten Systemhäuser oft mit Mischkalkulationen. Wir führen 'Open-Book' Ausschreibungen durch, bei denen Hardware-Preis und Dienstleistungs-Marge getrennt ausgewiesen werden müssen. Dies führt oft zu sofortigen Einsparungen von 10-15%."
+        }
+      ]
+    }
+  ]
+}

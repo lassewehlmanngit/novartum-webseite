@@ -1,0 +1,15 @@
+{
+  "analyticsScripts": {
+    "head": "",
+    "body": ""
+  },
+  "marketingScripts": {
+    "head": "",
+    "body": ""
+  },
+  "emailSettings": {
+    "senderName": "Novartum Website",
+    "senderEmail": "noreply@novartum.com",
+    "receiverEmail": "info@novartum.com"
+  }
+}

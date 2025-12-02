@@ -1,0 +1,21 @@
+{
+  "id": "6",
+  "slug": "b2b-customer-portal",
+  "title": "B2B Self-Service Kundenportal",
+  "clientIndustry": "Großhandel",
+  "category": "Software",
+  "shortDescription": "Digitalisierung des Bestellwesens mit SAP-Integration: 80% weniger manuelle Erfassung.",
+  "challenge": "Kundenbestellungen erfolgten per Fax/Telefon. Hoher manueller Aufwand und Fehlerquote bei der Dateneingabe.",
+  "solution": "Entwicklung eines modernen Web-Portals mit direkter SAP-Anbindung für Bestellungen, Rechnungen und Retouren.",
+  "results": ["80% der Bestellungen nun digital", "Halbierung der Prozesskosten im Vertriebsinnendienst", "Kundenzufriedenheit signifikant gesteigert"],
+  "techStack": ["Angular", ".NET Core", "SAP Integration", "SQL Server"],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+    "alt": "Tablet B2B Applikation"
+  },
+  "year": "2023",
+  "seo": {
+    "metaTitle": "B2B Kundenportal Entwicklung | SAP Integration | Novartum",
+    "metaDescription": "Entwicklung eines Self-Service Portals mit SAP-Anbindung. 80% Digitalisierungsrate der Bestellungen erreicht."
+  }
+}

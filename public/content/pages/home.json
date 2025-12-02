@@ -1,0 +1,119 @@
+{
+  "title": "Home",
+  "seo": {
+    "metaTitle": "Novartum - IT Services & Consulting",
+    "metaDescription": "Novartum ist Ihr Partner für Softwareentwicklung, Lizenzmanagement (SAM) und IT-Consulting.",
+    "metaKeywords": ["IT", "Consulting", "Software", "SAM"],
+    "ogImage": ""
+  },
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Novartum IT Services",
+      "title": "Ihre IT-Zukunft: Maßgeschneiderte & Sicher.",
+      "description": "Experten für Softwareentwicklung, Lizenzmanagement und IT-Beratung. Seit 20 Jahren Erfahrung.",
+      "primaryButtonText": "Gemeinsames Projekt starten",
+      "primaryLink": "#contact"
+    },
+    {
+      "_type": "trustbar_slice"
+    },
+    {
+      "_type": "services_slice",
+      "title": "Leistungsspektrum",
+      "subtitle": "Unsere Expertise",
+      "description": "Wir decken den gesamten Lebenszyklus professioneller IT-Lösungen ab.",
+      "items": [
+        {
+          "icon": "Code2",
+          "title": "Individuelle Softwarelösungen",
+          "description": "Maßgeschneiderte Anwendungen für Ihre spezifischen Anforderungen. Von der Konzeption bis zum Betrieb.",
+          "link": "/software"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Einkaufsmanagement",
+          "description": "Optimierung Ihrer IT-Beschaffungsprozesse und Verhandlungssicherheit für beste Konditionen.",
+          "link": "/einkauf"
+        },
+        {
+          "icon": "FileText",
+          "title": "Software Asset Management",
+          "description": "Transparenz und Compliance in Ihrem Lizenzportfolio. Vermeiden Sie Unterlizenzierung und senken Sie Kosten.",
+          "link": "/sam"
+        },
+        {
+          "icon": "Users",
+          "title": "ESO Consulting & Service",
+          "description": "Ganzheitliche IT-Beratung und Service-Management für reibungslose Betriebsabläufe.",
+          "link": "/consulting"
+        }
+      ]
+    },
+    {
+      "_type": "about_slice",
+      "subtitle": "Über uns",
+      "title": "Wer ist novartum?",
+      "text": "<p>Novartum ist Ihr verlässlicher Partner für digitale Transformation. Wir verbinden technologische Exzellenz mit tiefem Verständnis für geschäftliche Prozesse.</p><p>Unser Team aus erfahrenen Beratern und Entwicklern steht für Qualität, Transparenz und nachhaltige Lösungen. Wir sehen uns nicht nur als Dienstleister, sondern als Teil Ihres Teams.</p>",
+      "stats": [
+        { "value": "20+", "label": "Jahre Erfahrung" },
+        { "value": "500+", "label": "Projekte" },
+        { "value": "100%", "label": "Inhabergeführt" }
+      ],
+      "features": [
+        {
+          "icon": "Briefcase",
+          "title": "Erfahrung",
+          "description": "Jahrzehntelange Expertise in komplexen IT-Projekten für den Mittelstand."
+        },
+        {
+          "icon": "Award",
+          "title": "Exzellenz",
+          "description": "Ausgezeichnete Beratungsqualität und höchste Standards in der Umsetzung."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Wachstum",
+          "description": "Lösungen, die mit Ihrem Unternehmen skalieren und Zukunft sichern."
+        }
+      ]
+    },
+    {
+      "_type": "case_studies_slice",
+      "subtitle": "Referenzen",
+      "title": "Projekte aus der Praxis",
+      "items": [
+        {
+          "icon": "Truck",
+          "category": "Logistik",
+          "title": "Automatisierung für Logistik-Riese",
+          "challenge": "Manuelle Prozesse verlangsamten den Warendurchsatz erheblich.",
+          "solution": "Entwicklung einer automatisierten Steuerungssoftware für Hochregallager.",
+          "link": "/projekte/cloud-native-logistikplattform"
+        },
+        {
+          "icon": "Settings",
+          "category": "Fertigung",
+          "title": "IoT Dashboard für Maschinenpark",
+          "challenge": "Keine Übersicht über Maschinenauslastung in Echtzeit.",
+          "solution": "Implementierung einer IoT-Plattform zur Live-Überwachung der OEE.",
+          "link": "/projekte/iot-dashboard-manufacturing"
+        },
+        {
+          "icon": "FileText",
+          "category": "Bankwesen",
+          "title": "Lizenzoptimierung Großbank",
+          "challenge": "Intransparente Lizenzverträge führten zu hohen Kosten.",
+          "solution": "Einsparung von 2 Mio. € durch Konsolidierung und optimiertes Management.",
+          "link": "/projekte/oracle-audit-abwehr-grossbank"
+        }
+      ]
+    },
+    {
+      "_type": "blog_slice",
+      "title": "Aktuelles aus der IT-Welt",
+      "subtitle": "Insights",
+      "count": 3
+    }
+  ]
+}

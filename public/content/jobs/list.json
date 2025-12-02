@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Senior Java Developer (m/w/d)",
+    "department": "Softwareentwicklung",
+    "type": "Vollzeit",
+    "location": "Remote / München",
+    "description": "Wir suchen einen erfahrenen Entwickler für komplexe Backend-Architekturen im Enterprise-Umfeld.",
+    "tasks": [
+      "Konzeption und Entwicklung von Microservices mit Spring Boot",
+      "Design von REST APIs und Datenbank-Modellen",
+      "Coaching von Junior-Entwicklern und Code Reviews",
+      "Enge Zusammenarbeit mit DevOps für CI/CD Pipelines"
+    ],
+    "profile": [
+      "Mindestens 5 Jahre Erfahrung mit Java und Spring Boot",
+      "Erfahrung mit Cloud-Plattformen (AWS oder Azure)",
+      "Verständnis von Clean Code und TDD",
+      "Sehr gute Deutschkenntnisse (C1)"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "SAM Consultant (m/w/d)",
+    "department": "Consulting",
+    "type": "Vollzeit",
+    "location": "Remote / Deutschlandweit",
+    "description": "Du hilfst unseren Kunden, den Lizenz-Dschungel zu lichten und Compliance sicherzustellen.",
+    "tasks": [
+      "Durchführung von Lizenzbilanzierungen (Microsoft, Oracle, SAP)",
+      "Beratung zu Vertragsoptimierung und Cloud-Migration",
+      "Begleitung von Hersteller-Audits",
+      "Workshops und Schulungen bei Kunden"
+    ],
+    "profile": [
+      "Fundiertes Wissen in Lizenzmodellen mindestens eines großen Herstellers",
+      "Analytisches Denken und Freude an Daten (Excel, BI)",
+      "Kommunikationsstärke und Verhandlungsgeschick",
+      "Reisebereitschaft (ca. 20%)"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "IT-Sales Manager (m/w/d)",
+    "department": "Sales",
+    "type": "Vollzeit",
+    "location": "München / Hybrid",
+    "description": "Du bist das Gesicht zum Kunden und identifizierst Potenziale für unsere Beratungsleistungen.",
+    "tasks": [
+      "Aufbau und Pflege von Kundenbeziehungen im Mittelstand",
+      "Vorstellung unseres Portfolios (SAM, Dev, ITSM)",
+      "Erstellung von Angeboten und Vertragsverhandlungen",
+      "Teilnahme an Events und Messen"
+    ],
+    "profile": [
+      "Erfahrung im Vertrieb von erklärungsbedürftigen IT-Dienstleistungen",
+      "Netzwerk im DACH-Raum von Vorteil",
+      "Hohe Eigenmotivation und 'Hunter'-Mentalität",
+      "Sicheres Auftreten auf C-Level"
+    ]
+  }
+]

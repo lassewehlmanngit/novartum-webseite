@@ -1,0 +1,32 @@
+{
+  "contactPerson": {
+    "name": "Dr. Michael Weber",
+    "role": "Senior IT Consultant",
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
+    "email": "michael.weber@novartum.com",
+    "phone": "+49 89 12345678"
+  },
+  "links": {
+    "services": [
+      { "label": "Softwareentwicklung", "link": "/software" },
+      { "label": "SAM & Lizenzen", "link": "/sam" },
+      { "label": "IT Service Management", "link": "/itsm" },
+      { "label": "IT-Einkauf", "link": "/einkauf" },
+      { "label": "IT-Consulting", "link": "/consulting" }
+    ],
+    "resources": [
+      { "label": "Referenzprojekte", "link": "/projekte" },
+      { "label": "Blog", "link": "/blog" }
+    ],
+    "company": [
+      { "label": "Team", "link": "/team" },
+      { "label": "Karriere", "link": "/karriere" },
+      { "label": "Partner", "link": "/partner" }
+    ],
+    "legal": [
+      { "label": "Impressum", "link": "/impressum" },
+      { "label": "Datenschutz", "link": "/datenschutz" },
+      { "label": "AGB", "link": "/agb" }
+    ]
+  }
+}

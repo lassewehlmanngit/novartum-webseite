@@ -1,0 +1,205 @@
+import React from 'react';
+import { ConsultingData } from '../types';
+import { 
+  Scale, ShieldAlert, FileText, TrendingUp, 
+  Lightbulb, Gavel, Users, BookOpen, AlertOctagon,
+  FileSearch, Lock
+} from 'lucide-react';
+
+export const CONSULTING_DATA: ConsultingData = {
+  hero: {
+    tagline: "Strategic IT Consulting",
+    title: <>Rechtssicherheit. <br className="hidden md:block" />Wirtschaftlichkeit. <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-300 to-white">Compliance mit Augenmaß.</span></>,
+    description: "Wir schließen die Lücke zwischen IT-Technik, juristischen Anforderungen und kaufmännischer Realität. Von der Audit-Abwehr über Vertragsoptimierung bis zur NIS2-Umsetzung.",
+    primaryButtonText: "Compliance-Check buchen",
+    primaryLink: "#contact",
+    secondaryButtonText: "Krisenintervention",
+    secondaryLink: "#risks"
+  },
+  services: {
+    title: "Strategische Beratung",
+    subtitle: "Governance & Risk",
+    description: "Wir beraten auf C-Level Ebene, um Risiken zu minimieren und langfristige Strategien zu sichern.",
+    items: [
+      {
+        icon: <ShieldAlert size={28} strokeWidth={1.5} />,
+        title: "Audit Defense",
+        description: "Die Feuerwehr, wenn der Hersteller brennt. Wir übernehmen die Kommunikation bei Audits (Oracle, SAP, Microsoft) und wehren unberechtigte Forderungen ab."
+      },
+      {
+        icon: <FileText size={28} strokeWidth={1.5} />,
+        title: "Contract Engineering",
+        description: "Verträge, die technisch funktionieren. Wir prüfen Lizenzverträge auf operative Machbarkeit und Kostenfallen, bevor Sie unterschreiben."
+      },
+      {
+        icon: <Lock size={28} strokeWidth={1.5} />,
+        title: "Regulatory (NIS2 / DORA)",
+        description: "Haftungsrisiken minimieren. Wir übersetzen EU-Richtlinien in konkrete IT-Maßnahmen für den Mittelstand – pragmatisch, ohne bürokratischen Overhead."
+      },
+      {
+        icon: <Lightbulb size={28} strokeWidth={1.5} />,
+        title: "CIO Advisory",
+        description: "Ihre externe rechte Hand. Wir unterstützen bei strategischen Make-or-Buy Entscheidungen und der Ausrichtung der IT an den Geschäftszielen."
+      }
+    ]
+  },
+  synergy: {
+    title: "Der 360° Strategie-Ansatz.",
+    subtitle: "The Strategic Connector",
+    description: (
+      <>
+        <p>
+          Consulting ist kein Silo. Es ist das Fundament, auf dem Ihre operativen Einheiten sicher arbeiten. 
+          Das größte Risiko in der IT ist die Schnittstelle: Wenn Juristen Paragraphen sprechen, aber die Technik nicht verstehen.
+        </p>
+        <p>
+          Novartum agiert als Ihr Übersetzer. Wir bringen technische Fakten so auf den Tisch, dass sie juristisch belastbar und kaufmännisch sinnvoll entschieden werden können.
+        </p>
+      </>
+    ),
+    items: [
+      {
+        title: "Consulting + Einkauf",
+        icon: <TrendingUp size={24} />,
+        description: "Der Einkauf verhandelt den Preis, das Consulting definiert den Inhalt. Wir liefern die Argumente, Szenarien und Benchmarks, die Ihr Einkauf benötigt, um Bestpreise durchzusetzen."
+      },
+      {
+        title: "Consulting + SAM",
+        icon: <Scale size={24} />,
+        description: "SAM liefert Daten. Consulting bewertet das rechtliche Risiko. Wir interpretieren 'Grauzonen' in den AGBs zu Ihren Gunsten (z.B. Virtualisierung, Zweitnutzungsrechte)."
+      },
+      {
+        title: "Consulting + ITSM",
+        icon: <BookOpen size={24} />,
+        description: "Regulatorik (NIS2) darf den Betrieb nicht lähmen. Wir designen Compliance-Vorgaben so, dass sie direkt in Ihren ITSM-Workflows automatisiert abgebildet werden."
+      }
+    ]
+  },
+  risks: {
+    id: "risks",
+    title: "Risiko-Radar",
+    subtitle: "Aktuelle Bedrohungen",
+    description: "Diese Themen beschäftigen IT-Entscheider aktuell am meisten. Wir haben die Antworten.",
+    vendors: [
+      {
+        vendor: "Regulatorik",
+        logo: "NIS2 Richtlinie",
+        color: "bg-red-700",
+        label: "Haftungsrisiko",
+        risks: ["Persönliche Haftung der Geschäftsführung", "Bußgelder bis 10 Mio. € oder 2% Umsatz", "Meldepflicht bei Vorfällen binnen 24h"],
+        solution: "Durchführung einer Gap-Analyse, Definition der kritischen Assets und Erstellung eines pragmatischen Maßnahmenplans zur Erreichung der 'Stand der Technik'-Compliance."
+      },
+      {
+        vendor: "Audit",
+        logo: "Audit Defense",
+        color: "bg-orange-600",
+        label: "Finanzrisiko",
+        risks: ["Schätzungen durch den Hersteller", "Einfrieren von Rabatten", "Ungeplanter Cash-Out in Millionenhöhe"],
+        solution: "Single-Point-of-Contact Strategie. Wir kanalisieren jegliche Kommunikation, validieren alle Daten vor Herausgabe in einer Sandbox und verhandeln den 'Commercial Settlement'."
+      },
+      {
+        vendor: "Verträge",
+        logo: "Vertragslücken",
+        color: "bg-slate-600",
+        label: "Operatives Risiko",
+        risks: ["Price-Uplifts ohne Obergrenze (Cap)", "Fehlende Exit-Klauseln / Lock-in", "Indirekte Nutzung ungedeckt"],
+        solution: "Red-Lining Ihrer Verträge. Wir streichen kritische Passagen und fügen Schutzklauseln (z.B. für Divestitures, M&A oder Cloud-Exit) ein."
+      }
+    ]
+  },
+  roadmap: {
+    subtitle: "Methodik",
+    title: "Der 'Safe Harbor' Prozess",
+    description: "Unser standardisiertes Vorgehen schafft Sicherheit in Krisensituationen.",
+    qualityTitle: "Unser Standard",
+    qualityItems: ["Diskretion & Vertraulichkeit", "Juristisch validierte Vorgehensweise", "Ergebnisorientierung"],
+    steps: [
+      {
+        number: "01",
+        title: "Assess",
+        description: "Initiale Risikobewertung. Analyse des Audit-Letters oder Bestandsaufnahme des NIS2-Status."
+      },
+      {
+        number: "02",
+        title: "Stabilize",
+        description: "Sofortmaßnahmen zur Schadensbegrenzung. Verhängung eines Datenstopps (Audit) oder Schließung kritischer Lücken."
+      },
+      {
+        number: "03",
+        title: "Strategize",
+        description: "Entwicklung der Verhandlungs- oder Umsetzungsstrategie. Simulation verschiedener Szenarien (Best/Worst Case)."
+      },
+      {
+        number: "04",
+        title: "Execute",
+        description: "Führung der Verhandlungen mit dem Hersteller oder Implementierung der Compliance-Maßnahmen."
+      },
+      {
+        number: "05",
+        title: "Proof",
+        description: "Abschlussbericht und rechtssichere Dokumentation (Audit-Proof) zur Abwehr zukünftiger Ansprüche."
+      }
+    ]
+  },
+  about: {
+    subtitle: "Unser Ansatz",
+    title: "Warum IT-Projekte oft scheitern.",
+    text: (
+      <>
+        <p>
+          Das größte Risiko in der IT ist nicht die Technologie selbst, sondern die Schnittstelle. Juristen sprechen Paragraphen, Techniker sprechen Code und der Einkauf spricht Budget. 
+          Wenn diese Welten nicht synchronisiert sind, entstehen Vertragslücken, Sicherheitsrisiken und explodierende Kosten.
+        </p>
+        <p>
+          Novartum agiert als Ihr Übersetzer und Stratege. Wir bringen die technischen Fakten so auf den Tisch, dass sie juristisch belastbar und kaufmännisch sinnvoll entschieden werden können.
+        </p>
+      </>
+    ),
+    stats: [
+      { value: "0€", label: "Akzeptierte Strafen" },
+      { value: "100%", label: "Compliance Rate" },
+      { value: "NIS2", label: "Ready Check" }
+    ],
+    features: [
+      {
+        icon: <Gavel size={28} strokeWidth={1.5} />,
+        title: "Verhandlungsmacht",
+        description: "Wir kennen die Spielräume der Hersteller und setzen Ihre Interessen durch."
+      },
+      {
+        icon: <AlertOctagon size={28} strokeWidth={1.5} />,
+        title: "Risikominimierung",
+        description: "Wir identifizieren Risiken, bevor sie zum Problem werden."
+      },
+      {
+        icon: <Users size={28} strokeWidth={1.5} />,
+        title: "C-Level Sprache",
+        description: "Wir bereiten technische Themen entscheidungsgerecht für die Geschäftsführung auf."
+      }
+    ]
+  },
+  faq: {
+    items: [
+      {
+        question: "Haftet die Geschäftsführung wirklich persönlich bei NIS2-Verstößen?",
+        answer: "Ja, NIS2 verschärft die Haftung (Art. 20). Die Geschäftsleitung muss Cybersecurity-Maßnahmen billigen und überwachen. Unwissenheit schützt nicht vor Strafe. Wir schulen Ihre GF und dokumentieren die Wahrnehmung der Sorgfaltspflicht."
+      },
+      {
+        question: "Wir haben einen Audit-Brief erhalten. Sollen wir die Skripte des Herstellers ausführen?",
+        answer: "Nein, niemals ungeprüft! Herstellerskripte sammeln oft mehr Daten als vertraglich vereinbart (Datenschutzrisiko) oder interpretieren Konfigurationen fälschlicherweise als lizenzpflichtig. Lassen Sie Novartum die Skripte in einer Sandbox prüfen, bevor Sie Daten senden."
+      },
+      {
+        question: "Ersetzt Novartum unsere Anwälte?",
+        answer: "Nein, wir ergänzen sie. Anwälte kennen das Recht, wir kennen die Technologie und die Lizenzmetriken. Wir liefern Ihrem Rechtsbeistand die technische Faktenbasis ('Technical Fact Finding'), damit dieser den Fall juristisch gewinnen kann."
+      },
+      {
+        question: "Was bedeutet 'Technical Fact Finding'?",
+        answer: "In Streitfällen behaupten Hersteller oft eine Nutzung, die technisch so nicht stattgefunden hat. Wir analysieren Logs, Konfigurationen und Architekturen forensisch, um diese Behauptungen technisch zu widerlegen."
+      },
+      {
+        question: "Helfen Sie auch bei Cloud-Exit Strategien?",
+        answer: "Ja. Viele Verträge enthalten Lock-in Klauseln, die einen Wechsel teuer machen. Wir entwerfen Exit-Strategien und verhandeln Vertragsklauseln, die Ihnen die Datenhoheit und Wechselmöglichkeit sichern."
+      }
+    ]
+  }
+};

@@ -1,0 +1,11 @@
+{
+  "title": "Ausgewählte Klienten",
+  "clients": [
+    { "name": "DZ BANK", "logo": "DZ BANK" },
+    { "name": "Deutsche Telekom", "logo": "T Deutsche Telekom" },
+    { "name": "E.ON", "logo": "e.on" },
+    { "name": "Lufthansa", "logo": "Lufthansa" },
+    { "name": "SAP", "logo": "SAP" },
+    { "name": "Allianz", "logo": "Allianz" }
+  ]
+}

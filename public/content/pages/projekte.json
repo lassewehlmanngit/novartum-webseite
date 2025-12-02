@@ -1,0 +1,23 @@
+{
+  "title": "Projekte",
+  "seo": {
+    "metaTitle": "Unsere Projekte & Referenzen | Novartum",
+    "metaDescription": "Entdecken Sie erfolgreiche IT-Projekte und Case Studies aus den Bereichen Software, SAM und Consulting.",
+    "metaKeywords": ["Projekte", "Case Studies", "Referenzen"],
+    "ogImage": ""
+  },
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Success Stories",
+      "title": "Ergebnisse, die für sich sprechen.",
+      "description": "Von der komplexen Cloud-Migration bis zur millionenschweren Audit-Abwehr. Entdecken Sie, wie wir Unternehmen messbar voranbringen.",
+      "primaryButtonText": "Projekt anfragen",
+      "primaryLink": "#contact"
+    },
+    {
+      "_type": "projects_overview_slice",
+      "title": "Unsere Projekte"
+    }
+  ]
+}

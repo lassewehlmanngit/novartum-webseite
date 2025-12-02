@@ -1,0 +1,165 @@
+{
+  "title": "Softwareentwicklung",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Enterprise Software Solutions",
+      "title": "Softwareentwicklung auf höchstem Niveau.",
+      "description": "Wir realisieren komplexe, geschäftskritische Anwendungen für den Mittelstand und Großkonzerne. Von der Architekturberatung über die individuelle Entwicklung bis hin zur Cloud-Transformation.",
+      "primaryButtonText": "Projekt anfragen",
+      "primaryLink": "#contact",
+      "secondaryButtonText": "Technologie-Stack",
+      "secondaryLink": "#techstack"
+    },
+    {
+      "_type": "services_slice",
+      "title": "Leistungsspektrum",
+      "subtitle": "Unsere Expertise",
+      "description": "Wir decken den gesamten Lebenszyklus professioneller IT-Lösungen ab.",
+      "items": [
+        {
+          "icon": "Code2",
+          "title": "Individuelle Softwarelösungen",
+          "description": "Maßgeschneiderte Java- und .NET-Anwendungen, die exakt auf Ihre Geschäftsprozesse abgestimmt sind. Robust, skalierbar und zukunftssicher."
+        },
+        {
+          "icon": "RefreshCw",
+          "title": "Legacy Modernisierung",
+          "description": "Transformation veralteter Systeme in moderne Architekturen. Wir sichern Ihr Know-how und migrieren risikominimiert in die Zukunft."
+        },
+        {
+          "icon": "Cloud",
+          "title": "Cloud & DevOps",
+          "description": "Cloud-Native Entwicklung auf AWS und Azure. Beschleunigung Ihrer Deployments durch CI/CD-Pipelines und Containerisierung."
+        },
+        {
+          "icon": "LayoutTemplate",
+          "title": "Software-Architektur",
+          "description": "Design von Microservices, Domain Driven Design (DDD) und technologische Beratung für nachhaltige und wartbare Systemlandschaften."
+        }
+      ]
+    },
+    {
+      "_type": "tech_stack_slice",
+      "title": "Unser Technologie-Stack",
+      "subtitle": "State of the Art",
+      "description": "Wir setzen auf bewährte Enterprise-Technologien und moderne Frameworks für nachhaltige Lösungen.",
+      "categories": [
+        { 
+            "title": "Backend", 
+            "icon": "Server",
+            "items": ["Java", "Spring Boot", "Jakarta EE", "C# .NET", ".NET Core", "Node.js", "Python"]
+        },
+        { 
+            "title": "Frontend", 
+            "icon": "Globe",
+            "items": ["React", "Angular", "TypeScript", "Tailwind CSS", "Vue.js", "Bootstrap"]
+        },
+        { 
+            "title": "Cloud & DevOps", 
+            "icon": "Layers",
+            "items": ["AWS", "Microsoft Azure", "Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform"]
+        },
+        { 
+            "title": "Data & Persistence", 
+            "icon": "Database",
+            "items": ["PostgreSQL", "Oracle", "SQL Server", "MongoDB", "Redis", "Elasticsearch"]
+        }
+      ]
+    },
+    {
+      "_type": "methodology_slice",
+      "title": "Vom Konzept zum Code",
+      "subtitle": "Projekt-Lifecycle",
+      "description": "Jedes erfolgreiche Projekt folgt einem strukturierten Plan. Wir verwandeln Ihre Vision Schritt für Schritt in eine funktionierende Softwarelösung.",
+      "qualityTitle": "Unser Versprechen",
+      "qualityItems": ["Transparenz durch Agile Sprints", "Clean Code & Quality First", "Kein Vendor-Lock-in"],
+      "steps": [
+        {
+          "number": "01",
+          "title": "Analyse",
+          "description": "Wir tauchen tief in Ihre Geschäftsprozesse ein, verstehen die Stakeholder und definieren klare, messbare Ziele für das Projekt. Das Ergebnis ist ein gemeinsames Verständnis der Herausforderung."
+        },
+        {
+          "number": "02",
+          "title": "Konzeption",
+          "description": "Hier entsteht die Blaupause Ihrer Lösung. Wir entwerfen die Software-Architektur, erstellen Wireframes für die User Experience und definieren den optimalen Technologie-Stack."
+        },
+        {
+          "number": "03",
+          "title": "Entwicklung",
+          "description": "In agilen Sprints setzen unsere Experten die Konzeption in sauberen, wartbaren Code um. Transparenz durch regelmäßige Demos und Feedbackschleifen ist dabei selbstverständlich."
+        },
+        {
+          "number": "04",
+          "title": "Testing",
+          "description": "Qualitätssicherung ist kein nachträglicher Schritt. Automatisierte Tests (Unit, Integration) und manuelle Prüfungen garantieren eine robuste und fehlerfreie Anwendung vor dem Go-Live."
+        },
+        {
+          "number": "05",
+          "title": "Deployment",
+          "description": "Wir begleiten den Go-Live, sorgen für eine reibungslose Inbetriebnahme auf Ihrer Infrastruktur (Cloud oder On-Premise) und übergeben die fertige Lösung an Ihre Anwender."
+        }
+      ]
+    },
+    {
+      "_type": "about_slice",
+      "title": "Software-Handwerk aus Leidenschaft.",
+      "subtitle": "Unsere Philosophie",
+      "text": "<p>Bei novartum verstehen wir Softwareentwicklung als Handwerk. Wir schreiben nicht einfach nur Code – wir schaffen Lösungen, die Ihr Unternehmen voranbringen.</p><p>Unsere Entwickler sind Experten in ihrem Fachgebiet und bilden sich ständig weiter. Wir setzen auf flache Hierarchien, offene Kommunikation und technologische Exzellenz. Ob Java-Backend, React-Frontend oder komplexe Cloud-Architektur – wir liefern Qualität 'Made in Germany'.</p>",
+      "stats": [
+        { "value": "50+", "label": "Entwickler" },
+        { "value": "100+", "label": "Erfolgreiche Systeme" },
+        { "value": "24/7", "label": "Betrieb möglich" }
+      ],
+      "features": [
+        {
+          "icon": "Terminal",
+          "title": "Code Quality",
+          "description": "Wartbarer, sauberer Code als Fundament für Langlebigkeit."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Security First",
+          "description": "Sicherheit ist kein Feature, sondern integraler Bestandteil der Architektur."
+        },
+        {
+          "icon": "Cpu",
+          "title": "Performance",
+          "description": "Hochperformante Systeme, die auch unter Last stabil laufen."
+        }
+      ]
+    },
+    {
+      "_type": "case_studies_slice",
+      "title": "Projekte aus der Praxis",
+      "subtitle": "Referenzen",
+      "items": [
+        {
+          "icon": "CloudLightning",
+          "category": "Logistik",
+          "title": "Microservices Migration",
+          "challenge": "Monolithisches Altsystem war schwer wartbar und verhinderte schnelle Feature-Releases.",
+          "solution": "Migration auf eine skalierbare Microservices-Architektur mit Spring Boot und Kubernetes auf Azure.",
+          "link": "/projekte/cloud-native-logistikplattform"
+        },
+        {
+          "icon": "Globe",
+          "category": "Automotive",
+          "title": "B2B Kundenportal",
+          "challenge": "Veraltetes Portal mit schlechter UX und fehlender mobiler Unterstützung.",
+          "solution": "Neuentwicklung eines modernen SPAs mit React und REST-API Anbindung für 10.000+ Nutzer.",
+          "link": "/projekte/b2b-customer-portal"
+        },
+        {
+          "icon": "Database",
+          "category": "Versicherung",
+          "title": "Datenintegrations-Plattform",
+          "challenge": "Inkonsistente Datenhaltung über verschiedene Altsysteme hinweg.",
+          "solution": "Aufbau einer zentralen Integrationsschicht (Middleware) zur Echtzeit-Synchronisation aller Systeme.",
+          "link": "/projekte"
+        }
+      ]
+    }
+  ]
+}

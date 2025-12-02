@@ -1,0 +1,186 @@
+{
+  "title": "ITSM",
+  "content_blocks": [
+    {
+      "_type": "hero_slice",
+      "tagline": "Managed IT Service Management",
+      "title": "IT-Betrieb. Strukturiert & Messbar.",
+      "description": "Von der Strategieberatung über die Tool-Implementierung bis zum 24/7 Managed Service. Wir verwandeln Ihren Service Desk in eine Wertschöpfungskette.",
+      "primaryButtonText": "Strategie-Gespräch",
+      "primaryLink": "#contact",
+      "secondaryButtonText": "Roadmap ansehen",
+      "secondaryLink": "#roadmap"
+    },
+    {
+      "_type": "services_slice",
+      "title": "Leistungsbausteine",
+      "subtitle": "End-to-End ITSM",
+      "description": "Modularer Aufbau für maximale Flexibilität: Wählen Sie zwischen reiner Beratung, Implementierung oder dem vollständigen Betrieb.",
+      "items": [
+        {
+          "icon": "Target",
+          "title": "Strategie & Governance",
+          "description": "Definition von RACI-Matrizen, Servicekatalogen und IT-Sicherheitsrichtlinien. Wir machen Ihre ITIL-Prozesse revisionssicher und transparent."
+        },
+        {
+          "icon": "Layers",
+          "title": "Tool-Implementierung",
+          "description": "Experten für Matrix42 und ServiceNow. Wir kümmern uns um Customizing, Schnittstellen (AD, Azure) und die Migration historischer Daten."
+        },
+        {
+          "icon": "Headphones",
+          "title": "Managed Operation",
+          "description": "Wir übernehmen den Betrieb (Incident, Request, Problem Management). Inklusive Patchmanagement, Monitoring und optionalem 24/7 Support."
+        },
+        {
+          "icon": "Zap",
+          "title": "KI & Automatisierung",
+          "description": "Ticket-Deflection durch intelligente Chatbots und Self-Service-Portale. Reduzieren Sie das Ticketvolumen durch Automatisierung spürbar."
+        }
+      ]
+    },
+    {
+      "_type": "synergy_slice",
+      "title": "Prozesse, die mitdenken.",
+      "subtitle": "ITSM als Compliance-Wächter",
+      "description": "<p>Ein Ticket-System darf kein reines Logistik-Tool sein. In der Novartum-Welt ist Ihr ITSM-Tool das exekutive Organ für Compliance und Kostenkontrolle.</p><p>Wir verbinden Ihren Service Desk direkt mit dem Lizenzmanagement. Das Resultat: Weniger manuelle Arbeit und automatisierte Sicherheit.</p>",
+      "items": [
+        {
+          "title": "ITSM + SAM",
+          "icon": "FileCheck",
+          "description": "Wenn ein User 'Adobe Acrobat' bestellt, prüft unser Workflow automatisch den Lizenzbestand (Harvesting). Ist eine Lizenz frei? Wenn nein: Trigger an den Einkauf. Das verhindert Unterlizenzierung proaktiv."
+        },
+        {
+          "title": "ITSM + DevOps",
+          "icon": "Code2",
+          "description": "Unsere Software-Expertise fließt in Ihr Change Management ein. Wir bauen Pipelines, die Deployments nicht nur beschleunigen, sondern auch revisionssicher dokumentieren."
+        }
+      ]
+    },
+    {
+      "_type": "vendor_deep_dive_slice",
+      "title": "Vom Chaos zur Struktur",
+      "subtitle": "Use Cases",
+      "description": "Viele IT-Organisationen kämpfen mit intransparenten Prozessen und hohen Kosten. Wir liefern die Lösung.",
+      "vendors": [
+        {
+          "vendor": "Intransparenz",
+          "logo": "Governance & KPIs",
+          "color": "bg-red-600",
+          "label": "Herausforderung",
+          "risks": ["Keine messbaren SLAs", "Unklare Verantwortlichkeiten", "Fehlendes Reporting für Management"],
+          "solution": "Einführung von transparenten KPI-Dashboards (MTTR, FCR) und einer klaren Governance-Struktur. Regelmäßige Service Reviews schaffen Vertrauen."
+        },
+        {
+          "vendor": "Ineffizienz",
+          "logo": "Prozess-Chaos",
+          "color": "bg-orange-600",
+          "label": "Herausforderung",
+          "risks": ["Manuelle Routinetätigkeiten", "Hohe Ticket-Backlogs", "Lange Wartezeiten für Anwender"],
+          "solution": "Standardisierung nach ITIL und Automatisierung von Standard-Requests. Einführung eines Self-Service-Portals zur Entlastung des 1st Level Supports."
+        },
+        {
+          "vendor": "Tooling",
+          "logo": "System-Wildwuchs",
+          "color": "bg-blue-600",
+          "label": "Herausforderung",
+          "risks": ["Isolierte Insellösungen", "Veraltete CMDB Daten", "Mangelnde Integration (ERP/AD)"],
+          "solution": "Toolagnostische Beratung (z.B. Matrix42). Wir integrieren Ihr ITSM-Tool nahtlos in die bestehende Infrastruktur und automatisieren die Asset-Discovery."
+        }
+      ]
+    },
+    {
+      "_type": "methodology_slice",
+      "title": "In 6 Schritten zum ITSM",
+      "subtitle": "Ihr Weg zum Erfolg",
+      "description": "Ein bewährter Prozess garantiert eine reibungslose Einführung ohne Betriebsunterbrechungen.",
+      "qualityTitle": "Ihr Mehrwert",
+      "qualityItems": ["ITIL Best Practices", "Schnelle Implementierung", "Messbare KPIs (SLA, MTTR)"],
+      "steps": [
+        {
+          "number": "01",
+          "title": "Ziele",
+          "description": "Identifizierung strategischer, taktischer und operativer Ziele (SMART). Fokus auf Service-Verfügbarkeit und Compliance."
+        },
+        {
+          "number": "02",
+          "title": "Analyse",
+          "description": "Detaillierte Analyse der Prozesse, Tools und Organisation. Reifegradbewertung nach ITIL und Gap-Analyse."
+        },
+        {
+          "number": "03",
+          "title": "Anforderungen",
+          "description": "Erstellung des Anforderungskatalogs (MoSCoW) und Risikobewertung. Interviews mit Stakeholdern zur Akzeptanzsicherung."
+        },
+        {
+          "number": "04",
+          "title": "Roadmap",
+          "description": "Erstellung eines detaillierten Projektplans mit Meilensteinen, Ressourcenplanung und ROI-Kalkulation."
+        },
+        {
+          "number": "05",
+          "title": "Setup",
+          "description": "Auswahl und technisches Setup des ITSM-Tools. Konfiguration von Workflows, SLAs und CMDB/Asset-Discovery."
+        },
+        {
+          "number": "06",
+          "title": "Onboarding",
+          "description": "Datenmigration, Schulung der Key User und begleiteter Go-Live. Übergang in den Regelbetrieb (CSI)."
+        }
+      ]
+    },
+    {
+      "_type": "about_slice",
+      "title": "Mehr als nur Tickets schließen.",
+      "subtitle": "Zielbild & Nutzen",
+      "text": "<p>Ein modernes IT Service Management ist das Rückgrat jeder digitalen Organisation. Es geht nicht nur darum, Störungen zu beheben, sondern Services proaktiv und wertschöpfend zu gestalten.</p><p>Novartum bietet Ihnen stabile, revisionssichere Prozesse. Wir reduzieren Ihre Betriebskosten durch Automatisierung und erhöhen gleichzeitig die Zufriedenheit Ihrer Anwender durch schnelle Reaktionszeiten und ein professionelles Self-Service-Portal.</p>",
+      "stats": [
+        { "value": "ITIL", "label": "Konforme Prozesse" },
+        { "value": "24/7", "label": "Optionaler Support" },
+        { "value": "DSGVO", "label": "Konform & Sicher" }
+      ],
+      "features": [
+        {
+          "icon": "Activity",
+          "title": "Service Qualität",
+          "description": "Klare SLAs und kontinuierliche Verbesserungszyklen (CSI) für höchste Standards."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Compliance",
+          "description": "Revisionssicherer Betrieb, definierte Rollen und Einhaltung regulatorischer Normen."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Transparenz",
+          "description": "Echtzeit-Reportings für IT-Leitung und Geschäftsführung zur effizienten Steuerung."
+        }
+      ]
+    },
+    {
+      "_type": "faq_slice",
+      "items": [
+        {
+          "question": "Welche ITSM-Tools unterstützt Novartum?",
+          "answer": "Wir arbeiten toolagnostisch, haben aber eine tiefe Expertise in marktführenden Lösungen wie Matrix42 und ServiceNow. Wir unterstützen Sie auch bei der Auswahl einer neuen Lösung, die zu Ihrer Unternehmensgröße passt."
+        },
+        {
+          "question": "Bietet Novartum auch reines Bodyleasing an?",
+          "answer": "Unser Fokus liegt auf Managed Services, bei denen wir Verantwortung für Ergebnisse (SLAs) übernehmen. Wir können jedoch auch Experten zur Unterstützung Ihrer internen Teams (Sourcing) bereitstellen."
+        },
+        {
+          "question": "Wie läuft die Migration historischer Tickets ab?",
+          "answer": "Im Rahmen der Phase 6 (Implementierung & Onboarding) führen wir eine professionelle Datenmigration durch. Historische Tickets und Wissensdatenbank-Artikel werden in das neue System überführt, um die Historie zu wahren."
+        },
+        {
+          "question": "Was beinhaltet das 'Service-Portal'?",
+          "answer": "Das Self-Service-Portal ist die zentrale Anlaufstelle für Ihre Mitarbeiter. Hier können Störungen gemeldet, Service-Requests (z.B. neue Hardware) bestellt und der Status von Tickets eingesehen werden. Dies reduziert Rückfragen beim Support massiv."
+        },
+        {
+          "question": "Können Sie den 24/7 Betrieb abdecken?",
+          "answer": "Ja, im Rahmen unserer 'Premium' Betriebspakete bieten wir einen 24/7 Support (2nd/3rd Level) sowie Rufbereitschaften für Major Incidents an."
+        }
+      ]
+    }
+  ]
+}
