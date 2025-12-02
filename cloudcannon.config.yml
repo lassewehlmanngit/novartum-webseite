@@ -205,7 +205,7 @@ _structures:
                         type: select
                         options:
                           values: [Code2, ShoppingCart, FileText, Users, Briefcase, Award, TrendingUp, Truck, Settings, Layers]
-
+        
       - value:
           _type: about_slice
           title: Über Uns

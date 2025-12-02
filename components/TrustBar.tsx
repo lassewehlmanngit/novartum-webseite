@@ -70,7 +70,12 @@ const TrustBar: React.FC<TrustBarProps> = ({
          logoElement = <span className={`${baseLogoClasses} text-3xl font-serif font-bold tracking-wide text-slate-800`}>Allianz</span>;
          break;
        default:
-         logoElement = <span className={`${baseLogoClasses} text-2xl font-bold text-slate-700`}>{client.logo}</span>;
+         // Generic text fallback for clients without a logo image or special case
+         logoElement = (
+           <span className={`${baseLogoClasses} px-4 py-2 rounded-lg bg-slate-50 border border-slate-100 text-lg font-bold text-slate-600 whitespace-nowrap shadow-sm`}>
+             {client.name}
+           </span>
+         );
          break;
      }
 
@@ -88,25 +93,18 @@ const TrustBar: React.FC<TrustBarProps> = ({
       <div className="relative -top-16 md:-top-20 px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 md:gap-12 border border-slate-100">
              
-             {/* Badges Container */}
-             <div className="flex gap-3 shrink-0">
-                {/* Badge 1 */}
-                <div className="w-20 h-24 bg-gradient-to-b from-[#b4985a] to-[#8c733f] shadow-md flex flex-col items-center justify-center text-white p-1 relative overflow-hidden rounded-sm group">
-                   <div className="absolute top-0 left-0 w-full h-full bg-white/10 skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                   <span className="font-serif font-bold text-2xl leading-none">TOP</span>
-                   <span className="text-[0.6rem] font-bold uppercase tracking-tighter leading-tight text-center mt-1">CONSULTANT</span>
-                   <div className="w-8 h-px bg-white/50 my-1"></div>
-                   <span className="text-[0.6rem]">2023</span>
-                </div>
-
-                {/* Badge 2 */}
-                <div className="w-20 h-24 bg-gradient-to-b from-[#a83232] to-[#7a1f1f] shadow-md flex flex-col items-center justify-center text-white p-1 relative overflow-hidden rounded-sm group">
-                   <div className="absolute top-0 left-0 w-full h-full bg-white/10 skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 delay-100"></div>
-                   <span className="font-serif font-bold text-2xl leading-none">TOP</span>
-                   <span className="text-[0.6rem] font-bold uppercase tracking-tighter leading-tight text-center mt-1">KATEGORIE</span>
-                   <div className="w-8 h-px bg-white/50 my-1"></div>
-                   <span className="text-[0.5rem] uppercase">IT-Beratung</span>
-                </div>
+             {/* Badges Container - NEU: Siegel Bilder */}
+             <div className="flex gap-6 shrink-0 items-center justify-center">
+                <img 
+                  src="/images/awards/bvmid-siege-top.png" 
+                  alt="BVMID Auszeichnung 1" 
+                  className="h-28 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-md"
+                />
+                <img 
+                  src="/images/awards/bvmid-siegel-1.png" 
+                  alt="BVMID Auszeichnung 2" 
+                  className="h-28 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-md"
+                />
              </div>
 
              {/* Text Content */}

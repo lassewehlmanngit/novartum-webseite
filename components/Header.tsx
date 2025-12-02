@@ -13,7 +13,25 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [mobileSubMenuOpen, setMobileSubMenuOpen] = useState<number | null>(null);
   const [showStickyNav, setShowStickyNav] = useState(false);
+  const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const location = useLocation();
+
+  // Close more menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.more-menu-container')) {
+        setMoreMenuOpen(false);
+      }
+    };
+
+    if (moreMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [moreMenuOpen]);
 
   const isSolidPage = location.pathname.startsWith('/blog/') || location.pathname.startsWith('/impressum') || location.pathname.startsWith('/datenschutz') || location.pathname.startsWith('/agb');
   const effectiveVariant = variant || (isSolidPage ? 'solid' : 'transparent');
@@ -85,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
           </Link>
 
           {/* Desktop Menu - Initial View */}
-          <nav className={`hidden md:flex items-center space-x-8 text-sm font-medium ${headerTextColor}`} aria-label="Hauptnavigation">
+          <nav className={`hidden md:flex items-center space-x-4 lg:space-x-8 text-sm font-medium ${headerTextColor}`} aria-label="Hauptnavigation">
             {navItems.map((item, index) => (
               <Link 
                 key={index}
@@ -98,22 +116,55 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
           </nav>
 
           {/* CTA Buttons & Action Links (Initial View) */}
-          <div className="hidden md:flex items-center space-x-6">
-            <Link 
-              to="/projekte" 
-              className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/projekte') ? activeColor : headerTextColor}`}
-            >
-              Projekte
-            </Link>
-            <Link 
-              to="/blog" 
-              className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/blog') ? activeColor : headerTextColor}`}
-            >
-              Blog
-            </Link>
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
+            {/* Full Links for XL screens */}
+            <div className="hidden xl:flex items-center space-x-6">
+              <Link 
+                to="/projekte" 
+                className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/projekte') ? activeColor : headerTextColor}`}
+              >
+                Projekte
+              </Link>
+              <Link 
+                to="/blog" 
+                className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/blog') ? activeColor : headerTextColor}`}
+              >
+                Blog
+              </Link>
+            </div>
+
+            {/* Dropdown for MD to XL screens */}
+            <div className="xl:hidden relative more-menu-container">
+              <button
+                onClick={() => setMoreMenuOpen(!moreMenuOpen)}
+                className={`flex items-center gap-1 text-sm font-medium transition ${headerHoverColor} ${moreMenuOpen ? activeColor : headerTextColor}`}
+              >
+                Über uns <ChevronDown size={16} className={`transition-transform duration-300 ${moreMenuOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {moreMenuOpen && (
+                <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden animate-in fade-in slide-in-from-top-2 z-50">
+                  <Link 
+                    to="/projekte" 
+                    onClick={() => setMoreMenuOpen(false)}
+                    className={`block px-4 py-2 text-sm hover:bg-slate-50 hover:text-orange-700 transition-colors ${isActive('/projekte') ? 'text-orange-700 font-bold bg-orange-50' : 'text-slate-600'}`}
+                  >
+                    Projekte
+                  </Link>
+                  <Link 
+                    to="/blog" 
+                    onClick={() => setMoreMenuOpen(false)}
+                    className={`block px-4 py-2 text-sm hover:bg-slate-50 hover:text-orange-700 transition-colors ${isActive('/blog') ? 'text-orange-700 font-bold bg-orange-50' : 'text-slate-600'}`}
+                  >
+                    Blog
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <button 
               onClick={() => handleScrollTo('contact')}
-              className="bg-orange-700 hover:bg-orange-800 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition shadow-lg hover:shadow-orange-900/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-700 focus:ring-offset-slate-900"
+              className="bg-orange-700 hover:bg-orange-800 text-white px-4 lg:px-6 py-2.5 rounded-lg text-sm font-semibold transition shadow-lg hover:shadow-orange-900/20 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-700 focus:ring-offset-slate-900"
             >
               Kontaktieren
             </button>
