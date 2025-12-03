@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { PartnerItem } from '../types';
 import SectionHeader from './SectionHeader';
 
@@ -6,10 +6,29 @@ interface PartnerGridProps {
   title: string;
   subtitle: string;
   description: string;
-  partners: PartnerItem[];
+  partners?: PartnerItem[];
 }
 
-const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description, partners }) => {
+const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description, partners: initialPartners }) => {
+  const [partners, setPartners] = useState<PartnerItem[]>(initialPartners || []);
+
+  useEffect(() => {
+    if (!initialPartners || initialPartners.length === 0) {
+      fetch('/content/partners/list.json')
+        .then(res => res.json())
+        .then(data => {
+            if (Array.isArray(data)) {
+                setPartners(data);
+            }
+        })
+        .catch(console.error);
+    }
+  }, [initialPartners]);
+
+  if (partners.length === 0) {
+      return null;
+  }
+
   return (
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 md:px-12">

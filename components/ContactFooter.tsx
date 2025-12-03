@@ -139,79 +139,83 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
       data-cc-path="/content/globals/footer.json"
     >
       <div className="container mx-auto px-4 md:px-12">
-        <div className="bg-white rounded-[2rem] shadow-2xl p-6 md:p-12 mb-20 border border-slate-100 overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        {/* New Seamless Split-Card Design */}
+        <div className="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100 mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[600px]">
             
-            {/* Person Card */}
-            <div className="lg:col-span-5 xl:col-span-4 h-full min-w-0 flex flex-col">
-              <span className="text-orange-700 font-bold uppercase text-xs tracking-widest mb-4 block">Kontakt</span>
-              <h2 id="contact-heading" className="text-3xl font-bold mb-8 text-slate-900">Ihr direkter Ansprechpartner</h2>
-              
-              <div className="bg-slate-50 p-6 lg:p-8 rounded-2xl flex flex-col border border-slate-100 h-full w-full min-w-0 overflow-hidden shadow-sm">
-                 {/* Profile Header */}
-                 <div className="flex flex-row items-start gap-4 mb-8 w-full min-w-0">
+            {/* Left Panel: Expert & Trust (Darker/Different Background) */}
+            <div className="lg:col-span-5 bg-slate-900 text-white p-8 md:p-12 flex flex-col justify-between relative overflow-hidden">
+               {/* Decorative Background Elements */}
+               <div className="absolute top-0 right-0 w-64 h-64 bg-orange-600/10 blur-[80px] rounded-full translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+               <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600/10 blur-[80px] rounded-full -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+               <div className="relative z-10">
+                  <span className="text-orange-500 font-bold uppercase text-xs tracking-widest mb-6 block">Kontakt</span>
+                  <h2 id="contact-heading" className="text-3xl md:text-4xl font-bold mb-8 leading-tight">
+                    Lassen Sie uns über Ihr Projekt sprechen.
+                  </h2>
+
+                  <div className="flex items-center gap-5 mb-10">
                     <img 
                         src={contactPerson.image} 
                         alt={contactPerson.name} 
-                        className="w-20 h-20 rounded-2xl object-cover shadow-md shrink-0 bg-slate-200"
+                        className="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-lg"
                         data-cc-field="contactPerson.image"
                     />
-                    <div className="flex-1 min-w-0 pt-1">
-                        <h3 className="font-bold text-xl text-slate-900 leading-tight mb-1" data-cc-field="contactPerson.name">{contactPerson.name}</h3>
-                        <p className="text-sm text-slate-500 font-medium" data-cc-field="contactPerson.role">{contactPerson.role}</p>
+                    <div>
+                        <h3 className="font-bold text-lg text-white" data-cc-field="contactPerson.name">{contactPerson.name}</h3>
+                        <p className="text-slate-400 text-sm" data-cc-field="contactPerson.role">{contactPerson.role}</p>
                     </div>
-                 </div>
-                 
-                 {/* Contact Links */}
-                 <div className="space-y-4 w-full mb-8 flex-grow">
-                    <a 
-                      href={`mailto:${contactPerson.email}`} 
-                      onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
-                      className="flex items-center gap-4 text-slate-600 hover:text-orange-700 transition-all p-3 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 group w-full"
-                      data-cc-field="contactPerson.email"
-                    >
-                        <div className="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
-                           <Mail size={20} className="text-orange-600" />
-                        </div>
-                        <span className="text-sm font-medium break-all">{contactPerson.email}</span>
-                    </a>
-                    
-                    <a 
-                      href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} 
-                      onClick={() => trackPhoneClick(contactPerson.phone, 'ContactFooter')}
-                      className="flex items-center gap-4 text-slate-600 hover:text-orange-700 transition-all p-3 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 group w-full"
-                      data-cc-field="contactPerson.phone"
-                    >
-                        <div className="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
-                           <Phone size={20} className="text-orange-600" />
-                        </div>
-                        <span className="text-sm font-medium">{contactPerson.phone}</span>
-                    </a>
-                 </div>
+                  </div>
 
-                 {/* CTA Button */}
-                 <button 
-                   onClick={() => {
-                     trackCTAClick('calendar_booking', 'ContactFooter');
-                     const contactElement = document.getElementById('contact');
-                     if (contactElement) {
-                       contactElement.scrollIntoView({ behavior: 'smooth' });
-                     }
-                   }}
-                   className="w-full mt-auto bg-white border-2 border-slate-200 text-slate-700 hover:border-orange-500 hover:text-orange-600 hover:shadow-md px-6 py-4 rounded-xl text-base font-bold transition flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-orange-500 group"
-                 >
-                    <Calendar size={20} className="shrink-0 text-slate-400 group-hover:text-orange-600 transition-colors" />
-                    <span>Kostenloses Erstgespräch vereinbaren</span>
-                 </button>
-              </div>
+                  <div className="space-y-4">
+                     <a 
+                       href={`mailto:${contactPerson.email}`} 
+                       onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
+                       className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
+                       data-cc-field="contactPerson.email"
+                     >
+                         <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                            <Mail size={18} />
+                         </div>
+                         <span className="text-base font-medium break-all">{contactPerson.email}</span>
+                     </a>
+                     
+                     <a 
+                       href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} 
+                       onClick={() => trackPhoneClick(contactPerson.phone, 'ContactFooter')}
+                       className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
+                       data-cc-field="contactPerson.phone"
+                     >
+                         <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                            <Phone size={18} />
+                         </div>
+                         <span className="text-base font-medium">{contactPerson.phone}</span>
+                     </a>
+                  </div>
+               </div>
+
+               <div className="relative z-10 mt-12 pt-8 border-t border-slate-800">
+                  <button 
+                    onClick={() => {
+                      trackCTAClick('calendar_booking', 'ContactFooter');
+                      // Logic to open calendar or scroll (optional if already at contact)
+                    }}
+                    className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/10 px-6 py-4 rounded-xl text-sm font-bold transition flex items-center justify-center gap-3"
+                  >
+                     <Calendar size={18} />
+                     <span>Kostenloses Erstgespräch buchen</span>
+                  </button>
+               </div>
             </div>
 
-            {/* Form */}
-            <div className="lg:col-span-7 xl:col-span-8 min-w-0 pt-4 lg:pt-0">
-                <form onSubmit={handleSubmit} className="space-y-6 bg-white h-full flex flex-col justify-center" noValidate>
+            {/* Right Panel: Form (White Background) */}
+            <div className="lg:col-span-7 p-8 md:p-12 lg:p-16 bg-white">
+                <form onSubmit={handleSubmit} className="space-y-6 h-full flex flex-col justify-center" noValidate>
                     <div>
                       <h3 className="text-xl font-bold text-slate-900 mb-2">Schreiben Sie uns</h3>
-                      <p className="text-slate-500 mb-6 text-sm">Wir melden uns in der Regel innerhalb von 24 Stunden bei Ihnen.</p>
+                      <p className="text-slate-500 mb-6 text-sm">Füllen Sie das Formular aus und wir melden uns innerhalb von 24h.</p>
                     </div>
 
                     {isSuccess ? (
@@ -235,7 +239,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                                   value={formData.name}
                                   onChange={handleChange}
                                   placeholder="Max Mustermann" 
-                                  className={`w-full bg-slate-50 border rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:bg-white transition text-slate-900 placeholder:text-slate-400 ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 focus:ring-orange-500'}`} 
+                                  className={`w-full bg-slate-50 border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:bg-white transition text-slate-900 placeholder:text-slate-400 ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 focus:ring-orange-500'}`} 
                                 />
                                 {errors.name && <p className="text-red-500 text-xs flex items-center gap-1"><AlertCircle size={12}/> {errors.name}</p>}
                             </div>
@@ -247,7 +251,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                                   value={formData.company}
                                   onChange={handleChange}
                                   placeholder="Musterfirma GmbH" 
-                                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition text-slate-900 placeholder:text-slate-400" 
+                                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:bg-white transition text-slate-900 placeholder:text-slate-400" 
                                 />
                             </div>
                         </div>
@@ -262,7 +266,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                               value={formData.email}
                               onChange={handleChange}
                               placeholder="max@beispiel.de" 
-                              className={`w-full bg-slate-50 border rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:bg-white transition text-slate-900 placeholder:text-slate-400 ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 focus:ring-orange-500'}`} 
+                              className={`w-full bg-slate-50 border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:bg-white transition text-slate-900 placeholder:text-slate-400 ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 focus:ring-orange-500'}`} 
                             />
                             {errors.email && <p className="text-red-500 text-xs flex items-center gap-1"><AlertCircle size={12}/> {errors.email}</p>}
                         </div>
@@ -276,8 +280,8 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                               value={formData.message}
                               onChange={handleChange}
                               placeholder="Wie können wir Ihnen helfen?" 
-                              rows={5} 
-                              className={`w-full bg-slate-50 border rounded-xl px-4 py-4 focus:outline-none focus:ring-2 focus:bg-white transition text-slate-900 placeholder:text-slate-400 resize-none ${errors.message ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 focus:ring-orange-500'}`}
+                              rows={4} 
+                              className={`w-full bg-slate-50 border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:bg-white transition text-slate-900 placeholder:text-slate-400 resize-none ${errors.message ? 'border-red-500 focus:ring-red-500' : 'border-slate-200 focus:ring-orange-500'}`}
                             ></textarea>
                             {errors.message && <p className="text-red-500 text-xs flex items-center gap-1"><AlertCircle size={12}/> {errors.message}</p>}
                         </div>

@@ -19,6 +19,7 @@
       { "label": "Blog", "link": "/blog" }
     ],
     "company": [
+      { "label": "Über uns", "link": "/team" },
       { "label": "Team", "link": "/team" },
       { "label": "Karriere", "link": "/karriere" },
       { "label": "Partner", "link": "/partner" }

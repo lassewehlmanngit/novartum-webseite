@@ -84,22 +84,22 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
     return <img src="/logo.svg" alt="Novartum Logo" className={`${isSmall ? 'h-8' : 'h-10'} w-auto`} />;
   };
 
-  const headerTextColor = isSolid ? 'text-slate-700' : 'text-slate-200';
-  const headerHoverColor = isSolid ? 'hover:text-orange-700' : 'hover:text-white';
-  const activeColor = isSolid ? 'text-orange-700 font-bold' : 'text-white font-bold';
+  const headerTextColor = 'text-slate-200';
+  const headerHoverColor = 'hover:text-white';
+  const activeColor = 'text-white font-bold';
 
   return (
     <>
       {/* --- STANDARD ABSOLUTE HEADER (Initial View) --- */}
-      <header className={`absolute top-0 left-0 w-full z-40 py-6 px-4 md:px-8 lg:px-12 ${isSolid ? 'bg-white border-b border-slate-100' : ''}`}>
+      <header className={`absolute top-0 left-0 w-full z-40 py-6 px-4 md:px-8 lg:px-12 ${isSolid ? 'bg-[#15171e] border-b border-slate-800' : ''}`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link 
             to="/" 
-            className={`flex items-center gap-2 group ${isSolid ? 'text-slate-900' : 'text-white'} outline-none focus:ring-2 focus:ring-orange-500 rounded-lg p-1 z-50 relative`} 
+            className={`flex items-center gap-2 group text-white outline-none focus:ring-2 focus:ring-orange-500 rounded-lg p-1 z-50 relative`} 
             aria-label="Novartum Startseite"
           >
-             {renderLogo(false, isSolid)}
+             {renderLogo(false, false)}
           </Link>
 
           {/* Desktop Menu - Initial View */}
@@ -123,8 +123,14 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
 
           {/* CTA Buttons & Action Links (Initial View) */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-            {/* Full Links for XL screens */}
+            {/* Action Links */}
             <div className="hidden xl:flex items-center space-x-6">
+              <Link 
+                to="/team" 
+                className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/team') ? activeColor : headerTextColor}`}
+              >
+                Über uns
+              </Link>
               <Link 
                 to="/projekte" 
                 className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/projekte') ? activeColor : headerTextColor}`}
@@ -145,11 +151,18 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
                 onClick={() => setMoreMenuOpen(!moreMenuOpen)}
                 className={`flex items-center gap-1 text-sm font-medium transition ${headerHoverColor} ${moreMenuOpen ? activeColor : headerTextColor}`}
               >
-                Über uns <ChevronDown size={16} className={`transition-transform duration-300 ${moreMenuOpen ? 'rotate-180' : ''}`} />
+                Mehr <ChevronDown size={16} className={`transition-transform duration-300 ${moreMenuOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {moreMenuOpen && (
                 <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden animate-in fade-in slide-in-from-top-2 z-50">
+                  <Link 
+                    to="/team" 
+                    onClick={() => setMoreMenuOpen(false)}
+                    className={`block px-4 py-2 text-sm hover:bg-slate-50 hover:text-orange-700 transition-colors ${isActive('/team') ? 'text-orange-700 font-bold bg-orange-50' : 'text-slate-600'}`}
+                  >
+                    Über uns
+                  </Link>
                   <Link 
                     to="/projekte" 
                     onClick={() => setMoreMenuOpen(false)}
@@ -178,7 +191,7 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
 
           {/* Mobile Menu Button */}
           <button 
-            className={`md:hidden ${isSolid ? 'text-slate-900 hover:bg-slate-100' : 'text-white hover:bg-white/10'} p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 z-50 relative`}
+            className={`md:hidden text-white hover:bg-white/10 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 z-50 relative`}
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={isOpen}
@@ -283,6 +296,13 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
             })}
             
             {/* Mobile Extras */}
+            <Link 
+              to="/team"
+              onClick={() => setIsOpen(false)} 
+              className={`text-lg font-medium py-3 border-b border-[#2a2e3b] block ${isActive('/team') ? 'text-white font-bold' : 'text-slate-200 hover:text-white'}`}
+            >
+              Über uns
+            </Link>
             <Link 
               to="/projekte"
               onClick={() => setIsOpen(false)} 

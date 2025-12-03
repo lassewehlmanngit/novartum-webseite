@@ -4,16 +4,7 @@
     { "label": "SAM", "link": "/sam" },
     { "label": "ITSM", "link": "/itsm" },
     { "label": "Einkauf", "link": "/einkauf" },
-    { "label": "Consulting", "link": "/consulting" },
-    { 
-      "label": "Über uns", 
-      "link": "/team",
-      "children": [
-        { "label": "Team", "link": "/team" },
-        { "label": "Partner", "link": "/partner" },
-        { "label": "Karriere", "link": "/karriere" }
-      ]
-    }
+    { "label": "Consulting", "link": "/consulting" }
   ],
   "logo": "/logo.svg",
   "logo_text": "novartum"
