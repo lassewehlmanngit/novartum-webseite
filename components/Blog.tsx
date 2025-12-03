@@ -33,8 +33,8 @@ const Blog: React.FC<ExtendedBlogSectionProps> = ({
       <div className="container mx-auto px-4 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <SectionHeader 
-            title={title} 
-            subtitle={subtitle}
+            title={<span data-cc-field="title">{title}</span>} 
+            subtitle={<span data-cc-field="subtitle">{subtitle}</span>}
             align="left"
             id="blog-heading"
             className="mb-0" // Reset margin as it's handled by the parent flex

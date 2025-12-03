@@ -15,10 +15,16 @@ const VendorCard: React.FC<VendorIssue> = ({ vendor, logo, color, risks, solutio
       <div className="p-8 flex flex-col h-full">
         {/* Eyebrow Layout: Label above Title */}
         <div className="mb-6">
-          <span className={`text-xs font-bold uppercase tracking-widest block mb-2 ${labelTextColor}`}>
+          <span 
+            className={`text-xs font-bold uppercase tracking-widest block mb-2 ${labelTextColor}`}
+            data-cc-field="label"
+          >
             {label}
           </span>
-          <h3 className="text-2xl font-bold text-slate-900 break-words hyphens-auto leading-tight">
+          <h3 
+            className="text-2xl font-bold text-slate-900 break-words hyphens-auto leading-tight"
+            data-cc-field="logo"
+          >
             {typeof logo === 'string' && !logo.includes('/') ? logo : <IconMapper name={logo} size={32} />}
           </h3>
         </div>
@@ -31,7 +37,7 @@ const VendorCard: React.FC<VendorIssue> = ({ vendor, logo, color, risks, solutio
             {risks.map((risk, idx) => (
               <li key={idx} className="flex items-start gap-2 text-slate-700 text-sm">
                 <XCircle size={16} className="text-red-400 shrink-0 mt-0.5" />
-                <span>{risk}</span>
+                <span data-cc-field={`risks[${idx}]`}>{risk}</span>
               </li>
             ))}
           </ul>
@@ -41,7 +47,10 @@ const VendorCard: React.FC<VendorIssue> = ({ vendor, logo, color, risks, solutio
           <div className="flex items-center gap-2 text-green-700 font-bold mb-3 text-sm uppercase tracking-wide">
             <CheckCircle2 size={16} /> Die Novartum Lösung
           </div>
-          <p className="text-slate-600 text-sm leading-relaxed mb-6">
+          <p 
+            className="text-slate-600 text-sm leading-relaxed mb-6"
+            data-cc-field="solution"
+          >
             {solution}
           </p>
           <button className="text-orange-700 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
@@ -64,15 +73,17 @@ const VendorDeepDive: React.FC<VendorDeepDiveProps> = ({
     <section className="py-24 bg-slate-50" id={id} aria-labelledby={`${id}-heading`}>
       <div className="container mx-auto px-4 md:px-12">
         <SectionHeader 
-          title={title}
-          subtitle={subtitle}
-          description={description}
+          title={<span data-cc-field="title">{title}</span>}
+          subtitle={<span data-cc-field="subtitle">{subtitle}</span>}
+          description={<span data-cc-field="description">{description}</span>}
           id={`${id}-heading`}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {vendors.map((v, idx) => (
-            <VendorCard key={idx} {...v} />
+            <div key={idx} data-cc-field={`vendors[${idx}]`} className="h-full">
+               <VendorCard {...v} />
+            </div>
           ))}
         </div>
       </div>

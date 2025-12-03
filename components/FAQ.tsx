@@ -21,7 +21,10 @@ const FAQAccordion: React.FC<{ item: FAQItem; isOpen: boolean; toggle: () => voi
         className="w-full py-6 flex items-center justify-between text-left focus:outline-none group"
         aria-expanded={isOpen}
       >
-        <h3 className={`text-lg font-bold transition-colors ${isOpen ? 'text-orange-700' : 'text-slate-800 group-hover:text-orange-700'}`}>
+        <h3 
+          className={`text-lg font-bold transition-colors ${isOpen ? 'text-orange-700' : 'text-slate-800 group-hover:text-orange-700'}`}
+          data-cc-field="question"
+        >
           {item.question}
         </h3>
         <span className={`p-2 rounded-full transition-colors ${isOpen ? 'bg-orange-100 text-orange-700' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'}`}>
@@ -33,7 +36,10 @@ const FAQAccordion: React.FC<{ item: FAQItem; isOpen: boolean; toggle: () => voi
           isOpen ? 'max-h-96 opacity-100 pb-6' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="text-slate-600 leading-relaxed pr-8">
+        <div 
+          className="text-slate-600 leading-relaxed pr-8"
+          data-cc-field="answer"
+        >
           {typeof item.answer === 'string' ? <div dangerouslySetInnerHTML={{ __html: item.answer }} /> : item.answer}
         </div>
       </div>
@@ -82,8 +88,19 @@ const FAQ: React.FC<FAQProps> = ({
         {/* Header / Intro */}
         <div className="lg:w-1/3">
           <div className="sticky top-32">
-            <span className="text-orange-700 font-bold uppercase text-xs tracking-widest mb-4 block">{subtitle}</span>
-            <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">{title}</h2>
+            <span 
+              className="text-orange-700 font-bold uppercase text-xs tracking-widest mb-4 block"
+              data-cc-field="subtitle"
+            >
+              {subtitle}
+            </span>
+            <h2 
+              id="faq-heading" 
+              className="text-3xl md:text-4xl font-bold text-slate-900 mb-6"
+              data-cc-field="title"
+            >
+              {title}
+            </h2>
             <p className="text-slate-600 mb-8 leading-relaxed">
               Antworten auf die wichtigsten Fragen rund um Lizenzmanagement, Audits und Compliance.
               Optimiert für schnelle Informationsfindung.
@@ -102,12 +119,13 @@ const FAQ: React.FC<FAQProps> = ({
         <div className="lg:w-2/3">
            <div className="bg-white rounded-2xl">
              {items.map((item, idx) => (
-               <FAQAccordion 
-                 key={idx} 
-                 item={item} 
-                 isOpen={openIndex === idx} 
-                 toggle={() => handleToggle(idx)} 
-               />
+               <div key={idx} data-cc-field={`items[${idx}]`}>
+                 <FAQAccordion 
+                   item={item} 
+                   isOpen={openIndex === idx} 
+                   toggle={() => handleToggle(idx)} 
+                 />
+               </div>
              ))}
            </div>
         </div>

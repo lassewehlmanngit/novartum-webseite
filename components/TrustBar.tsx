@@ -121,12 +121,14 @@ const TrustBar: React.FC<TrustBarProps> = ({
       </div>
 
       <div className="container mx-auto px-4 md:px-12 text-center mt-4 pb-16">
-        <h3 id="trust-heading" className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-12">{data.title}</h3>
+        <h3 id="trust-heading" className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-12" data-cc-field="title">{data.title}</h3>
         
         <div className="flex flex-wrap justify-center gap-x-12 sm:gap-x-16 gap-y-12 items-center">
-           {data.clients.map((client) => (
+           {data.clients.map((client, idx) => (
              <React.Fragment key={client.name}>
-               {renderClientLogo(client)}
+               <div data-cc-field={`clients[${idx}]`}>
+                 {renderClientLogo(client)}
+               </div>
              </React.Fragment>
            ))}
         </div>

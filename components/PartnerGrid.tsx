@@ -14,14 +14,14 @@ const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description,
     <section className="py-24 bg-slate-50">
       <div className="container mx-auto px-4 md:px-12">
         <SectionHeader 
-          title={title}
-          subtitle={subtitle}
-          description={description}
+          title={<span data-cc-field="title">{title}</span>}
+          subtitle={<span data-cc-field="subtitle">{subtitle}</span>}
+          description={<span data-cc-field="description">{description}</span>}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
            {partners.map((partner, idx) => (
-             <div key={idx} className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+             <div key={idx} className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center" data-cc-field={`partners[${idx}]`}>
                 <div className="h-24 flex items-center justify-center mb-6 w-full border-b border-slate-50 pb-6">
                     {/* Visual Logo Placeholder Logic */}
                     <span className={`text-2xl font-bold ${
@@ -30,16 +30,18 @@ const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description,
                         partner.name === 'Oracle' ? 'text-[#C74634] font-serif' :
                         partner.name === 'VMware' ? 'text-slate-600 font-extrabold' :
                         'text-slate-800'
-                    }`}>
+                    }`}
+                    data-cc-field="logo"
+                    >
                         {partner.logo}
                     </span>
                 </div>
                 
-                <span className="text-xs font-bold text-orange-600 uppercase tracking-widest mb-3">
+                <span className="text-xs font-bold text-orange-600 uppercase tracking-widest mb-3" data-cc-field="type">
                     {partner.type}
                 </span>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{partner.name}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold text-slate-900 mb-4" data-cc-field="name">{partner.name}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed" data-cc-field="description">
                     {partner.description}
                 </p>
              </div>

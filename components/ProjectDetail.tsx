@@ -71,7 +71,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
   };
 
   return (
-    <article className="min-h-screen bg-white pb-24">
+    <article 
+      className="min-h-screen bg-white pb-24"
+      data-cc-path={`/content/projects/${slug}.json`}
+    >
        <SEO 
          title={project.title}
          description={project.seo.metaDescription}
@@ -90,6 +93,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
             src={project.coverImage.url} 
             alt={project.coverImage.alt} 
             className="w-full h-full object-cover"
+            data-cc-field="coverImage.url"
         />
         <div className="absolute inset-0 z-20 flex flex-col justify-end pb-16 md:pb-24">
              <div className="container mx-auto px-4 md:px-12">
@@ -97,14 +101,20 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                     <ArrowLeft size={20} className="mr-2"/> Zurück zur Übersicht
                 </Link>
                 <div className="flex items-center gap-3 mb-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-600 text-white`}>
+                    <span 
+                      className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-600 text-white`}
+                      data-cc-field="category"
+                    >
                         {project.category}
                     </span>
                     <span className="text-white/80 flex items-center gap-1 text-sm font-medium">
-                        <Calendar size={14} /> {project.year}
+                        <Calendar size={14} /> <span data-cc-field="year">{project.year}</span>
                     </span>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white max-w-4xl leading-tight">
+                <h1 
+                  className="text-4xl md:text-6xl font-bold text-white max-w-4xl leading-tight"
+                  data-cc-field="title"
+                >
                     {project.title}
                 </h1>
              </div>
@@ -119,16 +129,22 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                 <div className="bg-white rounded-t-3xl p-8 md:p-12 shadow-sm border border-slate-100 min-h-[500px]">
                     
                     <div className="flex items-center gap-2 text-slate-500 font-bold uppercase tracking-widest text-xs mb-6">
-                        <Building2 size={16} /> {project.clientIndustry}
+                        <Building2 size={16} /> <span data-cc-field="clientIndustry">{project.clientIndustry}</span>
                     </div>
 
                     <h2 className="text-2xl font-bold text-slate-900 mb-6">Die Ausgangslage</h2>
-                    <p className="text-lg text-slate-600 leading-relaxed mb-12">
+                    <p 
+                      className="text-lg text-slate-600 leading-relaxed mb-12"
+                      data-cc-field="challenge"
+                    >
                         {project.challenge}
                     </p>
 
                     <h2 className="text-2xl font-bold text-slate-900 mb-6">Unsere Lösung</h2>
-                    <p className="text-lg text-slate-600 leading-relaxed mb-8">
+                    <p 
+                      className="text-lg text-slate-600 leading-relaxed mb-8"
+                      data-cc-field="solution"
+                    >
                         {project.solution}
                     </p>
 
@@ -137,6 +153,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                         <div 
                             className="prose prose-lg prose-slate max-w-none mb-12 text-slate-600"
                             dangerouslySetInnerHTML={{ __html: project.body }}
+                            data-cc-field="body"
                         />
                     )}
                     
@@ -148,7 +165,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                             {project.results.map((res, idx) => (
                                 <div key={idx} className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 shrink-0"></div>
-                                    <span className="font-bold text-slate-700">{res}</span>
+                                    <span className="font-bold text-slate-700" data-cc-field={`results[${idx}]`}>{res}</span>
                                 </div>
                             ))}
                         </div>
@@ -163,8 +180,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                         <Layers size={20} className="text-orange-600" /> Tech Stack
                     </h3>
                     <div className="flex flex-wrap gap-2 mb-8">
-                        {project.techStack.map(tech => (
-                            <span key={tech} className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">
+                        {project.techStack.map((tech, idx) => (
+                            <span key={tech} className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm" data-cc-field={`techStack[${idx}]`}>
                                 {tech}
                             </span>
                         ))}

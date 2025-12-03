@@ -132,7 +132,12 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
   };
 
   return (
-    <footer className="bg-slate-50 pt-24 pb-12 text-slate-800" id="contact" aria-labelledby="contact-heading">
+    <footer 
+      className="bg-slate-50 pt-24 pb-12 text-slate-800" 
+      id="contact" 
+      aria-labelledby="contact-heading"
+      data-cc-path="/content/globals/footer.json"
+    >
       <div className="container mx-auto px-4 md:px-12">
         <div className="bg-white rounded-[2rem] shadow-2xl p-6 md:p-12 mb-20 border border-slate-100 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
@@ -149,10 +154,11 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                         src={contactPerson.image} 
                         alt={contactPerson.name} 
                         className="w-20 h-20 rounded-2xl object-cover shadow-md shrink-0 bg-slate-200"
+                        data-cc-field="contactPerson.image"
                     />
                     <div className="flex-1 min-w-0 pt-1">
-                        <h3 className="font-bold text-xl text-slate-900 leading-tight mb-1">{contactPerson.name}</h3>
-                        <p className="text-sm text-slate-500 font-medium">{contactPerson.role}</p>
+                        <h3 className="font-bold text-xl text-slate-900 leading-tight mb-1" data-cc-field="contactPerson.name">{contactPerson.name}</h3>
+                        <p className="text-sm text-slate-500 font-medium" data-cc-field="contactPerson.role">{contactPerson.role}</p>
                     </div>
                  </div>
                  
@@ -162,6 +168,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                       href={`mailto:${contactPerson.email}`} 
                       onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
                       className="flex items-center gap-4 text-slate-600 hover:text-orange-700 transition-all p-3 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 group w-full"
+                      data-cc-field="contactPerson.email"
                     >
                         <div className="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
                            <Mail size={20} className="text-orange-600" />
@@ -173,6 +180,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                       href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} 
                       onClick={() => trackPhoneClick(contactPerson.phone, 'ContactFooter')}
                       className="flex items-center gap-4 text-slate-600 hover:text-orange-700 transition-all p-3 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 group w-full"
+                      data-cc-field="contactPerson.phone"
                     >
                         <div className="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
                            <Phone size={20} className="text-orange-600" />

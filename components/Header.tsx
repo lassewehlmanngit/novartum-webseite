@@ -103,12 +103,18 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
           </Link>
 
           {/* Desktop Menu - Initial View */}
-          <nav className={`hidden md:flex items-center space-x-4 lg:space-x-8 text-sm font-medium ${headerTextColor}`} aria-label="Hauptnavigation">
+          <nav 
+            className={`hidden md:flex items-center space-x-4 lg:space-x-8 text-sm font-medium ${headerTextColor}`} 
+            aria-label="Hauptnavigation"
+            data-cc-path="/content/globals/navigation.json"
+            data-cc-field="navigation"
+          >
             {navItems.map((item, index) => (
               <Link 
                 key={index}
                 to={item.link || '#'} 
                 className={`transition-colors ${headerHoverColor} ${isActive(item.link) ? activeColor : ''}`}
+                data-cc-field={`navigation[${index}].label`}
               >
                 {item.label}
               </Link>

@@ -49,7 +49,11 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
             };
 
             return (
-              <div key={idx} className="group bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div 
+                key={idx} 
+                className="group bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                data-cc-field={`members[${idx}]`}
+              >
                 <script type="application/ld+json">
                   {JSON.stringify(personSchema)}
                 </script>
@@ -58,6 +62,7 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
                   src={member.image} 
                   alt={member.name} 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  data-cc-field="image"
                   />
                   {member.linkedin && (
                       <a 
@@ -66,18 +71,19 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
                         rel="noopener noreferrer"
                         className="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#0077b5] hover:bg-[#0077b5] hover:text-white transition-colors shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300"
                         aria-label={`${member.name} auf LinkedIn`}
+                        data-cc-field="linkedin"
                       >
                           <Linkedin size={20} />
                       </a>
                   )}
                 </div>
               
-              <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
-              <p className="text-orange-700 font-medium text-sm uppercase tracking-wide mb-4">{member.role}</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-1" data-cc-field="name">{member.name}</h3>
+              <p className="text-orange-700 font-medium text-sm uppercase tracking-wide mb-4" data-cc-field="role">{member.role}</p>
               
               <div className="w-10 h-0.5 bg-slate-200 mb-4 group-hover:bg-orange-500 transition-colors"></div>
               
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed" data-cc-field="bio">
                 {member.bio}
               </p>
             </div>

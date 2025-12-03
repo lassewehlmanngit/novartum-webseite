@@ -56,7 +56,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
              };
 
              return (
-               <div key={job.id} className={`border rounded-2xl transition-all duration-300 ${isOpen ? 'border-orange-200 bg-orange-50/30 shadow-md' : 'border-slate-200 bg-white hover:border-orange-200'}`}>
+               <div key={job.id} className={`border rounded-2xl transition-all duration-300 ${isOpen ? 'border-orange-200 bg-orange-50/30 shadow-md' : 'border-slate-200 bg-white hover:border-orange-200'}`} data-cc-field={`jobs[${jobs.indexOf(job)}]`}>
                   {isOpen && (
                     <script type="application/ld+json">
                       {JSON.stringify(jobSchema)}
@@ -67,11 +67,11 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
                     className="w-full flex flex-col md:flex-row md:items-center justify-between p-6 text-left focus:outline-none"
                   >
                      <div className="mb-4 md:mb-0">
-                        <h3 className={`text-xl font-bold mb-2 transition-colors ${isOpen ? 'text-orange-700' : 'text-slate-900'}`}>{job.title}</h3>
+                        <h3 className={`text-xl font-bold mb-2 transition-colors ${isOpen ? 'text-orange-700' : 'text-slate-900'}`} data-cc-field="title">{job.title}</h3>
                         <div className="flex flex-wrap gap-4 text-sm text-slate-500">
-                           <span className="flex items-center gap-1"><Briefcase size={14}/> {job.department}</span>
-                           <span className="flex items-center gap-1"><Clock size={14}/> {job.type}</span>
-                           <span className="flex items-center gap-1"><MapPin size={14}/> {job.location}</span>
+                           <span className="flex items-center gap-1"><Briefcase size={14}/> <span data-cc-field="department">{job.department}</span></span>
+                           <span className="flex items-center gap-1"><Clock size={14}/> <span data-cc-field="type">{job.type}</span></span>
+                           <span className="flex items-center gap-1"><MapPin size={14}/> <span data-cc-field="location">{job.location}</span></span>
                         </div>
                      </div>
                      <div className="flex items-center gap-3 text-sm font-bold text-orange-700">
@@ -82,7 +82,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
 
                   <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'}`}>
                      <div className="px-6 pb-8 pt-2 border-t border-slate-200/50">
-                        <p className="text-slate-700 mb-6 leading-relaxed font-medium">
+                        <p className="text-slate-700 mb-6 leading-relaxed font-medium" data-cc-field="description">
                            {job.description}
                         </p>
                         
@@ -93,7 +93,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
                                  {job.tasks.map((task, i) => (
                                     <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
                                        <span className="mt-1.5 w-1.5 h-1.5 bg-orange-500 rounded-full shrink-0"></span>
-                                       {task}
+                                       <span data-cc-field={`tasks[${i}]`}>{task}</span>
                                     </li>
                                  ))}
                               </ul>
@@ -104,7 +104,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
                                  {job.profile.map((item, i) => (
                                     <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
                                        <span className="mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full shrink-0"></span>
-                                       {item}
+                                       <span data-cc-field={`profile[${i}]`}>{item}</span>
                                     </li>
                                  ))}
                               </ul>

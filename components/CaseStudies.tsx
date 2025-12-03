@@ -14,22 +14,22 @@ const CaseStudyCard: React.FC<CaseStudyItem> = ({ icon, title, challenge, soluti
   <article className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden flex flex-col h-full group hover:transform hover:-translate-y-2 transition-all duration-300">
     <div className="p-8 flex-grow">
       <div className="flex items-center gap-4 mb-8">
-        <div className="p-3 bg-orange-100 text-orange-700 rounded-xl">
+        <div className="p-3 bg-orange-100 text-orange-700 rounded-xl" data-cc-field="icon">
            {typeof icon === 'string' ? <IconMapper name={icon} size={24} /> : icon}
         </div>
-        <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">{category}</span>
+        <span className="text-xs font-bold text-slate-500 uppercase tracking-widest" data-cc-field="category">{category}</span>
       </div>
       
-      <h3 className="text-xl font-bold text-slate-900 mb-6 group-hover:text-orange-700 transition-colors">{title}</h3>
+      <h3 className="text-xl font-bold text-slate-900 mb-6 group-hover:text-orange-700 transition-colors" data-cc-field="title">{title}</h3>
       
       <div className="space-y-6 text-sm text-slate-600">
         <div className="relative pl-4 border-l-2 border-orange-200">
           <strong className="block text-slate-900 mb-1">Herausforderung:</strong>
-          <p>{challenge}</p>
+          <p data-cc-field="challenge">{challenge}</p>
         </div>
         <div className="relative pl-4 border-l-2 border-green-200">
           <strong className="block text-slate-900 mb-1">Lösung:</strong>
-          <p>{solution}</p>
+          <p data-cc-field="solution">{solution}</p>
         </div>
       </div>
     </div>
@@ -61,8 +61,8 @@ const CaseStudies: React.FC<CaseStudiesProps> = ({
       <div className="container mx-auto px-4 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-                <span className="text-orange-500 font-bold mb-2 block uppercase tracking-wide text-sm">{subtitle}</span>
-                <h2 id="cases-heading" className="text-3xl md:text-4xl font-bold text-white">
+                <span className="text-orange-500 font-bold mb-2 block uppercase tracking-wide text-sm" data-cc-field="subtitle">{subtitle}</span>
+                <h2 id="cases-heading" className="text-3xl md:text-4xl font-bold text-white" data-cc-field="title">
                 {typeof title === 'string' ? <span dangerouslySetInnerHTML={{ __html: title }} /> : title}
                 </h2>
             </div>
@@ -73,7 +73,9 @@ const CaseStudies: React.FC<CaseStudiesProps> = ({
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.map((study, idx) => (
-            <CaseStudyCard key={idx} {...study} />
+            <div key={idx} data-cc-field={`items[${idx}]`} className="h-full">
+               <CaseStudyCard {...study} />
+            </div>
           ))}
         </div>
       </div>

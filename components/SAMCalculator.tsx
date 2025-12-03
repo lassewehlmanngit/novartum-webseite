@@ -792,10 +792,10 @@ const SAMCalculator: React.FC<SAMCalculatorProps> = ({
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-400 font-medium text-xs uppercase tracking-wider mb-4">
                 <Calculator size={14} /> Interaktiver Rechner
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4" data-cc-field="title">
               {title}
             </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
+            <p className="text-slate-400 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed" data-cc-field="description">
               {description}
             </p>
         </div>
@@ -1089,20 +1089,25 @@ const SAMCalculator: React.FC<SAMCalculatorProps> = ({
                      </p>
 
                      {config?.contact && (
-                       <div className="bg-slate-50 border border-slate-100 rounded-xl p-4 text-left flex items-start gap-4 mb-6">
+                       <div 
+                         className="bg-slate-50 border border-slate-100 rounded-xl p-4 text-left flex items-start gap-4 mb-6"
+                         data-cc-path="/content/sam-calculator/config.json"
+                       >
                           <img 
                             src={config.contact.image} 
                             alt={config.contact.name}
                             className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md shrink-0 bg-gray-200" 
+                            data-cc-field="contact.image"
                           />
-                          <div>
+                          <div data-cc-field="contact">
                              <p className="text-xs font-bold text-orange-600 uppercase tracking-wider mb-1">Ihr Experte</p>
-                             <h4 className="font-bold text-slate-900 text-sm">{config.contact.name}</h4>
-                             <p className="text-xs text-slate-500 mb-3">{config.contact.role}</p>
+                             <h4 className="font-bold text-slate-900 text-sm" data-cc-field="name">{config.contact.name}</h4>
+                             <p className="text-xs text-slate-500 mb-3" data-cc-field="role">{config.contact.role}</p>
                              
                              <a 
                                href={`mailto:${config.contact.email}`} 
                                className="text-xs font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1 group"
+                               data-cc-field="email"
                              >
                                Termin vereinbaren <ExternalLink size={12} className="group-hover:translate-x-0.5 transition-transform"/>
                              </a>

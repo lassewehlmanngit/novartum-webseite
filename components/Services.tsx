@@ -8,11 +8,18 @@ import { IconMapper } from './IconMapper';
 const ServiceCard: React.FC<ServiceItem> = ({ icon, title, description, link }) => {
   const CardContent = (
     <>
-      <div className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-700 mb-6 group-hover:bg-orange-700 group-hover:text-white transition-colors duration-300" aria-hidden="true">
+      <div 
+        className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-700 mb-6 group-hover:bg-orange-700 group-hover:text-white transition-colors duration-300" 
+        aria-hidden="true"
+        data-cc-field="icon"
+      >
         {typeof icon === 'string' ? <IconMapper name={icon} size={28} /> : icon}
       </div>
-      <h3 className="text-xl font-bold text-slate-900 mb-4">{title}</h3>
-      <p className="text-slate-600 mb-8 text-sm leading-relaxed flex-grow">
+      <h3 className="text-xl font-bold text-slate-900 mb-4" data-cc-field="title">{title}</h3>
+      <p 
+        className="text-slate-600 mb-8 text-sm leading-relaxed flex-grow"
+        data-cc-field="description"
+      >
         {description}
       </p>
       {link && (
@@ -60,15 +67,17 @@ const Services: React.FC<ServicesProps> = ({
     <section className="pt-24 pb-24 bg-slate-50" id="services" aria-labelledby="services-heading">
       <div className="container mx-auto px-4 md:px-12">
         <SectionHeader 
-          title={title} 
-          subtitle={subtitle} 
-          description={description} 
+          title={<span data-cc-field="title">{title}</span>} 
+          subtitle={<span data-cc-field="subtitle">{subtitle}</span>} 
+          description={<span data-cc-field="description">{description}</span>} 
           id="services-heading"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {items.map((service, idx) => (
-            <ServiceCard key={idx} {...service} />
+            <div key={idx} data-cc-field={`items[${idx}]`} className="h-full">
+               <ServiceCard {...service} />
+            </div>
           ))}
         </div>
       </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 interface SectionHeaderProps {
   title: React.ReactNode;
-  subtitle?: string;
-  description?: string;
+  subtitle?: React.ReactNode;
+  description?: React.ReactNode;
   align?: 'left' | 'center';
   dark?: boolean; // If true, optimizes text colors for dark backgrounds
   className?: string;

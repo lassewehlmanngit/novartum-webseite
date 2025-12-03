@@ -56,13 +56,17 @@ export const DynamicLegalPage: React.FC<DynamicLegalPageProps> = ({ slug, title:
   }
 
   return (
-    <LegalPage title={pageTitle} lastUpdated={lastUpdated}>
+    <LegalPage 
+      title={pageTitle} 
+      lastUpdated={lastUpdated}
+      data-cc-path={`/content/legal/${slug}.md`}
+    >
       <SEO 
         title={pageTitle} 
         description={`${pageTitle} der Novartum GmbH.`}
         type="website" 
       />
-      <MarkdownContent content={content} />
+      <MarkdownContent content={content} data-cc-field="content" />
     </LegalPage>
   );
 };

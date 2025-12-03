@@ -127,7 +127,10 @@ const BlogPostReader: React.FC<BlogPostReaderProps> = ({ posts: initialPosts }) 
   } : null;
 
   return (
-    <article className="bg-white min-h-screen pt-32 pb-24">
+    <article 
+      className="bg-white min-h-screen pt-32 pb-24"
+      data-cc-path={`/content/blog/${slug}.md`}
+    >
       <SEO 
         title={post.title} 
         description={post.excerpt}
@@ -162,16 +165,22 @@ const BlogPostReader: React.FC<BlogPostReaderProps> = ({ posts: initialPosts }) 
         {/* Header */}
         <header className="mb-12 text-center">
            <div className="flex items-center justify-center gap-2 mb-6">
-             <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+             <span 
+               className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
+               data-cc-field="category"
+             >
                {post.category}
              </span>
              <span className="text-slate-400">•</span>
              <span className="text-slate-500 text-sm font-medium flex items-center gap-1">
-                <Clock size={14}/> {post.readTime} Lesezeit
+                <Clock size={14}/> <span data-cc-field="readTime">{post.readTime}</span> Lesezeit
              </span>
            </div>
 
-           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight">
+           <h1 
+             className="text-3xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight"
+             data-cc-field="title"
+           >
              {post.title}
            </h1>
 
@@ -181,21 +190,26 @@ const BlogPostReader: React.FC<BlogPostReaderProps> = ({ posts: initialPosts }) 
                     <User size={24} className="text-slate-400"/>
                  </div>
                  <div className="text-left">
-                    <p className="font-bold text-slate-900 text-sm">{post.author}</p>
-                    <p className="text-slate-500 text-xs">{post.authorRole}</p>
+                    <p className="font-bold text-slate-900 text-sm" data-cc-field="author">{post.author}</p>
+                    <p className="text-slate-500 text-xs" data-cc-field="authorRole">{post.authorRole}</p>
                  </div>
               </div>
               <div className="hidden md:block w-px h-10 bg-slate-200"></div>
               <div className="flex items-center gap-2 text-slate-500 text-sm">
                  <Calendar size={16} />
-                 {post.date}
+                 <span data-cc-field="date">{post.date}</span>
               </div>
            </div>
         </header>
 
         {/* Featured Image */}
         <div className="rounded-3xl overflow-hidden shadow-2xl mb-12 max-h-[500px]">
-           <img src={post.imageUrl} alt={post.title} className="w-full h-full object-cover" />
+           <img 
+             src={post.imageUrl} 
+             alt={post.title} 
+             className="w-full h-full object-cover" 
+             data-cc-field="imageUrl"
+           />
         </div>
 
         {/* AI / TLDR Box */}
@@ -203,13 +217,13 @@ const BlogPostReader: React.FC<BlogPostReaderProps> = ({ posts: initialPosts }) 
            <div className="flex items-center gap-2 text-orange-700 font-bold mb-3 uppercase tracking-widest text-xs">
               <BookOpen size={16} /> Key Takeaways
            </div>
-           <p className="text-lg text-slate-700 font-medium leading-relaxed italic">
+           <p className="text-lg text-slate-700 font-medium leading-relaxed italic" data-cc-field="tldr">
              "{post.tldr}"
            </p>
         </div>
 
         {/* Content Body - Render Markdown */}
-        <div className="prose prose-lg prose-slate mx-auto mb-16 focus:outline-none">
+        <div className="prose prose-lg prose-slate mx-auto mb-16 focus:outline-none" data-cc-field="content">
           <ReactMarkdown
             components={{
                 img: ({node, ...props}) => <img {...props} className="rounded-xl shadow-lg my-8" />
