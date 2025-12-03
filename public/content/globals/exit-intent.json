@@ -1,0 +1,33 @@
+{
+  "default": {
+    "tagline": "💡 Unverbindliche Beratung",
+    "title": "Unsicher bei Ihrer IT-Strategie?",
+    "description": "Ein 15-minütiges Gespräch kann oft Wochen an Recherche sparen. Lassen Sie uns kurz über Ihre Herausforderungen sprechen.",
+    "ctaText": "Kostenloses Erstgespräch buchen",
+    "ctaLink": "#contact",
+    "secondaryCta": "Nein, ich recherchiere noch"
+  },
+  "routes": [
+    {
+      "pathKeywords": ["sam", "software"],
+      "tagline": "💰 Lizenzkosten sparen?",
+      "title": "Die 5 häufigsten Lizenz-Fallen",
+      "description": "Bevor Sie gehen: Laden Sie sich unsere Checkliste herunter, um teure Audit-Fehler bei Microsoft & Oracle zu vermeiden.",
+      "ctaText": "Checkliste herunterladen",
+      "ctaLink": "/downloads/lizenz-checkliste.pdf",
+      "ctaIconType": "download",
+      "secondaryCta": "Kostenloses Erstgespräch"
+    },
+    {
+      "pathKeywords": ["karriere"],
+      "tagline": "🚀 Karriere-News",
+      "title": "Keine passende Stelle dabei?",
+      "description": "Verpassen Sie keine Chance. Melden Sie sich für unseren Talent-Pool an und wir melden uns, wenn es passt.",
+      "ctaText": "In Talent-Pool eintragen",
+      "ctaLink": "#contact",
+      "ctaIconType": "arrow",
+      "secondaryCta": "Offene Stellen ansehen"
+    }
+  ]
+}
+

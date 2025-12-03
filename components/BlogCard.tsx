@@ -28,7 +28,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
           <div className="flex items-center gap-4 text-sm text-slate-500 mb-4">
             <span className="text-orange-600 font-bold uppercase tracking-wider">{post.category}</span>
             <span>•</span>
-            <span className="flex items-center gap-1"><Clock size={14}/> {post.readTime}</span>
+            <span className="flex items-center gap-1"><Clock size={14}/> {post.readTime?.replace(/\D/g, '')} Min.</span>
           </div>
           
           <Link to={`/blog/${post.slug}`}>
@@ -81,7 +81,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post, featured = false }) => {
       
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex items-center gap-3 text-xs text-slate-500 mb-3">
-          <span className="flex items-center gap-1"><Clock size={12}/> {post.readTime}</span>
+          <span className="flex items-center gap-1"><Clock size={12}/> {post.readTime?.replace(/\D/g, '')} Min.</span>
           <span>•</span>
           <span>{post.date}</span>
         </div>

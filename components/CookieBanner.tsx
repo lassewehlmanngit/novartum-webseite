@@ -28,6 +28,15 @@ const CookieBanner: React.FC = () => {
       const timer = setTimeout(() => setIsVisible(true), 1000);
       return () => clearTimeout(timer);
     }
+
+    // Listen for custom event to re-open banner
+    const handleOpenBanner = () => {
+      setIsVisible(true);
+      setShowDetails(true);
+    };
+
+    window.addEventListener('openCookieBanner', handleOpenBanner);
+    return () => window.removeEventListener('openCookieBanner', handleOpenBanner);
   }, []);
 
   const saveConsent = (preferences: ConsentSettings) => {

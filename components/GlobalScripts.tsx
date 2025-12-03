@@ -40,11 +40,25 @@ const GlobalScripts = () => {
           
           // Inject Analytics if consented
           if (consent.analytics && settings.analyticsScripts) {
+             // Update Consent Mode
+             if ((window as any).gtag) {
+               (window as any).gtag('consent', 'update', {
+                 'analytics_storage': 'granted'
+               });
+             }
              injectScripts(settings.analyticsScripts);
           }
           
           // Inject Marketing if consented
           if (consent.marketing && settings.marketingScripts) {
+             // Update Consent Mode
+             if ((window as any).gtag) {
+               (window as any).gtag('consent', 'update', {
+                 'ad_storage': 'granted',
+                 'ad_user_data': 'granted',
+                 'ad_personalization': 'granted'
+               });
+             }
              injectScripts(settings.marketingScripts);
           }
         }

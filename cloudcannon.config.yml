@@ -180,6 +180,37 @@ _inputs:
         type: number
         hidden: true
 
+  # Exit Intent Configuration
+  default:
+    type: object
+    options:
+      header: "Standard Exit Intent (Fallback)"
+  routes:
+    type: array
+    options:
+      header: "Spezifische Exit Intents (nach URL)"
+    structures:
+      values:
+        - value:
+            pathKeywords: []
+            tagline: Tagline
+            title: Titel
+            description: Beschreibung
+            ctaText: Button Text
+            ctaLink: "#"
+            ctaIconType: calendar
+            secondaryCta: Zweiter Link Text
+          _inputs:
+            description:
+              type: textarea
+            pathKeywords:
+              type: list
+              comment: "Wenn die URL eines dieser Wörter enthält, wird dieser Banner angezeigt (z.B. 'sam', 'karriere')"
+            ctaIconType:
+              type: select
+              options:
+                values: [calendar, download, arrow, mail]
+
 _structures:
   content_blocks:
     values:

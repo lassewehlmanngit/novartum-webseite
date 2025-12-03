@@ -173,7 +173,7 @@ const BlogPostReader: React.FC<BlogPostReaderProps> = ({ posts: initialPosts }) 
              </span>
              <span className="text-slate-400">•</span>
              <span className="text-slate-500 text-sm font-medium flex items-center gap-1">
-                <Clock size={14}/> <span data-cc-field="readTime">{post.readTime}</span> Lesezeit
+                <Clock size={14}/> <span data-cc-field="readTime">{post.readTime?.replace(/\D/g, '')}</span> Min. Lesezeit
              </span>
            </div>
 

@@ -353,6 +353,14 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                      {links.legal.map((link, idx) => (
                       <li key={idx}>{renderLink(link)}</li>
                     ))}
+                    <li>
+                      <button 
+                        onClick={() => window.dispatchEvent(new Event('openCookieBanner'))}
+                        className="hover:text-orange-700 transition block text-left"
+                      >
+                        Cookie-Einstellungen
+                      </button>
+                    </li>
                 </ul>
             </div>
         </div>
