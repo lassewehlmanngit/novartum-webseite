@@ -39,14 +39,19 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
 
   // Scroll Detection Logic
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      // Show sticky nav after scrolling past typical Hero height (approx 600px)
-      // For solid variant (like on blog posts), show sticky nav sooner or always?
-      // Keeping original behavior but can adjust if needed.
-      if (window.scrollY > 600) {
-        setShowStickyNav(true);
-      } else {
-        setShowStickyNav(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 600) {
+            setShowStickyNav(true);
+          } else {
+            setShowStickyNav(false);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
@@ -203,7 +208,7 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
 
       {/* --- STICKY ANIMATED HEADER (Scroll View - Desktop Only) --- */}
       <div 
-        className={`fixed top-0 left-0 w-full z-50 bg-[#15171e]/95 backdrop-blur-md border-b border-slate-700 transition-transform duration-500 ease-in-out hidden md:flex items-center shadow-2xl ${
+        className={`fixed top-0 left-0 w-full z-50 bg-[#15171e]/95 backdrop-blur-md border-b border-slate-700 transition-transform duration-500 ease-in-out hidden md:flex items-center shadow-2xl will-change-transform ${
           showStickyNav ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
