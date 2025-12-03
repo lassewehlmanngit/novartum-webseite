@@ -342,9 +342,11 @@ const SAMCalculator: React.FC<SAMCalculatorProps> = ({
   };
 
   const scrollToCalculator = () => {
-    const element = document.getElementById('calculator-inputs');
+    const element = document.getElementById('calculator');
     if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Calculate position: element top + current scroll - offset (e.g. 100px for header)
+        const y = element.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
