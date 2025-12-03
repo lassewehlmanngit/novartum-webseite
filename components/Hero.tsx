@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeroProps } from '../types';
 import { trackCTAClick } from '../utils/analytics';
+import { useCloudCannon } from '../contexts/CloudCannonContext';
 
 const Hero: React.FC<HeroProps> = ({
   tagline,
@@ -14,6 +15,7 @@ const Hero: React.FC<HeroProps> = ({
   onPrimaryClick,
   onSecondaryClick
 }) => {
+  const { contentPath } = useCloudCannon();
   
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
@@ -72,14 +74,32 @@ const Hero: React.FC<HeroProps> = ({
       <div className="absolute bottom-0 left-0 w-[40rem] h-[40rem] bg-indigo-900/10 blur-[100px] rounded-full -translate-x-1/2 translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
 
       <div className="container mx-auto px-4 md:px-12 relative z-10 text-center flex flex-col items-center">
-        <div className="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 font-medium text-sm mb-8">
+        <div 
+          className="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 font-medium text-sm mb-8"
+          {...(contentPath && {
+            'data-cc-field': 'tagline',
+            'data-cc-type': 'text'
+          })}
+        >
           {tagline}
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight max-w-5xl">
+        <h1 
+          className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight max-w-5xl"
+          {...(contentPath && {
+            'data-cc-field': 'title',
+            'data-cc-type': 'text'
+          })}
+        >
           {typeof title === 'string' ? <span dangerouslySetInnerHTML={{ __html: title }} /> : title}
         </h1>
         
-        <p className="max-w-3xl mx-auto text-slate-300 text-lg md:text-xl mb-10 leading-relaxed font-light">
+        <p 
+          className="max-w-3xl mx-auto text-slate-300 text-lg md:text-xl mb-10 leading-relaxed font-light"
+          {...(contentPath && {
+            'data-cc-field': 'description',
+            'data-cc-type': 'textarea'
+          })}
+        >
           {description}
         </p>
 

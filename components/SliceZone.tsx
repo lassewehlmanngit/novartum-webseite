@@ -17,6 +17,7 @@ import BlogOverview from './BlogOverview';
 import ProjectsOverview from './ProjectsOverview';
 import TrustBar from './TrustBar';
 import ExpertCTA from './ExpertCTA';
+import { useCloudCannon } from '../contexts/CloudCannonContext';
 
 const SLICE_MAP: Record<string, React.FC<any>> = {
   hero_slice: Hero,
@@ -39,8 +40,19 @@ const SLICE_MAP: Record<string, React.FC<any>> = {
   expert_cta_slice: ExpertCTA,
 };
 
-export const SliceZone = ({ slices }: { slices: any[] }) => {
+interface SliceZoneProps {
+  slices: any[];
+  pageSlug?: string;
+}
+
+export const SliceZone = ({ slices, pageSlug }: SliceZoneProps) => {
+  const { pageSlug: contextSlug } = useCloudCannon();
+  const effectiveSlug = pageSlug || contextSlug || 'home';
+  
   if (!slices) return null;
+
+  // Determine the content path for CloudCannon
+  const contentPath = `/content/pages/${effectiveSlug}.json`;
 
   return (
     <>
@@ -50,7 +62,16 @@ export const SliceZone = ({ slices }: { slices: any[] }) => {
           console.warn(`Unbekannter Slice Typ: ${slice._type}`);
           return null;
         }
-        return <Component key={index} {...slice} />;
+        return (
+          <div
+            key={index}
+            data-cc-path={contentPath}
+            data-cc-field={`content_blocks[${index}]`}
+            data-cc-type={slice._type}
+          >
+            <Component {...slice} />
+          </div>
+        );
       })}
     </>
   );

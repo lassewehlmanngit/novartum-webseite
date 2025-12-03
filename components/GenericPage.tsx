@@ -3,6 +3,7 @@ import { SliceZone } from './SliceZone';
 import SEO from './SEO';
 import { Helmet } from 'react-helmet-async';
 import { useTimeOnPageTracking } from '../hooks/useTimeOnPageTracking';
+import { CloudCannonProvider } from '../contexts/CloudCannonContext';
 
 interface PageData {
   title: string;
@@ -53,35 +54,39 @@ export const GenericPage = ({ slug }: { slug: string }) => {
     "url": `https://novartum.com/${slug}`
   } : null;
 
+  const contentPath = `/content/pages/${slug}.json`;
+
   return (
-    <main>
-      <SEO 
-        title={data.seo?.metaTitle || data.title} 
-        description={data.seo?.metaDescription}
-        keywords={data.seo?.metaKeywords}
-        image={data.seo?.ogImage}
-      />
-      
-      {/* Schema Injection */}
-      {serviceSchema && (
-        <Helmet>
-          <script type="application/ld+json">
-            {JSON.stringify(serviceSchema)}
-          </script>
-        </Helmet>
-      )}
+    <CloudCannonProvider pageSlug={slug} contentPath={contentPath}>
+      <main data-cc-path={contentPath}>
+        <SEO 
+          title={data.seo?.metaTitle || data.title} 
+          description={data.seo?.metaDescription}
+          keywords={data.seo?.metaKeywords}
+          image={data.seo?.ogImage}
+        />
+        
+        {/* Schema Injection */}
+        {serviceSchema && (
+          <Helmet>
+            <script type="application/ld+json">
+              {JSON.stringify(serviceSchema)}
+            </script>
+          </Helmet>
+        )}
 
-      {/* AI Context Block (Visually Hidden) */}
-      <div className="sr-only">
-        <h1>{data.title}</h1>
-        <p>
-          Novartum GmbH bietet spezialisierte Dienstleistungen im Bereich {data.title}. 
-          {data.seo?.metaDescription || "Wir unterstützen Unternehmen bei der Optimierung ihrer IT-Landschaft."}
-          Dieser Bereich umfasst: {data.content_blocks.map((block: any) => block.title).join(', ')}.
-        </p>
-      </div>
+        {/* AI Context Block (Visually Hidden) */}
+        <div className="sr-only">
+          <h1>{data.title}</h1>
+          <p>
+            Novartum GmbH bietet spezialisierte Dienstleistungen im Bereich {data.title}. 
+            {data.seo?.metaDescription || "Wir unterstützen Unternehmen bei der Optimierung ihrer IT-Landschaft."}
+            Dieser Bereich umfasst: {data.content_blocks.map((block: any) => block.title).join(', ')}.
+          </p>
+        </div>
 
-      <SliceZone slices={data.content_blocks} />
-    </main>
+        <SliceZone slices={data.content_blocks} pageSlug={slug} />
+      </main>
+    </CloudCannonProvider>
   );
 };

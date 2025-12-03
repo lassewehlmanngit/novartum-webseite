@@ -1,9 +1,16 @@
+# CloudCannon Visual Editor Configuration
+visual_editor:
+  enabled: true
+  js_path: https://cdn.jsdelivr.net/npm/@cloudcannon/visual-editor@1.0.0/dist/index.js
+
 collections_config:
   pages:
     path: public/content/pages
     output: false
     name: "Seiten"
     icon: "wysiwyg"
+    visual_editor:
+      enabled: true
     schemas:
       default:
         path: .cloudcannon/schemas/page.json
