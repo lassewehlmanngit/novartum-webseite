@@ -37,11 +37,19 @@ const Blog: React.FC<ExtendedBlogSectionProps> = ({
             subtitle={<span data-cc-field="subtitle">{subtitle}</span>}
             align="left"
             id="blog-heading"
-            className="mb-0" // Reset margin as it's handled by the parent flex
+            className="mb-0" 
           />
-          <Link to="/blog" className="text-orange-700 hover:text-orange-900 font-bold flex items-center gap-2 group transition-colors shrink-0">
-            Alle Artikel ansehen <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform"/>
-          </Link>
+          <div className="mb-2 hidden md:block">
+             <Link to="/blog" className="text-orange-700 hover:text-orange-900 font-bold flex items-center gap-2 group transition-colors">
+               Alle Artikel ansehen <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform"/>
+             </Link>
+          </div>
+          {/* Mobile Link - Visible only on mobile */}
+          <div className="md:hidden">
+             <Link to="/blog" className="text-orange-700 hover:text-orange-900 font-bold flex items-center gap-2 group transition-colors">
+               Alle Artikel ansehen <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform"/>
+             </Link>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
