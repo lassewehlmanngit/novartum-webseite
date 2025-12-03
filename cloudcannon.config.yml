@@ -6,7 +6,8 @@ visual_editor:
 collections_config:
   pages:
     path: public/content/pages
-    output: false
+    output: true
+    url: "/[slug]"
     name: "Seiten"
     icon: "wysiwyg"
     visual_editor:
@@ -17,7 +18,8 @@ collections_config:
   
   blog:
     path: public/content/blog
-    output: false
+    output: true
+    url: "/blog/[slug]"
     name: "Blog Beiträge"
     icon: "article"
     schemas:
@@ -27,27 +29,32 @@ collections_config:
   team:
     path: public/content/team
     parser: json
+    output: false
     name: "Team"
 
   partners:
     path: public/content/partners
     parser: json
+    output: false
     name: "Partner"
 
   jobs:
     path: public/content/jobs
     parser: json
+    output: false
     name: "Stellenangebote"
 
   projects:
     path: public/content/projects
-    output: false
+    output: true
+    url: "/projekte/[slug]"
     name: "Projekte"
     icon: "work"
 
   legal:
     path: public/content/legal
-    output: false
+    output: true
+    url: "/[slug]"
     name: "Rechtliche Seiten"
     icon: "gavel"
 
