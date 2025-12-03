@@ -84,6 +84,7 @@ const App: React.FC = () => {
           <Routes>
           {/* Static Routes that fetch their own content via GenericPage */}
           <Route path="/" element={<GenericPage slug="home" />} />
+          <Route path="/home" element={<Navigate to="/" replace />} /> {/* Redirect /home to / for CloudCannon */}
           <Route path="/software" element={<GenericPage slug="software" />} />
           <Route path="/sam" element={<GenericPage slug="sam" />} />
           <Route path="/itsm" element={<GenericPage slug="itsm" />} />
