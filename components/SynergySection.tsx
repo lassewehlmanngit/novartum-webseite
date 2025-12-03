@@ -42,7 +42,7 @@ const SynergySection: React.FC<SynergyProps> = ({ title, subtitle, description, 
            {/* Cards Side */}
            <div className="lg:col-span-7">
               <div className="grid gap-6">
-                 {items.map((item, idx) => (
+                 {items?.map((item, idx) => (
                     <div key={idx} className="relative group" data-cc-field={`items[${idx}]`}>
                        {/* Connector Line (except for last item) */}
                        {idx !== items.length - 1 && (

@@ -326,7 +326,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
             <div>
                 <h4 className="font-bold text-slate-900 mb-6">Services</h4>
                 <ul className="space-y-3">
-                    {links.services.map((link, idx) => (
+                    {links.services?.map((link, idx) => (
                       <li key={idx}>{renderLink(link)}</li>
                     ))}
                 </ul>
@@ -334,7 +334,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
              <div>
                 <h4 className="font-bold text-slate-900 mb-6">Ressourcen</h4>
                 <ul className="space-y-3">
-                     {links.resources.map((link, idx) => (
+                     {links.resources?.map((link, idx) => (
                       <li key={idx}>{renderLink(link)}</li>
                     ))}
                 </ul>
@@ -342,7 +342,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
             <div>
                 <h4 className="font-bold text-slate-900 mb-6">Über uns</h4>
                 <ul className="space-y-3">
-                     {links.company.map((link, idx) => (
+                     {links.company?.map((link, idx) => (
                       <li key={idx}>{renderLink(link)}</li>
                     ))}
                 </ul>
@@ -350,7 +350,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
              <div>
                 <h4 className="font-bold text-slate-900 mb-6">Rechtliches</h4>
                 <ul className="space-y-3">
-                     {links.legal.map((link, idx) => (
+                     {links.legal?.map((link, idx) => (
                       <li key={idx}>{renderLink(link)}</li>
                     ))}
                     <li>

@@ -22,10 +22,10 @@ const BlogOverview: React.FC<BlogOverviewProps> = ({ data: initialData }) => {
   }, [initialData]);
 
   // Extract unique categories
-  const categories = ['All', ...Array.from(new Set(posts.map(p => p.category)))];
+  const categories = ['All', ...Array.from(new Set((posts || []).map(p => p.category)))];
 
   // Filter posts
-  const filteredPosts = posts.filter(p => {
+  const filteredPosts = (posts || []).filter(p => {
     const matchesCategory = selectedCategory === 'All' || p.category === selectedCategory;
     const matchesSearch = p.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           p.excerpt.toLowerCase().includes(searchTerm.toLowerCase());

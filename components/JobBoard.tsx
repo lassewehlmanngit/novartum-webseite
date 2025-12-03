@@ -22,7 +22,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-4">
-           {jobs.map((job) => {
+           {jobs?.map((job) => {
              const isOpen = openJob === job.id;
              
              // JobPosting Schema
@@ -90,7 +90,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
                            <div>
                               <h4 className="font-bold text-slate-900 mb-3">Deine Aufgaben</h4>
                               <ul className="space-y-2">
-                                 {job.tasks.map((task, i) => (
+                                 {job.tasks?.map((task, i) => (
                                     <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
                                        <span className="mt-1.5 w-1.5 h-1.5 bg-orange-500 rounded-full shrink-0"></span>
                                        <span data-cc-field={`tasks[${i}]`}>{task}</span>
@@ -101,7 +101,7 @@ const JobBoard: React.FC<JobBoardProps> = ({ jobs }) => {
                            <div>
                               <h4 className="font-bold text-slate-900 mb-3">Das bringst du mit</h4>
                               <ul className="space-y-2">
-                                 {job.profile.map((item, i) => (
+                                 {job.profile?.map((item, i) => (
                                     <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
                                        <span className="mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full shrink-0"></span>
                                        <span data-cc-field={`profile[${i}]`}>{item}</span>

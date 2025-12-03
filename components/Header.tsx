@@ -114,7 +114,7 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
             data-cc-path="/content/globals/navigation.json"
             data-cc-field="navigation"
           >
-            {navItems.map((item, index) => (
+            {navItems?.map((item, index) => (
               <Link 
                 key={index}
                 to={item.link || '#'} 
@@ -221,7 +221,7 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
 
            {/* Centered Service Navigation */}
            <nav className="flex items-center gap-6 lg:gap-8">
-              {navItems.map((item, index) => (
+              {navItems?.map((item, index) => (
                 <Link 
                   key={index}
                   to={item.link || '#'} 

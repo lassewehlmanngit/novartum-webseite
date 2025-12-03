@@ -34,7 +34,7 @@ const VendorCard: React.FC<VendorIssue> = ({ vendor, logo, color, risks, solutio
             <AlertTriangle size={16} /> Häufige Risiken
           </div>
           <ul className="space-y-3">
-            {risks.map((risk, idx) => (
+            {risks?.map((risk, idx) => (
               <li key={idx} className="flex items-start gap-2 text-slate-700 text-sm">
                 <XCircle size={16} className="text-red-400 shrink-0 mt-0.5" />
                 <span data-cc-field={`risks[${idx}]`}>{risk}</span>

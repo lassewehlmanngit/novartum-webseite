@@ -72,7 +72,7 @@ const Methodology: React.FC<MethodologyProps> = ({
                  </div>
 
                  <div className="lg:w-1/2 pt-4">
-                     {steps.map((step, idx) => (
+                     {steps?.map((step, idx) => (
                        <div key={idx} data-cc-field={`steps[${idx}]`}>
                          <Step {...step} />
                        </div>
