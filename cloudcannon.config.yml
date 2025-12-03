@@ -3,6 +3,10 @@ visual_editor:
   enabled: true
   js_path: https://cdn.jsdelivr.net/npm/@cloudcannon/visual-editor@1.0.0/dist/index.js
 
+routing:
+  error_pages:
+    404: /index.html
+
 collections_config:
   pages:
     path: public/content/pages
