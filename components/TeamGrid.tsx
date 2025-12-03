@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { TeamMember } from '../types';
 import { Linkedin, User } from 'lucide-react';
 
@@ -99,12 +100,12 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
              <p className="text-slate-400 mb-8 max-w-xs">
                Wir suchen immer nach talentierten Persönlichkeiten, die unser Team bereichern.
              </p>
-             <a 
-               href="/#/karriere" 
+             <Link 
+               to="/karriere" 
                className="bg-orange-700 hover:bg-orange-800 text-white px-8 py-3 rounded-xl font-bold transition-colors"
              >
                Karriere starten
-             </a>
+             </Link>
           </div>
         </div>
       </div>
