@@ -43,6 +43,24 @@
       "title": "SAM Calculator"
     },
     {
+      "_type": "expert_cta_slice",
+      "title": "Sprechen Sie mit dem Experten für SAM",
+      "subtitle": "Direkter Draht",
+      "description": "Haben Sie spezifische Fragen zu Oracle-Audits, Microsoft-Verträgen oder Cloud-FinOps? Dr. Weber hat über 20 Jahre Erfahrung in der Abwehr von Nachforderungen und der Optimierung komplexer Lizenzszenarien.",
+      "expert": {
+        "name": "Dr. Michael Weber",
+        "role": "Head of SAM & Compliance",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
+        "bio": "Ehemals auf Herstellerseite, kenne ich die Taktiken der Auditoren genau. Mein Ziel ist es, dieses Wissen zu 100% für den Schutz Ihres Budgets einzusetzen.",
+        "email": "michael.weber@novartum.com",
+        "calendarLink": "#",
+        "stats": {
+          "experience": "20+ Jahre",
+          "projects": "100+ Projekte"
+        }
+      }
+    },
+    {
       "_type": "synergy_slice",
       "title": "Ein Haus. Kurze Wege. Maximale Wirkung.",
       "subtitle": "Der Novartum Verbund-Vorteil",

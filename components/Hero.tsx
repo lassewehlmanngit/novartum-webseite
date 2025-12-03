@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeroProps } from '../types';
+import { trackCTAClick } from '../utils/analytics';
 
 const Hero: React.FC<HeroProps> = ({
   tagline,
@@ -30,23 +31,35 @@ const Hero: React.FC<HeroProps> = ({
     
     const classes = `${baseClasses} px-8 py-4 rounded-lg font-semibold text-lg transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 w-full sm:w-auto inline-flex justify-center items-center cursor-pointer`;
 
+    const handleClick = () => {
+      trackCTAClick(text, 'Hero');
+      if (onClick) onClick();
+    };
+
     if (link) {
       if (link.startsWith('#')) {
          return (
-           <a href={link} onClick={(e) => handleScrollTo(e, link)} className={classes}>
+           <a 
+             href={link} 
+             onClick={(e) => {
+               handleClick();
+               handleScrollTo(e, link);
+             }} 
+             className={classes}
+           >
              {text}
            </a>
          );
       }
       return (
-        <Link to={link} className={classes}>
+        <Link to={link} onClick={handleClick} className={classes}>
           {text}
         </Link>
       );
     }
     
     return (
-      <button onClick={onClick} className={classes}>
+      <button onClick={handleClick} className={classes}>
         {text}
       </button>
     );

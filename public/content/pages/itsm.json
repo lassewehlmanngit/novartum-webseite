@@ -130,6 +130,24 @@
       ]
     },
     {
+      "_type": "expert_cta_slice",
+      "title": "ITSM Prozesse, die funktionieren",
+      "subtitle": "Prozess-Check",
+      "description": "Ihr Service Desk ist überlastet oder die Anwenderzufriedenheit sinkt? Oft liegt es nicht am Tool, sondern am Prozess. Wir analysieren Ihre Workflows und finden die Flaschenhälse.",
+      "expert": {
+        "name": "Sarah Linder",
+        "role": "Head of Consulting",
+        "image": "https://images.unsplash.com/photo-1573496359-7013ac2bebb6?q=80&w=400&auto=format&fit=crop",
+        "bio": "Ein Tool ist nur so gut wie der Prozess dahinter. Ich helfe Ihnen, ITIL nicht als Bürokratie, sondern als Enabler für schnellen Support zu leben.",
+        "email": "sarah.linder@novartum.com",
+        "calendarLink": "#",
+        "stats": {
+          "experience": "12+ Jahre",
+          "projects": "80+ Implementierungen"
+        }
+      }
+    },
+    {
       "_type": "about_slice",
       "title": "Mehr als nur Tickets schließen.",
       "subtitle": "Zielbild & Nutzen",

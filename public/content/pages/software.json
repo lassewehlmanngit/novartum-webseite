@@ -103,6 +103,24 @@
       ]
     },
     {
+      "_type": "expert_cta_slice",
+      "title": "Technologie-Beratung auf Augenhöhe",
+      "subtitle": "Architectural Review",
+      "description": "Sie planen eine Neuentwicklung oder wollen ein Altsystem ablösen? Lassen Sie uns über Ihre Architektur-Vision sprechen. Wir validieren Ihren Tech-Stack neutral und zeigen Optimierungspotenziale auf.",
+      "expert": {
+        "name": "Thomas Bergmann",
+        "role": "Lead Software Architect",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
+        "bio": "Code ist Handwerk. Ich unterstütze Sie dabei, technische Schulden zu vermeiden und skalierbare Lösungen zu bauen, die auch morgen noch wartbar sind.",
+        "email": "thomas.bergmann@novartum.com",
+        "calendarLink": "#",
+        "stats": {
+          "experience": "15+ Jahre",
+          "projects": "50+ Systeme"
+        }
+      }
+    },
+    {
       "_type": "about_slice",
       "title": "Software-Handwerk aus Leidenschaft.",
       "subtitle": "Unsere Philosophie",

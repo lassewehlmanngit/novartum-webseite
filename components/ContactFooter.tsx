@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, Calendar, CheckCircle, AlertCircle } from 'lucide-react';
 import { ContactFooterProps, FooterLink } from '../types';
 import { Link } from 'react-router-dom';
+import { trackCTAClick, trackEmailClick, trackPhoneClick, trackFormSubmit } from '../utils/analytics';
 
 const ContactFooter: React.FC<ContactFooterProps> = ({ 
   contactPerson = {
@@ -80,6 +81,9 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
     if (validateForm()) {
       setIsSubmitting(true);
       
+      // Track form submission
+      trackFormSubmit('contact_footer', true);
+      
       // Simulate API call
       setTimeout(() => {
         setIsSubmitting(false);
@@ -90,6 +94,8 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
         // Reset success message after 5 seconds
         setTimeout(() => setIsSuccess(false), 5000);
       }, 1500);
+    } else {
+      trackFormSubmit('contact_footer', false);
     }
   };
 
@@ -136,41 +142,58 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
               <span className="text-orange-700 font-bold uppercase text-xs tracking-widest mb-4 block">Kontakt</span>
               <h2 id="contact-heading" className="text-3xl font-bold mb-8 text-slate-900">Ihr direkter Ansprechpartner</h2>
               
-              <div className="bg-slate-50 p-6 lg:p-8 rounded-2xl flex flex-col border border-slate-100 h-full w-full min-w-0 overflow-hidden">
+              <div className="bg-slate-50 p-6 lg:p-8 rounded-2xl flex flex-col border border-slate-100 h-full w-full min-w-0 overflow-hidden shadow-sm">
                  {/* Profile Header */}
-                 <div className="flex flex-row items-center gap-4 mb-8 w-full min-w-0">
+                 <div className="flex flex-row items-start gap-4 mb-8 w-full min-w-0">
                     <img 
                         src={contactPerson.image} 
                         alt={contactPerson.name} 
-                        className="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover shadow-md shrink-0 bg-slate-200"
+                        className="w-20 h-20 rounded-2xl object-cover shadow-md shrink-0 bg-slate-200"
                     />
-                    <div className="flex-1 min-w-0 overflow-hidden">
-                        <h3 className="font-bold text-lg text-slate-900 truncate pr-2">{contactPerson.name}</h3>
-                        <p className="text-sm text-slate-500 font-medium truncate">{contactPerson.role}</p>
+                    <div className="flex-1 min-w-0 pt-1">
+                        <h3 className="font-bold text-xl text-slate-900 leading-tight mb-1">{contactPerson.name}</h3>
+                        <p className="text-sm text-slate-500 font-medium">{contactPerson.role}</p>
                     </div>
                  </div>
                  
                  {/* Contact Links */}
-                 <div className="space-y-3 w-full mb-8 flex-grow">
-                    <a href={`mailto:${contactPerson.email}`} className="flex items-start gap-3 text-slate-600 hover:text-orange-700 hover:bg-white hover:shadow-sm hover:border-slate-200 transition-all p-3 rounded-lg border border-transparent group w-full">
-                        <div className="p-2 bg-white rounded-lg border border-slate-100 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
-                           <Mail size={18} className="text-orange-600" />
+                 <div className="space-y-4 w-full mb-8 flex-grow">
+                    <a 
+                      href={`mailto:${contactPerson.email}`} 
+                      onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
+                      className="flex items-center gap-4 text-slate-600 hover:text-orange-700 transition-all p-3 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 group w-full"
+                    >
+                        <div className="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
+                           <Mail size={20} className="text-orange-600" />
                         </div>
-                        <span className="text-sm font-medium break-words py-1.5">{contactPerson.email}</span>
+                        <span className="text-sm font-medium break-all">{contactPerson.email}</span>
                     </a>
                     
-                    <a href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} className="flex items-start gap-3 text-slate-600 hover:text-orange-700 hover:bg-white hover:shadow-sm hover:border-slate-200 transition-all p-3 rounded-lg border border-transparent group w-full">
-                        <div className="p-2 bg-white rounded-lg border border-slate-100 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
-                           <Phone size={18} className="text-orange-600" />
+                    <a 
+                      href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} 
+                      onClick={() => trackPhoneClick(contactPerson.phone, 'ContactFooter')}
+                      className="flex items-center gap-4 text-slate-600 hover:text-orange-700 transition-all p-3 rounded-xl hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 group w-full"
+                    >
+                        <div className="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm shrink-0 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
+                           <Phone size={20} className="text-orange-600" />
                         </div>
-                        <span className="text-sm font-medium break-words py-1.5">{contactPerson.phone}</span>
+                        <span className="text-sm font-medium">{contactPerson.phone}</span>
                     </a>
                  </div>
 
                  {/* CTA Button */}
-                 <button className="w-full mt-auto border-2 border-slate-200 bg-white text-slate-700 hover:border-orange-500 hover:text-orange-700 px-4 py-3.5 rounded-xl text-sm font-bold transition flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-orange-500 group shadow-sm">
-                    <Calendar size={18} className="shrink-0 text-slate-400 group-hover:text-orange-600 transition-colors" />
-                    <span className="truncate">Termin vereinbaren</span>
+                 <button 
+                   onClick={() => {
+                     trackCTAClick('calendar_booking', 'ContactFooter');
+                     const contactElement = document.getElementById('contact');
+                     if (contactElement) {
+                       contactElement.scrollIntoView({ behavior: 'smooth' });
+                     }
+                   }}
+                   className="w-full mt-auto bg-white border-2 border-slate-200 text-slate-700 hover:border-orange-500 hover:text-orange-600 hover:shadow-md px-6 py-4 rounded-xl text-base font-bold transition flex items-center justify-center gap-3 focus:outline-none focus:ring-2 focus:ring-orange-500 group"
+                 >
+                    <Calendar size={20} className="shrink-0 text-slate-400 group-hover:text-orange-600 transition-colors" />
+                    <span>Kostenloses Erstgespräch vereinbaren</span>
                  </button>
               </div>
             </div>

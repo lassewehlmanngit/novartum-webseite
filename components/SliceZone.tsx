@@ -16,6 +16,7 @@ import JobBoard from './JobBoard';
 import BlogOverview from './BlogOverview';
 import ProjectsOverview from './ProjectsOverview';
 import TrustBar from './TrustBar';
+import ExpertCTA from './ExpertCTA';
 
 const SLICE_MAP: Record<string, React.FC<any>> = {
   hero_slice: Hero,
@@ -35,6 +36,7 @@ const SLICE_MAP: Record<string, React.FC<any>> = {
   blog_overview_slice: BlogOverview,
   projects_overview_slice: ProjectsOverview,
   trustbar_slice: TrustBar,
+  expert_cta_slice: ExpertCTA,
 };
 
 export const SliceZone = ({ slices }: { slices: any[] }) => {

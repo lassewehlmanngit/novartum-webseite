@@ -14,6 +14,7 @@ import { MarkdownContent } from './components/MarkdownContent';
 import GlobalScripts from './components/GlobalScripts';
 import GlobalSchema from './components/GlobalSchema';
 import BreadcrumbsSchema from './components/BreadcrumbsSchema';
+import ExitIntentHandler from './components/ExitIntentHandler';
 
 // Scroll to top component
 const ScrollToTop = () => {
@@ -108,6 +109,7 @@ const App: React.FC = () => {
         </Routes>
         <ContactFooter {...footer} />
         <CookieBanner />
+        <ExitIntentHandler />
       </div>
     </Router>
     </HelmetProvider>

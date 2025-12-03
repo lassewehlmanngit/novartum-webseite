@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { SliceZone } from './SliceZone';
 import SEO from './SEO';
 import { Helmet } from 'react-helmet-async';
+import { useTimeOnPageTracking } from '../hooks/useTimeOnPageTracking';
 
 interface PageData {
   title: string;
@@ -17,6 +18,9 @@ interface PageData {
 export const GenericPage = ({ slug }: { slug: string }) => {
   const [data, setData] = useState<PageData | null>(null);
   const [error, setError] = useState<boolean>(false);
+  
+  // Track time on page as micro-conversion
+  useTimeOnPageTracking();
 
   useEffect(() => {
     // Determine file path: /content/pages/home.json

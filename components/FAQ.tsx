@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
+import { trackMicroConversion } from '../utils/analytics';
 
 export interface FAQItem {
   question: string;
@@ -48,7 +49,13 @@ const FAQ: React.FC<FAQProps> = ({
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const handleToggle = (idx: number) => {
+    const isOpening = openIndex !== idx;
     setOpenIndex(openIndex === idx ? null : idx);
+    
+    // Track FAQ expansion as micro-conversion
+    if (isOpening && items[idx]) {
+      trackMicroConversion('faq_expand', items[idx].question);
+    }
   };
 
   // FAQPage Schema

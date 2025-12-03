@@ -90,6 +90,24 @@
       ]
     },
     {
+      "_type": "expert_cta_slice",
+      "title": "Verhandlungssicher in den nächsten Deal",
+      "subtitle": "Kostenloser Erst-Check",
+      "description": "Sie haben ein Angebot vorliegen? Senden Sie es uns (geschwärzt) zu. Wir geben Ihnen innerhalb von 48 Stunden eine Einschätzung zum Preisniveau und identifizieren fehlende Schutzklauseln.",
+      "expert": {
+        "name": "Dr. Michael Weber",
+        "role": "Managing Director",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
+        "bio": "Ich verhandele seit 20 Jahren IT-Verträge. Mein Ziel: Waffengleichheit zwischen Ihnen und den Herstellern herstellen.",
+        "email": "michael.weber@novartum.com",
+        "calendarLink": "#",
+        "stats": {
+          "experience": "20+ Jahre",
+          "projects": "200+ Verhandlungen"
+        }
+      }
+    },
+    {
       "_type": "methodology_slice",
       "title": "Der Weg zum besten Deal",
       "subtitle": "Sourcing Lifecycle",

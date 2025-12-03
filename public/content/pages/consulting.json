@@ -96,6 +96,24 @@
       ]
     },
     {
+      "_type": "expert_cta_slice",
+      "title": "Rechtssicherheit statt Risiko",
+      "subtitle": "Compliance Check",
+      "description": "NIS2, DSGVO oder Lizenz-Audit: Die Anforderungen steigen. Lassen Sie uns prüfen, ob Ihre IT-Organisation rechtlich auf der sicheren Seite ist.",
+      "expert": {
+        "name": "Elena Rodriguez",
+        "role": "IT-Legal Counsel",
+        "image": "https://images.unsplash.com/photo-1598550874175-4d7112ee7f43?q=80&w=400&auto=format&fit=crop",
+        "bio": "IT-Recht muss nicht kompliziert sein. Ich übersetze regulatorische Anforderungen in klare, machbare To-Dos für Ihre IT-Abteilung.",
+        "email": "elena.rodriguez@novartum.com",
+        "calendarLink": "#",
+        "stats": {
+          "experience": "10+ Jahre",
+          "projects": "150+ Compliance-Projekte"
+        }
+      }
+    },
+    {
       "_type": "methodology_slice",
       "title": "Der 'Safe Harbor' Prozess",
       "subtitle": "Methodik",

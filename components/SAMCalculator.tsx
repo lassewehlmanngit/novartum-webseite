@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
+import { trackPDFDownload, trackFormSubmit, trackCTAClick, trackMicroConversion } from '../utils/analytics';
 
 // --- Types & Interfaces ---
 
@@ -476,6 +477,7 @@ const SAMCalculator: React.FC<SAMCalculatorProps> = ({
     // 1. Trigger PDF Download Immediately for the user
     try {
       generatePDF();
+      trackPDFDownload('SAM_Health_Report');
     } catch (pdfErr) {
       console.error("PDF Generation failed:", pdfErr);
     }
@@ -499,8 +501,10 @@ const SAMCalculator: React.FC<SAMCalculatorProps> = ({
         
         setIsSuccess(true);
         setIsSubmitting(false);
+        trackFormSubmit('sam_calculator', true);
     } catch (error) {
         console.error("Submission error:", error);
+        trackFormSubmit('sam_calculator', false);
         // Even if sending fails, they got the PDF, so we just warn them about the email
         alert("Der Report wurde heruntergeladen, aber die E-Mail konnte nicht gesendet werden.");
         setIsSubmitting(false);
@@ -996,7 +1000,10 @@ const SAMCalculator: React.FC<SAMCalculatorProps> = ({
                  </button>
                  
                  <button 
-                    onClick={() => setShowEmailModal(true)}
+                    onClick={() => {
+                      trackCTAClick('download_report', 'SAMCalculator');
+                      setShowEmailModal(true);
+                    }}
                     className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2.5 rounded-lg text-xs md:text-sm font-bold transition-all shadow-lg shadow-orange-900/40"
                  >
                     <Download size={14} /> <span className="hidden sm:inline">Report anfordern</span><span className="sm:hidden">Report</span>
