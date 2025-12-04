@@ -82,7 +82,12 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
     setMobileSubMenuOpen(mobileSubMenuOpen === index ? null : index);
   };
 
-  const isActive = (link?: string) => link && location.pathname === link;
+  // Verbesserte Active-Detection: Erkennt auch Unterseiten (z.B. /projekte/xyz -> Projekte aktiv)
+  const isActive = (link?: string) => {
+    if (!link) return false;
+    if (link === '/') return location.pathname === '/';
+    return location.pathname.startsWith(link);
+  };
 
   const renderLogo = (isSmall = false, isDark = false) => {
     // Always use the SVG logo now
@@ -118,10 +123,14 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
               <Link 
                 key={index}
                 to={item.link || '#'} 
-                className={`transition-colors ${headerHoverColor} ${isActive(item.link) ? activeColor : ''}`}
+                className={`relative py-2 transition-colors ${headerHoverColor} ${isActive(item.link) ? 'text-white font-bold' : ''}`}
                 data-cc-field={`navigation[${index}].label`}
               >
                 {item.label}
+                {/* Active Indicator Line */}
+                {isActive(item.link) && (
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-500 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.8)] animate-in fade-in zoom-in duration-300"></span>
+                )}
               </Link>
             ))}
           </nav>
@@ -130,24 +139,22 @@ const Header: React.FC<HeaderProps> = ({ navigation = [], logo, variant }) => {
           <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {/* Action Links */}
             <div className="hidden xl:flex items-center space-x-6">
-              <Link 
-                to="/team" 
-                className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/team') ? activeColor : headerTextColor}`}
-              >
-                Über uns
-              </Link>
-              <Link 
-                to="/projekte" 
-                className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/projekte') ? activeColor : headerTextColor}`}
-              >
-                Projekte
-              </Link>
-              <Link 
-                to="/blog" 
-                className={`text-sm font-medium transition ${headerHoverColor} ${isActive('/blog') ? activeColor : headerTextColor}`}
-              >
-                Blog
-              </Link>
+              {[
+                { label: 'Über uns', link: '/team' },
+                { label: 'Projekte', link: '/projekte' },
+                { label: 'Blog', link: '/blog' }
+              ].map((item) => (
+                <Link 
+                  key={item.link}
+                  to={item.link} 
+                  className={`relative py-2 text-sm font-medium transition ${headerHoverColor} ${isActive(item.link) ? 'text-white font-bold' : headerTextColor}`}
+                >
+                  {item.label}
+                  {isActive(item.link) && (
+                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-orange-500 rounded-full shadow-[0_0_8px_rgba(249,115,22,0.8)] animate-in fade-in zoom-in duration-300"></span>
+                  )}
+                </Link>
+              ))}
             </div>
 
             {/* Dropdown for MD to XL screens */}
