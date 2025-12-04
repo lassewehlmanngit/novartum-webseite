@@ -1,0 +1,31 @@
+{
+  "id": "1",
+  "slug": "managed-sam-service-finanzsektor-compliance",
+  "title": "Managed SAM Finanzsektor: Audit-Sicherheit & Lizenzkosten-Senkung",
+  "clientIndustry": "Finanzdienstleistung",
+  "clientName": "Finanzinformatik",
+  "category": "SAM",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Vollständige Compliance und Budgetentlastung durch Matrix42-basiertes Managed Lizenzmanagement. Eliminierung von Audit-Risiken in komplexen IT-Umgebungen.",
+  "challenge": "Massive regulatorische Anforderungen treffen auf eine heterogene Lizenzlandschaft. Das Risiko: Unentdeckte Unterlizenzierungen (Audit-Gefahr) und teure Überlizenzierungen (Shelf-ware).",
+  "solution": "Implementierung eines 'SAM-as-a-Service'-Modells: Konsolidierung aller Assets in Matrix42, Etablierung permanenter Compliance-Bilanzierung und proaktives Monitoring von Vertragsverlängerungen.",
+  "results": [
+    "100% Audit-Readiness: Lückenlose Dokumentation für Wirtschaftsprüfer",
+    "Sofortige Liquiditätseffekte: Identifikation und Kündigung ungenutzter Software-Abos",
+    "Risikominimierung: Automatische Erkennung und Behebung von Unterlizenzierungen"
+  ],
+  "techStack": [
+    "Matrix42 SAM-Plattform",
+    "Automatisierte Inventarisierung",
+    "Compliance-Dashboards"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&w=800&q=80",
+    "alt": "Moderner Serverraum mit blauer Beleuchtung - Symbol für IT-Sicherheit"
+  },
+  "seo": {
+    "metaTitle": "Managed SAM Service für Banken | Matrix42 Expertise | Novartum",
+    "metaDescription": "Case Study: Wie wir für Finanzdienstleister Audit-Sicherheit herstellten & Lizenzkosten senkten. Managed Service auf Basis von Matrix42."
+  }
+}

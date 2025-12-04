@@ -1,0 +1,32 @@
+{
+  "id": "14",
+  "slug": "sap-cucontract-migration-savings",
+  "title": "SAP Migration & Kostensenkung: Cisco/Microsoft Optimierung",
+  "clientIndustry": "Finanzdienstleistung",
+  "clientName": "BNP PARIBAS",
+  "category": "IT-Procurement",
+  "richSnippetType": "CaseStudy",
+  "year": "2024-2025",
+  "shortDescription": "Nahtlose Migration: Überführung des Vertragsmanagements auf SAP CuContract bei gleichzeitiger Hebung von Einsparpotenzialen.",
+  "challenge": "Strukturierte Überführung der Verträge ohne Betriebsunterbrechung und Identifikation von Einsparungen bei Cisco- und Microsoft-Lizenzen (True-Up).",
+  "solution": "Erstellung von Lizenzbilanzen, Planung kostenoptimierter Angebote (True-Up, Cisco) und Koordination der Migration auf SAP CuContract nach PMP-Methodik.",
+  "results": [
+    "Zero-Downtime: Erfolgreiche Migration ohne Betriebsunterbrechung",
+    "Savings: Identifizierte und realisierte Einsparpotenziale bei Cisco-/Microsoft-Lizenzen",
+    "Transparenz: Vollständige Lizenzbilanz als Basis für Management-Entscheidungen"
+  ],
+  "techStack": [
+    "SAP CuContract",
+    "Synertrade",
+    "Cisco Lizenzierung",
+    "Microsoft True-Up"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80",
+    "alt": "Unterzeichnung eines digitalen Vertrags - Symbol für Contract Management"
+  },
+  "seo": {
+    "metaTitle": "SAP CuContract Migration & Savings | Novartum",
+    "metaDescription": "Case Study: Migration auf SAP CuContract bei BNP Paribas. Realisierung von Einsparungen bei Cisco und Microsoft Lizenzen."
+  }
+}

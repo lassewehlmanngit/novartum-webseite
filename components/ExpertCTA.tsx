@@ -22,6 +22,10 @@ interface ExpertCTAProps {
   title?: string;
   description?: string;
   expert?: Expert;
+  primaryCtaLabel?: string;
+  emailCtaLabel?: string;
+  phoneCtaLabel?: string;
+  trustBadges?: string[];
   // Kept for backward compatibility if needed, though current design is unified
   variant?: 'compact' | 'wide'; 
 }
@@ -30,6 +34,10 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
   subtitle = "Direkter Draht",
   title = "Sprechen Sie mit dem Experten für SAM",
   description = "Haben Sie spezifische Fragen zu Oracle-Audits, Microsoft-Verträgen oder Cloud-FinOps? Unsere Experten haben jahrelange Erfahrung in der Abwehr von Nachforderungen.",
+  primaryCtaLabel = "Kostenloses Erstgespräch (30 Min.)",
+  emailCtaLabel = "E-Mail senden",
+  phoneCtaLabel = "Jetzt anrufen",
+  trustBadges = ["✓ Unverbindlich", "✓ Kostenlos", "✓ Diskret"],
   expert = {
     name: "Dr. Michael Weber",
     role: "Head of SAM & Compliance",
@@ -116,13 +124,16 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
               )}
 
               {/* Trust Badges */}
-              <div className="text-xs text-slate-400 mb-6 flex items-center gap-3">
-                <span>✓ Unverbindlich</span>
-                <span>•</span>
-                <span>✓ Kostenlos</span>
-                <span>•</span>
-                <span>✓ Diskret</span>
-              </div>
+              {trustBadges && trustBadges.length > 0 && (
+                <div className="text-xs text-slate-400 mb-6 flex items-center gap-3" data-cc-field="trustBadges">
+                  {trustBadges.map((badge, idx) => (
+                    <React.Fragment key={idx}>
+                      {idx > 0 && <span>•</span>}
+                      <span>{badge}</span>
+                    </React.Fragment>
+                  ))}
+                </div>
+              )}
 
               <div className="flex flex-col gap-3 w-full max-w-sm">
                 <a 
@@ -131,7 +142,7 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                   className="w-full flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3.5 px-6 rounded-xl transition shadow-lg hover:shadow-orange-900/20 transform hover:-translate-y-0.5"
                   data-cc-field="calendarLink"
                 >
-                  <Calendar size={18} /> Kostenloses Erstgespräch (30 Min.)
+                  <Calendar size={18} /> <span data-cc-field="primaryCtaLabel">{primaryCtaLabel}</span>
                 </a>
                 <a 
                   href={`mailto:${expert.email}`}
@@ -139,7 +150,7 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                   className="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-3 px-6 rounded-xl transition border border-slate-700 hover:border-slate-600"
                   data-cc-field="email"
                 >
-                  <Mail size={18} /> E-Mail senden
+                  <Mail size={18} /> <span data-cc-field="emailCtaLabel">{emailCtaLabel}</span>
                 </a>
                 {expert.phone && (
                   <a 
@@ -148,7 +159,7 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                     className="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-3 px-6 rounded-xl transition border border-slate-700 hover:border-slate-600"
                     data-cc-field="phone"
                   >
-                    <Phone size={18} /> {expert.phone}
+                    <Phone size={18} /> <span data-cc-field="phoneCtaLabel">{phoneCtaLabel}</span>
                   </a>
                 )}
               </div>

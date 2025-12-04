@@ -1,0 +1,32 @@
+{
+  "id": "12",
+  "slug": "zentralisierung-lizenzmanagement-banking-sap",
+  "title": "Banking Transformation: Zentrales Lizenzmanagement & Governance",
+  "clientIndustry": "Finanzdienstleistung",
+  "clientName": "Helaba",
+  "category": "Consulting",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Governance-Aufbau: Zentralisierung der Lizenzstrukturen und Implementierung standardisierter Compliance-Prozesse in SAP CuContract.",
+  "challenge": "Strukturelle Aufbereitung von Softwareprodukten und Vertragsprozessen sowie Sicherstellung regulatorischer Compliance (DSGVO/ISMS) nach Bankenstandards.",
+  "solution": "Implementierung einer zentralen Lizenzgovernance, Pflege der Vertragsdaten in SAP CuContract und Durchführung von Lizenz-Clearings für Major-Vendor (Microsoft, Adobe, Oracle).",
+  "results": [
+    "Standardisierung: Einheitliche Verwaltungsprozesse erfolgreich etabliert",
+    "Regulatorik: Compliance (DSGVO/ISMS) vollständig sichergestellt",
+    "Audit-Proof: Prüfungsrelevante Dokumentation und Audit-Readiness aufgebaut"
+  ],
+  "techStack": [
+    "SAP CuContract",
+    "Adobe/Oracle/Microsoft Clearing",
+    "ISMS / DSGVO",
+    "ITIL/SCRUM/PMI"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1565514020176-db936c53e895?auto=format&fit=crop&w=800&q=80",
+    "alt": "Skyline Frankfurt am Main - Symbol für Bankenstandort"
+  },
+  "seo": {
+    "metaTitle": "Zentrales Lizenzmanagement Banken | Novartum",
+    "metaDescription": "Case Study Helaba: Zentralisierung von IT-Prozessen und Lizenzmanagement mit SAP CuContract unter strengen Compliance-Vorgaben."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "6",
+  "slug": "dora-compliance-risk-management",
+  "title": "DORA Readiness: Regulatorisches Risiko-Management",
+  "clientIndustry": "Finanzdienstleistung",
+  "clientName": "BNP Paribas",
+  "category": "IT-Procurement",
+  "richSnippetType": "CaseStudy",
+  "year": "2024",
+  "shortDescription": "Umsetzung der DORA-Anforderungen im Procurement: Systematische Identifikation und Bewertung von IT-/Cyberrisiken bei Drittanbietern.",
+  "challenge": "Erfüllung der strengen regulatorischen Vorgaben des Digital Operational Resilience Act (DORA) hinsichtlich des Risikomanagements von IKT-Drittdienstleistern.",
+  "solution": "Priorisierung DORA-relevanter Lieferanten, Durchführung risikobasierter IT-/Cyber-Risk-Assessments und lückenlose Dokumentation der Ergebnisse in Einkaufstools.",
+  "results": [
+    "Compliance: Etablierung einer vollständig DORA-konformen Lieferantenübersicht",
+    "Transparenz: Vollständige Durchführung aller notwendigen Risk-Assessments",
+    "Resilienz: Erhöhung der digitalen Widerstandsfähigkeit gegenüber Cyber-Risiken"
+  ],
+  "techStack": [
+    "DORA Compliance Framework",
+    "Risk Assessment Tools",
+    "Cyber Security Bewertung"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80",
+    "alt": "Digitales Sicherheitsschloss auf Display - Symbol für DORA/Cyber Security"
+  },
+  "seo": {
+    "metaTitle": "DORA Compliance Procurement | Novartum",
+    "metaDescription": "Sicherstellung der DORA-Compliance im Einkauf: Risikomanagement für Drittanbieter und Cyber-Risk-Assessments für Banken."
+  }
+}

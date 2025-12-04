@@ -1,0 +1,32 @@
+{
+  "id": "18",
+  "slug": "itsm-virtualisierung-high-availability",
+  "title": "ITSM & Virtualisierung: Hochverfügbarkeit im Mittelstand",
+  "clientIndustry": "Konsumgüterindustrie",
+  "clientName": null,
+  "category": "ITSM",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Ausfallsicherheit maximieren: Schaffung einer hochverfügbaren Betriebsplattform durch Virtualisierung und Einführung standardisierter ITSM-Tools.",
+  "challenge": "Ablösung veralteter Strukturen zur Gewährleistung von Stabilität und IT-Sicherheit sowie fehlende Prozesssteuerung im Betrieb.",
+  "solution": "Beratung und Umsetzung von ITIL-Prozessen (Service Strategy/Design/Operation), Einführung eines ITSM-Tools und Aufbau von SLA/OLA-Strukturen.",
+  "results": [
+    "Stabilität: Stabile, hochverfügbare Betriebsplattform etabliert",
+    "Steuerung: ITSM-Tool zur Prozesssteuerung erfolgreich eingeführt",
+    "Qualität: SLA/OLA-Strukturen und IT-Sicherheitsstandards operativ"
+  ],
+  "techStack": [
+    "ITIL Processes",
+    "Virtualisierung",
+    "ITSM-Tool",
+    "High Availability Architecture"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    "alt": "Industrielle Produktionsanlage - Symbol für Konsumgüterindustrie"
+  },
+  "seo": {
+    "metaTitle": "ITSM & Virtualisierung | Novartum",
+    "metaDescription": "Modernisierung in der Konsumgüterindustrie: Hochverfügbarkeit durch Virtualisierung und professionelles ITSM nach ITIL."
+  }
+}

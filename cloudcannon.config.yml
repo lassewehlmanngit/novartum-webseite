@@ -565,6 +565,10 @@ _structures:
           title: "Sprechen Sie mit dem Experten für SAM"
           subtitle: "Direkter Draht"
           description: "Haben Sie spezifische Fragen zu Oracle-Audits, Microsoft-Verträgen oder Cloud-FinOps? Dr. Weber hat über 20 Jahre Erfahrung in der Abwehr von Nachforderungen und der Optimierung komplexer Lizenzszenarien."
+          primaryCtaLabel: "Kostenloses Erstgespräch (30 Min.)"
+          emailCtaLabel: "E-Mail senden"
+          phoneCtaLabel: "Jetzt anrufen"
+          trustBadges: ["✓ Unverbindlich", "✓ Kostenlos", "✓ Diskret"]
           expert:
             name: "Dr. Michael Weber"
             role: "Head of SAM & Compliance"
@@ -575,6 +579,14 @@ _structures:
         _inputs:
           description:
             type: textarea
+          primaryCtaLabel:
+            type: text
+          emailCtaLabel:
+            type: text
+          phoneCtaLabel:
+            type: text
+          trustBadges:
+            type: list
           expert:
             type: object
             fields:

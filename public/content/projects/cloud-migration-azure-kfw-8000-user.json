@@ -1,0 +1,32 @@
+{
+  "id": "16",
+  "slug": "cloud-migration-azure-kfw-8000-user",
+  "title": "Azure & M365 Migration: Großprojekt (8.000 User)",
+  "clientIndustry": "Behörde / Bank",
+  "clientName": "KfW Bank",
+  "category": "Software",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Digitale Transformation im großen Stil: Migration von 8.000 Anwendern auf Azure/M365 unter strengsten Security-Vorgaben.",
+  "challenge": "Ablösung bestehender Systeme unter strengen IT-Security- und Datenschutzvorgaben sowie Herstellung der Cloud-Readiness für eine Bank/Behörde.",
+  "solution": "Projektsteuerung nach Prince2/Scrum, Migration von Daten/Anwendungen in Azure AD/SharePoint und Implementierung einer DSGVO-konformen Architektur.",
+  "results": [
+    "Skalierung: Migration von 8.000 Anwendern erfolgreich abgeschlossen",
+    "Cloud-Integration: Vollständige Einbindung von Azure und M365",
+    "Digitalisierung: Modernisierte Beschaffungs- und HR-Prozesse"
+  ],
+  "techStack": [
+    "Microsoft Azure & Azure AD",
+    "M365 & SharePoint",
+    "Prince2 & Scrum",
+    "IT-Security / DSGVO"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1483478550801-ceba96c89ae7?auto=format&fit=crop&w=800&q=80",
+    "alt": "Blaue Cloud-Struktur abstrakt - Symbol für Cloud Computing"
+  },
+  "seo": {
+    "metaTitle": "Cloud Migration KfW Bank | Novartum",
+    "metaDescription": "Großprojekt KfW: Migration von 8.000 Usern in die Azure Cloud. Sichere Digitalisierung von HR- und Beschaffungsprozessen."
+  }
+}

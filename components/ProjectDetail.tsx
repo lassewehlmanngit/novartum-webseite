@@ -13,6 +13,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
   const [project, setProject] = useState<ProjectItem | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  // Image fallback handling for header (must be declared before any early returns)
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     if (initialProjects && slug) {
@@ -41,6 +43,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
     }
   }, [slug, initialProjects]);
 
+  // Early returns before accessing `project` details
   if (loading) return <div className="min-h-screen bg-white pt-32 text-center">Laden...</div>;
   if (error || !project) return <Navigate to="/projekte" replace />;
 
@@ -70,6 +73,21 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
     "datePublished": `${project.year}-01-01`
   };
 
+  const getHeaderBackground = () => {
+    switch (project.category) {
+      case 'Software':
+        return 'bg-blue-700';
+      case 'SAM':
+        return 'bg-orange-700';
+      case 'IT-Procurement':
+        return 'bg-emerald-700';
+      case 'ITSM':
+        return 'bg-indigo-700';
+      default:
+        return 'bg-slate-800';
+    }
+  };
+
   return (
     <article 
       className="min-h-screen bg-white pb-24"
@@ -88,13 +106,19 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
 
       {/* Header Image Area */}
       <div className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
+        {/* Background image or colored fallback */}
+        <div className={`absolute inset-0 ${(!imageError && project.coverImage?.url) ? '' : getHeaderBackground()}`}>
+          {!imageError && project.coverImage?.url && (
+            <img 
+              src={project.coverImage.url} 
+              alt={project.coverImage.alt} 
+              className="w-full h-full object-cover"
+              data-cc-field="coverImage.url"
+              onError={() => setImageError(true)}
+            />
+          )}
+        </div>
         <div className="absolute inset-0 bg-slate-900/60 z-10"></div>
-        <img 
-            src={project.coverImage.url} 
-            alt={project.coverImage.alt} 
-            className="w-full h-full object-cover"
-            data-cc-field="coverImage.url"
-        />
         <div className="absolute inset-0 z-20 flex flex-col justify-end pb-16 md:pb-24">
              <div className="container mx-auto px-4 md:px-12">
                 <Link to="/projekte" className="inline-flex items-center text-white/80 hover:text-white mb-6 transition-colors">
@@ -112,7 +136,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                     </span>
                 </div>
                 <h1 
-                  className="text-4xl md:text-6xl font-bold text-white max-w-4xl leading-tight"
+                  className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight"
                   data-cc-field="title"
                 >
                     {project.title}
@@ -158,10 +182,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
                     )}
                     
                     <div className="bg-slate-50 border-l-4 border-green-500 p-8 rounded-r-xl my-12">
-                        <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                              <CheckCircle2 className="text-green-600" /> Ergebnisse
                         </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                             {project.results.map((res, idx) => (
                                 <div key={idx} className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 shrink-0"></div>
@@ -176,7 +200,7 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ projects: initialProjects
             {/* Sidebar / Meta Info */}
             <div className="lg:col-span-4 lg:pt-12">
                 <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200 sticky top-32">
-                    <h3 className="font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
                         <Layers size={20} className="text-orange-600" /> Tech Stack
                     </h3>
                     <div className="flex flex-wrap gap-2 mb-8">

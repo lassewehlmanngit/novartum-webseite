@@ -1,0 +1,32 @@
+{
+  "id": "8",
+  "slug": "eam-agile-leadership-transformation",
+  "title": "EAM & Agile Transformation: TOGAF trifft OKR",
+  "clientIndustry": "IT-Dienstleistung (Bund)",
+  "clientName": "BWI GmbH",
+  "category": "Consulting",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Operationalisierung der IT-Strategie: Verknüpfung von Enterprise Architecture (TOGAF) mit agiler Führung (Kanban/OKR) für Bundes-IT-Dienstleister.",
+  "challenge": "Aufbau einer nachhaltigen Governance-Struktur und eines Architektur-Boards in einem sich transformierenden Umfeld hin zu agilen Arbeitsweisen.",
+  "solution": "Entwicklung eines EAM-Frameworks auf Basis von TOGAF/BAM, Einführung von Kanban Flight Level 2 und OKRs sowie Coaching der CIO-Teams in agiler Führung.",
+  "results": [
+    "Governance: Operatives Architektur-Board und aktives Standards-Management etabliert",
+    "Kulturwandel: Agile Führungskultur in den Teams nachhaltig verankert",
+    "Messbarkeit: Reifegrad durch implementiertes KPI-System transparent gemacht"
+  ],
+  "techStack": [
+    "TOGAF / BAM",
+    "Kanban Flight Level 2",
+    "OKR (Objectives and Key Results)",
+    "Lean Portfolio Management"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
+    "alt": "Agiles Team am Whiteboard - Symbol für New Work"
+  },
+  "seo": {
+    "metaTitle": "EAM & Agile Transformation | Novartum Consulting",
+    "metaDescription": "Verbindung von Enterprise Architecture (TOGAF) mit agiler Führung (OKR, Kanban) für IT-Dienstleister des Bundes."
+  }
+}

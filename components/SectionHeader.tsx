@@ -31,7 +31,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
           {subtitle}
         </span>
       )}
-      <h2 id={id} className={`text-3xl md:text-4xl font-bold ${titleColor} mb-6`}>
+      <h2 id={id} className={`text-2xl md:text-3xl font-bold ${titleColor} mb-6`}>
         {title}
       </h2>
       {description && (

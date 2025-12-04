@@ -1,0 +1,32 @@
+{
+  "id": "17",
+  "slug": "it-infrastruktur-modernisierung-handel-m365",
+  "title": "IT-Modernisierung Handel: M365 & Cloud-Architektur",
+  "clientIndustry": "Handel",
+  "clientName": null,
+  "category": "Software",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Workplace der Zukunft: Unternehmensweite Modernisierung der IT-Landschaft durch Einführung von M365, Cloud-Migration und ITIL.",
+  "challenge": "Überführung einer klassischen Infrastruktur in hybride Cloud-Modelle und Etablierung eines modernen Workplace-Managements.",
+  "solution": "Projektleitung für M365-Rollout (Teams, Exchange, SharePoint), Konzeption von IaaS/PaaS-Betriebsmodellen und Einführung von ITIL-Prozessen für den Betrieb.",
+  "results": [
+    "Workplace-Transformation: Erfolgreiche Umsetzung der M365-Migration",
+    "Flexibilität: Cloud-Betriebsmodelle (IaaS/PaaS/SaaS) implementiert",
+    "Betriebssicherheit: ITIL-Prozesse und Notfall-Konzepte operativ etabliert"
+  ],
+  "techStack": [
+    "Microsoft 365 (Teams, Exchange, SP)",
+    "Azure AD",
+    "IaaS / PaaS / SaaS",
+    "IBM/NetApp Storage"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+    "alt": "Modernes Logistikzentrum mit Paketen - Symbol für Handel und Logistik"
+  },
+  "seo": {
+    "metaTitle": "IT-Modernisierung Handel | Novartum",
+    "metaDescription": "Infrastruktur-Upgrade im Handel: M365 Migration, Cloud-Integration und ITIL-Prozesse für moderne Arbeitsplätze."
+  }
+}

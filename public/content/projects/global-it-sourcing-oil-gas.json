@@ -1,0 +1,32 @@
+{
+  "id": "7",
+  "slug": "global-it-sourcing-oil-gas",
+  "title": "Global Sourcing & TCO-Optimierung (Öl & Gas)",
+  "clientIndustry": "Öl- und Gasbranche",
+  "clientName": "Wintershall Dea",
+  "category": "IT-Procurement",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Steuerung der globalen IT-Beschaffung: RFP-Verfahren, massive TCO-Senkung und TSA-Vorbereitung für M&A-Szenarien.",
+  "challenge": "Zentralisierung der Procurement-Strategie über globale Standorte hinweg und Vorbereitung der Vertragsstrukturen für Geschäftsaufspaltungen (TSA).",
+  "solution": "Durchführung globaler RFP-Prozesse, Spend-Analysen zur TCO-Senkung, Verhandlung mit Lieferanten und Implementierung eines Vendor Performance Managements.",
+  "results": [
+    "Kostenführerschaft: TCO-Optimierung durch strategisches Sourcing erreicht",
+    "Effizienz: Reduzierte Lieferantenanzahl durch gezielte Konsolidierung",
+    "M&A Readiness: TSA-ready Vertragsstruktur für Transaktionen geschaffen"
+  ],
+  "techStack": [
+    "RFP-Management",
+    "TCO-Analyse",
+    "TSA (Transitional Service Agreements)",
+    "Vendor Performance Management"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800&q=80",
+    "alt": "Industrielle Raffinerie Anlage - Symbol für Schwerindustrie"
+  },
+  "seo": {
+    "metaTitle": "Globales IT-Procurement & TCO | Novartum",
+    "metaDescription": "Strategisches Procurement in der Öl- & Gasbranche: TCO-Reduktion, Global Sourcing und M&A-Vorbereitung (TSA)."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "9",
+  "slug": "itsm-transformation-hybrid-cloud-stability",
+  "title": "ITSM-Transformation: Stabilität in der Hybrid-Cloud",
+  "clientIndustry": "Energiewirtschaft",
+  "clientName": "Link Digital GmbH",
+  "category": "ITSM",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Sicherstellung der Betriebsstabilität: Etablierung prozessorientierter IT-Services nach ITIL v4 in einer komplexen hybriden Cloud-Landschaft.",
+  "challenge": "Optimierung der Servicequalität und Gewährleistung der Betriebsstabilität in einem komplexen Umfeld aus On-Premise- und Cloud-Systemen.",
+  "solution": "Vollständige Einführung von ITIL-Prozessen (Incident, Change, Problem), Konzeption des Servicedesk und Steuerung externer Dienstleister über SLAs/OLAs.",
+  "results": [
+    "Prozess-Exzellenz: ITIL-basierte Prozesse und Betriebsmodelle vollständig etabliert",
+    "Service-Level: Servicequalität messbar durch SLA-Monitoring optimiert",
+    "Resilienz: Betriebsstabilität in hybrider IT-Infrastruktur dauerhaft gewährleistet"
+  ],
+  "techStack": [
+    "ITIL v4",
+    "Hybrid Cloud Management",
+    "SLA/OLA Monitoring",
+    "IT-Asset Management"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+    "alt": "Solarpaneele mit digitalem Overlay - Symbol für Energiewirtschaft"
+  },
+  "seo": {
+    "metaTitle": "ITSM Transformation & Cloud | Novartum",
+    "metaDescription": "ITIL v4 Implementierung und Stabilisierung des Cloud-Betriebs für die Energiewirtschaft. Servicequalität messbar verbessern."
+  }
+}

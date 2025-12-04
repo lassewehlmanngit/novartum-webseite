@@ -21,7 +21,7 @@ const Roadmap: React.FC<RoadmapProps> = ({
     const activeStepForDesktop = activeIndex !== null ? steps[activeIndex] : null;
 
     return (
-        <section className="py-24 bg-white" aria-labelledby="roadmap-heading">
+        <section id="roadmap" className="py-24 bg-white" aria-labelledby="roadmap-heading">
             <div className="container mx-auto px-4 md:px-12">
                 <SectionHeader 
                     title={title}

@@ -1,0 +1,31 @@
+{
+  "id": "4",
+  "slug": "dsgvo-compliance-sam-behoerde",
+  "title": "Behörden-SAM: DSGVO-konforme Audit-Sicherheit",
+  "clientIndustry": "Öffentliche Verwaltung",
+  "clientName": "LZPD NRW",
+  "category": "SAM",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Sicherstellung der Compliance im kritischen Behördenumfeld: USU-Aspera-Cloud Administration und automatisierter Active Directory Abgleich.",
+  "challenge": "Die Verwaltung komplexer Kauf-/Mietlizenzen unter strengsten Datenschutzvorgaben. Ziel: Erstellung 'gerichtsfester' Auditunterlagen für kritische Hersteller.",
+  "solution": "Einsatz der USU License Manager Cloud (SmartTrack) zur automatisierten Lizenz-Clearing und Integration von Active Directory Daten für eine lückenlose Zuordnung.",
+  "results": [
+    "Automatisierung: Vollständige AD-Integration für fehlerfreie Lizenzzuordnung",
+    "Rechtssicherheit: DSGVO-konforme Compliance-Reports für behördliche Prüfungen",
+    "Audit-Abwehr: Audit-sichere Dokumentation für kritische Herstellerlizenzen"
+  ],
+  "techStack": [
+    "USU Aspera SmartTrack (Cloud)",
+    "Active Directory Integration",
+    "Microsoft/Citrix/VMware Clearing"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80",
+    "alt": "Gesetzbücher und Justitia im Hintergrund - Symbol für Compliance"
+  },
+  "seo": {
+    "metaTitle": "SAM für Behörden & Öffentlichen Dienst | Novartum",
+    "metaDescription": "Lizenzmanagement für die Verwaltung: DSGVO-Compliance, USU Aspera Management und Audit-Sicherheit für kritische Software."
+  }
+}

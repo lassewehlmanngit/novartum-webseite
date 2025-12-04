@@ -1,0 +1,32 @@
+{
+  "id": "11",
+  "slug": "managed-sam-service-kmu",
+  "title": "Managed SAM Service: Compliance für den Mittelstand",
+  "clientIndustry": "Branchenübergreifend",
+  "clientName": "KMU & Mittelstand",
+  "category": "SAM",
+  "richSnippetType": "CaseStudy",
+  "year": "Seit 2021",
+  "shortDescription": "Skalierbare Sicherheit: Operative und strategische Betreuung mehrerer Mandanten mit Fokus auf standardisierte SAM-Prozesse und DSGVO.",
+  "challenge": "Etablierung professioneller SAM-Strukturen ohne eigenen Headcount-Aufbau bei unterschiedlichen Systemlandschaften und DSGVO-Anforderungen.",
+  "solution": "Einführung standardisierter SAM-Prozesse, operative Nutzung von SNOW/USU Aspera und Übernahme der Pflege von Lizenzdaten (Microsoft, Oracle, IBM, Adobe) als Managed Service.",
+  "results": [
+    "Skalierbarkeit: Standardisierte SAM-Prozesse über mehrere Mandanten etabliert",
+    "Datenschutz: DSGVO-konforme Lizenzdatenverwaltung sichergestellt",
+    "Transparenz: Kontinuierliches Management-Reporting für Projektcontrolling"
+  ],
+  "techStack": [
+    "SNOW License Manager",
+    "USU Aspera",
+    "Managed Service (SaaS)",
+    "DSGVO-Compliance"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+    "alt": "Business Handshake im Meetingraum - Symbol für Partnerschaft"
+  },
+  "seo": {
+    "metaTitle": "Managed SAM Service Mittelstand | Novartum",
+    "metaDescription": "Skalierbares Lizenzmanagement für KMU: Standardisierte Prozesse, Tool-Betreuung (SNOW/Aspera) und DSGVO-Compliance als Service."
+  }
+}

@@ -84,7 +84,7 @@ const Hero: React.FC<HeroProps> = ({
           {tagline}
         </div>
         <h1 
-          className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight max-w-5xl"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-[1.1] tracking-tight max-w-5xl"
           {...(contentPath && {
             'data-cc-field': 'title',
             'data-cc-type': 'text'

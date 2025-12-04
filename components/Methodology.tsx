@@ -45,7 +45,7 @@ const Methodology: React.FC<MethodologyProps> = ({
   qualityItems = []
 }) => {
     return (
-        <section className="py-24 bg-white" aria-labelledby="method-heading">
+        <section id="roadmap" className="py-24 bg-white" aria-labelledby="method-heading">
              <div className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row gap-16">
                  <div className="lg:w-1/2">
                     <SectionHeader 

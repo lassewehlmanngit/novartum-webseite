@@ -1,0 +1,32 @@
+{
+  "id": "3",
+  "slug": "globales-lizenzmanagement-ela-verhandlung",
+  "title": "Globales Lizenzmanagement: ELA-Verhandlungen & Offshoring",
+  "clientIndustry": "IT Service Provider",
+  "clientName": "Atos IT Solutions / Siemens-Konzern",
+  "category": "SAM",
+  "richSnippetType": "CaseStudy",
+  "year": "Abgeschlossen",
+  "shortDescription": "Aufbau einer weltweiten SAM-Governance für VMware/EMC. Erfolgreiche Verhandlung von Enterprise License Agreements (ELAs) und Kostenreduktion durch Offshoring.",
+  "challenge": "Intransparente globale Lizenzbestände und ineffiziente Kostenstrukturen erforderten eine Standardisierung der internen Verrechnung und neue Verhandlungen mit Major Vendors.",
+  "solution": "Implementierung eines globalen Chargeback-Modells, Verlagerung operativer Aufgaben in Nearshore/Offshore-Zentren und direkte Verhandlung komplexer ELAs (Siemens/Atos).",
+  "results": [
+    "Globale Transparenz: Vollständige Übersicht über alle internationalen Standorte",
+    "Deal-Optimierung: Erfolgreiche Verhandlung und Umsetzung von ELAs",
+    "Operational Excellence: Kostensenkung durch operatives Offshoring des Lizenzmanagements"
+  ],
+  "techStack": [
+    "VMware ELA Negotiation",
+    "EMC Networker",
+    "Chargeback-Systeme",
+    "Offshore Delivery Centers"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    "alt": "Globale Vernetzung aus dem All gesehen - Symbol für Worldwide Operations"
+  },
+  "seo": {
+    "metaTitle": "Globales SAM & ELA Verhandlung | Novartum Expertise",
+    "metaDescription": "Case Study: Weltweites Lizenzmanagement & ELA-Verhandlungen für VMware/EMC. Chargeback-Modelle und Offshoring im Konzernumfeld."
+  }
+}

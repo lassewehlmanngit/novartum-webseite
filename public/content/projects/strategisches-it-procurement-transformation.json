@@ -1,0 +1,32 @@
+{
+  "id": "5",
+  "slug": "strategisches-it-procurement-transformation",
+  "title": "IT-Procurement Transformation: End-to-End Sourcing",
+  "clientIndustry": "Medizintechnik/Gesundheit",
+  "clientName": "Paul Hartmann AG",
+  "category": "IT-Procurement",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Vom Einkauf zum Wertschöpfer: Etablierung eines digitalen End-to-End Procurement Frameworks und Vendor Managements für einen globalen Medizintechnik-Konzern.",
+  "challenge": "Notwendigkeit einer strategischen Neuausrichtung der IT-Beschaffung, um Skalierung zu ermöglichen und direkte Einsparpotenziale durch C-Level-Alignment zu heben.",
+  "solution": "Implementierung eines 'Target Operating Models', Einführung tiefgehender Spend-Analytics zur Identifikation von Kostentreibern und Professionalisierung des Claim Managements.",
+  "results": [
+    "Digitalisierung: Erfolgreiche Etablierung eines End-to-End Procurement Frameworks",
+    "Kosteneffizienz: Realisierung signifikanter Einsparpotenziale durch Spend-Analytics",
+    "Organisationsentwicklung: Aufbau und Coaching eines spezialisierten Einkauf-Teams"
+  ],
+  "techStack": [
+    "Target Operating Model (TOM)",
+    "Spend Analytics",
+    "Vendor Management",
+    "Claim Management"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+    "alt": "Medizinische Forschungslabore mit blauer Beleuchtung"
+  },
+  "seo": {
+    "metaTitle": "Transformation IT-Einkauf & Sourcing | Novartum",
+    "metaDescription": "Strategische Neuausrichtung des IT-Procurements: Wie wir Vendor Management und Spend Analytics für Paul Hartmann AG optimierten."
+  }
+}

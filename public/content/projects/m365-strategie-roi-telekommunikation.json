@@ -1,0 +1,32 @@
+{
+  "id": "2",
+  "slug": "m365-strategie-roi-telekommunikation",
+  "title": "M365 Strategie: ROI-Maximierung & E3-zu-E5 Business Case",
+  "clientIndustry": "Telekommunikation",
+  "clientName": "Deutsche GigaNetz",
+  "category": "SAM",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Strategische M365-Optimierung: Belastbarer Business Case für den E3/E5-Wechsel und Auswahl der optimalen SAM-Plattform (ServiceNow vs. Snow/USU).",
+  "challenge": "Ein schnell wachsender Telco-Anbieter stand vor der Entscheidung des M365-Upgrades (E3 auf E5) ohne validen ROI-Nachweis und benötigte eine skalierbare SAM-Tool-Strategie.",
+  "solution": "Durchführung einer tiefgehenden Kosten-Nutzen-Analyse für Microsoft 365 Pakete, Konsolidierung von Schatten-IT (NFON, PowerBI) und Begleitung der 'Tool-Battle-Card' Auswahlprozesse.",
+  "results": [
+    "Investitionssicherheit: Business Case M365 E5 mit ROI-Berechnung erstellt",
+    "Tool-Konsolidierung: Reduktion der Betriebskosten durch Eliminierung redundanter Apps",
+    "Prozess-Sicherheit: Definition dauerhafter Schnittstellen zwischen IT, Einkauf & FiBu"
+  ],
+  "techStack": [
+    "Microsoft 365 (E3/E5 Strategie)",
+    "ServiceNow vs. Snow/USU",
+    "Power BI Analytics",
+    "ROI-Modellierung"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    "alt": "Glasfaser-Technologie und Netzwerk-Verbindungen"
+  },
+  "seo": {
+    "metaTitle": "M365 Lizenzoptimierung & SAM Strategie | Novartum Case Study",
+    "metaDescription": "M365 Kosten senken oder upgraden? Unsere Case Study zeigt den ROI-Weg von E3 zu E5 und die Auswahl des perfekten SAM-Tools für Telcos."
+  }
+}

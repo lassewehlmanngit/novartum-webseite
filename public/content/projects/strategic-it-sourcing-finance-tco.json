@@ -1,0 +1,32 @@
+{
+  "id": "15",
+  "slug": "strategic-it-sourcing-finance-tco",
+  "title": "Strategic Sourcing: TCO-Reduktion & Compliance",
+  "clientIndustry": "Finanzdienstleistung",
+  "clientName": "BNP PARIBAS",
+  "category": "IT-Procurement",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Führung im Einkauf: Leitung des strategischen IT-Einkaufs zur TCO-Reduktion und Umsetzung standardisierter RFX-Prozesse.",
+  "challenge": "Effizienzsteigerung im Lieferantenportfolio und Einhaltung strenger regulatorischer Beschaffungsrichtlinien bei gleichzeitiger Kostensenkung.",
+  "solution": "Durchführung von Marktanalysen, Standardisierung des End-to-End-Beschaffungsprozesses inkl. Risikobewertung und Einführung eines KPI-basierten Trackings.",
+  "results": [
+    "Cost-Cutting: Messbare TCO-Reduktion durch optimierte Sourcing-Strategien",
+    "Prozess-Sicherheit: Standardisierte, audit-sichere Beschaffungsprozesse etabliert",
+    "Risk-Management: Compliance-driven Supplier Selection erfolgreich umgesetzt"
+  ],
+  "techStack": [
+    "RFX-Management",
+    "TCO-Analyse",
+    "Compliance-driven Procurement",
+    "Risk Assessment"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1553484771-371af0474b41?auto=format&fit=crop&w=800&q=80",
+    "alt": "Schachfiguren auf Brett - Symbol für Strategie und Planung"
+  },
+  "seo": {
+    "metaTitle": "Strategic IT Sourcing Banking | Novartum",
+    "metaDescription": "Strategischer IT-Einkauf für Banken: TCO-Reduktion, RFX-Management und Compliance-konforme Lieferantenauswahl."
+  }
+}

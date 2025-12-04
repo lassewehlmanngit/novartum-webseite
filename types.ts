@@ -49,7 +49,7 @@ export interface ProjectItem {
   title: string;
   clientIndustry: string;
   clientName?: string; // Optional, often hidden in public case studies
-  category: 'Software' | 'SAM' | 'Consulting';
+  category: 'Software' | 'SAM' | 'Consulting' | 'IT-Procurement' | 'ITSM';
   
   // Teaser Content (Overview)
   shortDescription: string;

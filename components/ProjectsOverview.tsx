@@ -8,19 +8,44 @@ interface ProjectsOverviewProps {
   data?: ProjectsData;
 }
 
-const ProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) => (
+const ProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) => {
+  const [imageError, setImageError] = useState(false);
+
+  // Fallback pattern logic based on category
+  const getFallbackPattern = () => {
+    switch (project.category) {
+      case 'Software': return 'bg-blue-600';
+      case 'SAM': return 'bg-orange-600';
+      case 'IT-Procurement': return 'bg-emerald-600';
+      case 'ITSM': return 'bg-indigo-600';
+      default: return 'bg-purple-600';
+    }
+  };
+
+  return (
   <article className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 group">
     {/* Card Image Header */}
     <Link to={`/projekte/${project.slug}`} className="h-48 overflow-hidden relative block">
-        <img 
-            src={project.coverImage.url} 
-            alt={project.coverImage.alt} 
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        />
+        {!imageError ? (
+            <img 
+                src={project.coverImage.url} 
+                alt={project.coverImage.alt} 
+                onError={() => setImageError(true)}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+        ) : (
+            <div className={`w-full h-full ${getFallbackPattern()} flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-700`}>
+                <div className="text-white opacity-20 transform -rotate-12 scale-150 font-bold text-4xl">
+                    {project.category}
+                </div>
+            </div>
+        )}
         <div className="absolute top-4 left-4">
             <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm ${
             project.category === 'Software' ? 'bg-blue-100 text-blue-700' :
             project.category === 'SAM' ? 'bg-orange-100 text-orange-700' :
+            project.category === 'IT-Procurement' ? 'bg-emerald-100 text-emerald-700' :
+            project.category === 'ITSM' ? 'bg-indigo-100 text-indigo-700' :
             'bg-purple-100 text-purple-700'
             }`}>
             {project.category}
@@ -35,24 +60,34 @@ const ProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) => (
       </div>
 
       <Link to={`/projekte/${project.slug}`}>
-        <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-orange-700 transition-colors">
+        <h3 className="text-xl font-semibold text-slate-900 mb-2 group-hover:text-orange-700 transition-colors">
             {project.title}
         </h3>
       </Link>
       
-      <p className="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+      <p className="text-slate-700 text-sm mb-6 line-clamp-3 leading-relaxed">
           {project.shortDescription}
       </p>
 
       {/* Results Snippet */}
-      <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 mb-6">
-         <strong className="block text-slate-900 text-xs uppercase tracking-wide mb-2 flex items-center gap-2">
-            <CheckCircle2 size={14} className="text-green-600"/> Key Result
-         </strong>
-         <p className="text-slate-700 text-sm font-bold truncate">
-            {project.results[0]}
-         </p>
-      </div>
+      {project.results && project.results.length > 0 && (
+        <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 mb-6">
+            <strong className="block text-slate-900 text-xs uppercase tracking-wide mb-3 flex items-center gap-2">
+                <CheckCircle2 size={14} className="text-green-600"/> Key Results
+            </strong>
+            <ul className="space-y-2">
+                {project.results.slice(0, 2).map((res, i) => (
+                    <li key={i} className="text-slate-700 text-sm font-medium flex items-start gap-2">
+                        <span className="block w-1.5 h-1.5 bg-green-500 rounded-full mt-1.5 shrink-0"></span>
+                        <span className="line-clamp-2">{res}</span>
+                    </li>
+                ))}
+            </ul>
+            {project.results.length > 2 && (
+                <p className="text-xs text-slate-400 mt-2 pl-3.5">+ {project.results.length - 2} weitere Ergebnisse</p>
+            )}
+        </div>
+      )}
 
       <div className="mt-auto flex items-center justify-between pt-4 border-t border-slate-100">
          <div className="flex -space-x-2 overflow-hidden">
@@ -75,7 +110,7 @@ const ProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) => (
       </div>
     </div>
   </article>
-);
+)};
 
 const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({ data: initialData }) => {
   // Since we don't have a single JSON for all projects yet (projects are individual files), 
@@ -91,7 +126,7 @@ const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({ data: initialData }
   // But wait, the `projects_overview_slice` in `cloudcannon.config.yml` suggests this might be used in a page.
   
   const [data, setData] = useState<ProjectsData | undefined>(initialData);
-  const [filter, setFilter] = useState<'All' | 'Software' | 'SAM' | 'Consulting'>('All');
+  const [filter, setFilter] = useState<'All' | 'Software' | 'SAM' | 'Consulting' | 'IT-Procurement' | 'ITSM'>('All');
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -149,8 +184,8 @@ const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({ data: initialData }
             <div className="container mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
                 
                 {/* Filters */}
-                <div className="flex p-1 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden">
-                    {(['All', 'Software', 'SAM', 'Consulting'] as const).map((cat) => (
+                <div className="flex p-1 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden overflow-x-auto">
+                    {(['All', 'Software', 'SAM', 'Consulting', 'IT-Procurement', 'ITSM'] as const).map((cat) => (
                         <button
                             key={cat}
                             onClick={() => setFilter(cat)}
@@ -182,8 +217,8 @@ const ProjectsOverview: React.FC<ProjectsOverviewProps> = ({ data: initialData }
         <section className="py-24 bg-white min-h-screen">
             <div className="container mx-auto px-4 md:px-12">
                 
-                <div className="mb-12">
-                   <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                <div className="mb-10">
+                   <h2 className="text-xl md:text-2xl font-semibold text-slate-900 flex items-center gap-2">
                       {filteredProjects.length} {filteredProjects.length === 1 ? 'Projekt' : 'Projekte'} gefunden
                       {filter !== 'All' && <span className="text-orange-700">in {filter}</span>}
                    </h2>

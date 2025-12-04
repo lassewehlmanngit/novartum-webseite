@@ -1,0 +1,32 @@
+{
+  "id": "10",
+  "slug": "devops-itsm-integration-public-sector",
+  "title": "DevOps trifft ITSM: Container-Orchestrierung & Deployment",
+  "clientIndustry": "Öffentliche Verwaltung",
+  "clientName": "Bundesagentur für Arbeit",
+  "category": "ITSM",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Modernisierung der Service-Transition: Verzahnung von klassischem ITSM mit CI/CD-Pipelines und Kubernetes-Orchestrierung.",
+  "challenge": "Integration von ITSM-Geschäftsprozessen in eine dynamische Continuous Deployment-Umgebung mit klaren Schnittstellen für Release und Architektur.",
+  "solution": "Analyse der Deployment-Pipelines, Konzeption der Systemunterstützung für ITSM-Prozesse und Implementierung von Container-Orchestrierung (Kubernetes/Rancher).",
+  "results": [
+    "Integration: Erfolgreiche Verzahnung von ITSM-Prozessen und DevOps-Methoden",
+    "Modernisierung: Etablierung einer Container-Orchestrierung mit Kubernetes",
+    "Effizienz: Optimierte und dokumentierte Service-Transition-Prozesse"
+  ],
+  "techStack": [
+    "DevOps / CI/CD",
+    "Kubernetes / SUSE Rancher",
+    "ITIL Service Transition",
+    "Redis In-Memory Cache"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1667372393119-c81c0cda0a29?auto=format&fit=crop&w=800&q=80",
+    "alt": "Abstrakte Darstellung von Containern und Code"
+  },
+  "seo": {
+    "metaTitle": "DevOps & ITSM Integration | Novartum",
+    "metaDescription": "Synergie aus ITSM und DevOps: Kubernetes, CI/CD und ITIL-Prozesse in der öffentlichen Verwaltung erfolgreich integriert."
+  }
+}

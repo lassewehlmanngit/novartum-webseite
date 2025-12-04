@@ -1,129 +1,575 @@
 [
   {
     "id": "1",
-    "slug": "oracle-audit-abwehr-grossbank",
-    "title": "Oracle Audit Abwehr für Großbank",
-    "clientIndustry": "Finanzwesen",
+    "slug": "managed-sam-service-finanzsektor-compliance",
+    "title": "Managed SAM Finanzsektor: Audit-Sicherheit & Lizenzkosten-Senkung",
+    "clientIndustry": "Finanzdienstleistung",
+    "clientName": "Finanzinformatik",
     "category": "SAM",
-    "shortDescription": "Erfolgreiche Abwehr einer 4,5 Mio. € Nachforderung durch technische Tiefenanalyse und vertragliche Expertise.",
-    "challenge": "Oracle forderte 4,5 Mio. € Nachzahlung aufgrund angeblicher 'Soft-Partitioning' Verstöße in einer VMware-Umgebung.",
-    "solution": "Detaillierte technische Analyse der Cluster-Historie und juristische Aufbereitung der Vertragsbasis (ULA). Einsatz spezialisierter Vermessungstools.",
-    "results": ["4,5 Mio. € Forderung auf 0 € reduziert", "Rechtssichere Dokumentation für Zukunft", "Optimierung der Oracle-Verträge"],
-    "techStack": ["Oracle DB", "VMware", "Java", "Solaris"],
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Vollständige Compliance und Budgetentlastung durch Matrix42-basiertes Managed Lizenzmanagement. Eliminierung von Audit-Risiken in komplexen IT-Umgebungen.",
+    "challenge": "Massive regulatorische Anforderungen treffen auf eine heterogene Lizenzlandschaft. Das Risiko: Unentdeckte Unterlizenzierungen (Audit-Gefahr) und teure Überlizenzierungen (Shelf-ware).",
+    "solution": "Implementierung eines 'SAM-as-a-Service'-Modells: Konsolidierung aller Assets in Matrix42, Etablierung permanenter Compliance-Bilanzierung und proaktives Monitoring von Vertragsverlängerungen.",
+    "results": [
+      "100% Audit-Readiness: Lückenlose Dokumentation für Wirtschaftsprüfer",
+      "Sofortige Liquiditätseffekte: Identifikation und Kündigung ungenutzter Software-Abos",
+      "Risikominimierung: Automatische Erkennung und Behebung von Unterlizenzierungen"
+    ],
+    "techStack": [
+      "Matrix42 SAM-Plattform",
+      "Automatisierte Inventarisierung",
+      "Compliance-Dashboards"
+    ],
     "coverImage": {
-      "url": "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=1000&auto=format&fit=crop",
-      "alt": "Bankgebäude Skyline Finanzwesen"
+      "url": "https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&w=800&q=80",
+      "alt": "Moderner Serverraum mit blauer Beleuchtung - Symbol für IT-Sicherheit"
     },
-    "year": "2024",
     "seo": {
-      "metaTitle": "Oracle Audit Case Study | 4,5 Mio € Abwehr | Novartum",
-      "metaDescription": "Case Study: Wie Novartum für eine Großbank eine 4,5 Millionen Euro Oracle Nachforderung erfolgreich abgewehrt hat."
-    },
-    "body": "<p>In diesem Hochsicherheits-Umfeld war Präzision entscheidend. Der Softwarehersteller versuchte, über die Virtualisierungsumgebung (VMware) eine flächendeckende Lizenzierung aller physischen Hosts durchzusetzen.</p><p>Unser Team analysierte über 6 Wochen hinweg die historischen Bewegungsdaten der virtuellen Maschinen (VMotion logs) und konnte nachweisen, dass eine strikte Separierung zu jeder Zeit gegeben war.</p>"
+      "metaTitle": "Managed SAM Service für Banken | Matrix42 Expertise | Novartum",
+      "metaDescription": "Case Study: Wie wir für Finanzdienstleister Audit-Sicherheit herstellten & Lizenzkosten senkten. Managed Service auf Basis von Matrix42."
+    }
   },
   {
     "id": "2",
-    "slug": "cloud-native-logistikplattform",
-    "title": "Cloud-Native Logistikplattform",
-    "clientIndustry": "Logistik & Transport",
-    "category": "Software",
-    "shortDescription": "Skalierbare Microservices-Architektur für 99.99% Uptime während der Black Friday Peak-Zeiten.",
-    "challenge": "Monolithisches Altsystem verhinderte Skalierung zu Peak-Zeiten (Black Friday). Hohe Wartungskosten und Downtimes.",
-    "solution": "Migration auf Microservices-Architektur in Azure. Implementierung von Kubernetes für automatische Skalierung und CI/CD Pipelines.",
-    "results": ["99.99% Uptime auch bei Lastspitzen", "30% geringere Betriebskosten", "Deployment-Zeit von 2 Wochen auf 1 Stunde reduziert"],
-    "techStack": ["Azure", "Kubernetes", "Java Spring Boot", "React", "Kafka"],
+    "slug": "m365-strategie-roi-telekommunikation",
+    "title": "M365 Strategie: ROI-Maximierung & E3-zu-E5 Business Case",
+    "clientIndustry": "Telekommunikation",
+    "clientName": "Deutsche GigaNetz",
+    "category": "SAM",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Strategische M365-Optimierung: Belastbarer Business Case für den E3/E5-Wechsel und Auswahl der optimalen SAM-Plattform (ServiceNow vs. Snow/USU).",
+    "challenge": "Ein schnell wachsender Telco-Anbieter stand vor der Entscheidung des M365-Upgrades (E3 auf E5) ohne validen ROI-Nachweis und benötigte eine skalierbare SAM-Tool-Strategie.",
+    "solution": "Durchführung einer tiefgehenden Kosten-Nutzen-Analyse für Microsoft 365 Pakete, Konsolidierung von Schatten-IT (NFON, PowerBI) und Begleitung der 'Tool-Battle-Card' Auswahlprozesse.",
+    "results": [
+      "Investitionssicherheit: Business Case M365 E5 mit ROI-Berechnung erstellt",
+      "Tool-Konsolidierung: Reduktion der Betriebskosten durch Eliminierung redundanter Apps",
+      "Prozess-Sicherheit: Definition dauerhafter Schnittstellen zwischen IT, Einkauf & FiBu"
+    ],
+    "techStack": [
+      "Microsoft 365 (E3/E5 Strategie)",
+      "ServiceNow vs. Snow/USU",
+      "Power BI Analytics",
+      "ROI-Modellierung"
+    ],
     "coverImage": {
-      "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop",
-      "alt": "Modernes Logistikzentrum Lagerhalle"
+      "url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+      "alt": "Glasfaser-Technologie und Netzwerk-Verbindungen"
     },
-    "year": "2023",
     "seo": {
-      "metaTitle": "Cloud Migration Logistik | Azure Kubernetes | Novartum",
-      "metaDescription": "Migration eines Logistik-Monolithen zu Azure Kubernetes Services. Ergebnis: 99.99% Uptime und 30% Kostensenkung."
+      "metaTitle": "M365 Lizenzoptimierung & SAM Strategie | Novartum Case Study",
+      "metaDescription": "M365 Kosten senken oder upgraden? Unsere Case Study zeigt den ROI-Weg von E3 zu E5 und die Auswahl des perfekten SAM-Tools für Telcos."
     }
   },
   {
     "id": "3",
-    "slug": "m365-azure-finops",
-    "title": "M365 & Azure FinOps Optimierung",
-    "clientIndustry": "Automotive Zulieferer",
+    "slug": "globales-lizenzmanagement-ela-verhandlung",
+    "title": "Globales Lizenzmanagement: ELA-Verhandlungen & Offshoring",
+    "clientIndustry": "IT Service Provider",
+    "clientName": "Atos IT Solutions / Siemens-Konzern",
     "category": "SAM",
-    "shortDescription": "350.000 € jährliche Einsparung durch automatisiertes Lizenz-Harvesting und Cloud-Rightsizing.",
-    "challenge": "Intransparente Cloud-Kosten. Tausende ungenutzte 'Zombie'-Ressourcen und überlizensierte User-Profile (E5 statt E3).",
-    "solution": "Implementierung einer FinOps-Strategie. Automatisiertes Harvesting inaktiver Lizenzen und Rightsizing der VMs.",
-    "results": ["Jährliche Einsparung von 350.000 €", "Etablierung interner Kostenverrechnung", "Volle Transparenz über Cloud-Spend"],
-    "techStack": ["Microsoft 365", "Azure Cost Management", "Power BI"],
+    "richSnippetType": "CaseStudy",
+    "year": "Abgeschlossen",
+    "shortDescription": "Aufbau einer weltweiten SAM-Governance für VMware/EMC. Erfolgreiche Verhandlung von Enterprise License Agreements (ELAs) und Kostenreduktion durch Offshoring.",
+    "challenge": "Intransparente globale Lizenzbestände und ineffiziente Kostenstrukturen erforderten eine Standardisierung der internen Verrechnung und neue Verhandlungen mit Major Vendors.",
+    "solution": "Implementierung eines globalen Chargeback-Modells, Verlagerung operativer Aufgaben in Nearshore/Offshore-Zentren und direkte Verhandlung komplexer ELAs (Siemens/Atos).",
+    "results": [
+      "Globale Transparenz: Vollständige Übersicht über alle internationalen Standorte",
+      "Deal-Optimierung: Erfolgreiche Verhandlung und Umsetzung von ELAs",
+      "Operational Excellence: Kostensenkung durch operatives Offshoring des Lizenzmanagements"
+    ],
+    "techStack": [
+      "VMware ELA Negotiation",
+      "EMC Networker",
+      "Chargeback-Systeme",
+      "Offshore Delivery Centers"
+    ],
     "coverImage": {
-      "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      "alt": "Datenanalyse Dashboard Finanzen"
+      "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+      "alt": "Globale Vernetzung aus dem All gesehen - Symbol für Worldwide Operations"
     },
-    "year": "2024",
     "seo": {
-      "metaTitle": "FinOps Case Study | M365 Kostenoptimierung | Novartum",
-      "metaDescription": "Wie ein Automotive-Zulieferer durch Novartum FinOps 350.000 Euro pro Jahr bei Microsoft 365 und Azure einspart."
+      "metaTitle": "Globales SAM & ELA Verhandlung | Novartum Expertise",
+      "metaDescription": "Case Study: Weltweites Lizenzmanagement & ELA-Verhandlungen für VMware/EMC. Chargeback-Modelle und Offshoring im Konzernumfeld."
     }
   },
   {
     "id": "4",
-    "slug": "iot-dashboard-manufacturing",
-    "title": "IoT Dashboard für Fertigungslinie",
-    "clientIndustry": "Industrie 4.0",
-    "category": "Software",
-    "shortDescription": "Echtzeit-Überwachung von Produktionsanlagen via MQTT und React für Predictive Maintenance.",
-    "challenge": "Keine Echtzeit-Daten über Maschinenausfälle. Reaktion erfolgte erst nach Stillstand, was zu hohen Produktionsverlusten führte.",
-    "solution": "Entwicklung eines React-basierten Dashboards, das Maschinendaten via MQTT in Echtzeit visualisiert (Digital Twin).",
-    "results": ["Reduktion der Stillstandszeiten um 25%", "Vorausschauende Wartung (Predictive Maintenance)", "Mobile Verfügbarkeit für Schichtleiter"],
-    "techStack": ["React", "TypeScript", "MQTT", "Node.js", "InfluxDB"],
+    "slug": "dsgvo-compliance-sam-behoerde",
+    "title": "Behörden-SAM: DSGVO-konforme Audit-Sicherheit",
+    "clientIndustry": "Öffentliche Verwaltung",
+    "clientName": "LZPD NRW",
+    "category": "SAM",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Sicherstellung der Compliance im kritischen Behördenumfeld: USU-Aspera-Cloud Administration und automatisierter Active Directory Abgleich.",
+    "challenge": "Die Verwaltung komplexer Kauf-/Mietlizenzen unter strengsten Datenschutzvorgaben. Ziel: Erstellung 'gerichtsfester' Auditunterlagen für kritische Hersteller.",
+    "solution": "Einsatz der USU License Manager Cloud (SmartTrack) zur automatisierten Lizenz-Clearing und Integration von Active Directory Daten für eine lückenlose Zuordnung.",
+    "results": [
+      "Automatisierung: Vollständige AD-Integration für fehlerfreie Lizenzzuordnung",
+      "Rechtssicherheit: DSGVO-konforme Compliance-Reports für behördliche Prüfungen",
+      "Audit-Abwehr: Audit-sichere Dokumentation für kritische Herstellerlizenzen"
+    ],
+    "techStack": [
+      "USU Aspera SmartTrack (Cloud)",
+      "Active Directory Integration",
+      "Microsoft/Citrix/VMware Clearing"
+    ],
     "coverImage": {
-      "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop",
-      "alt": "Industrie 4.0 Roboterarm Fertigung"
+      "url": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80",
+      "alt": "Gesetzbücher und Justitia im Hintergrund - Symbol für Compliance"
     },
-    "year": "2023",
     "seo": {
-      "metaTitle": "IoT Dashboard Entwicklung | Industrie 4.0 | Novartum",
-      "metaDescription": "Entwicklung eines Echtzeit-Dashboards für die Fertigung. Reduktion der Downtime um 25% durch Predictive Maintenance."
+      "metaTitle": "SAM für Behörden & Öffentlichen Dienst | Novartum",
+      "metaDescription": "Lizenzmanagement für die Verwaltung: DSGVO-Compliance, USU Aspera Management und Audit-Sicherheit für kritische Software."
     }
   },
   {
     "id": "5",
-    "slug": "strategic-ea-negotiation",
-    "title": "Strategische EA Vertragsverhandlung",
-    "clientIndustry": "Versicherung",
-    "category": "Consulting",
-    "shortDescription": "22% Rabatt auf Microsoft Enterprise Agreement durch Benchmark-Analyse und Verhandlungsstrategie.",
-    "challenge": "Anstehende Verlängerung des Microsoft Enterprise Agreements (EA) unter enormem Zeitdruck und Preiserhöhungen.",
-    "solution": "Benchmark-Analyse der Konditionen und Ausarbeitung einer Alternativ-Strategie (Dual Vendor) zur Stärkung der Verhandlungsposition.",
-    "results": ["22% Rabatt auf Listenpreis erzielt", "Price Protection für 3 Jahre gesichert", "Flexiblere Cloud-Migration Terms"],
-    "techStack": ["Microsoft Licensing", "Negotiation", "Contract Management"],
+    "slug": "strategisches-it-procurement-transformation",
+    "title": "IT-Procurement Transformation: End-to-End Sourcing",
+    "clientIndustry": "Medizintechnik/Gesundheit",
+    "clientName": "Paul Hartmann AG",
+    "category": "IT-Procurement",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Vom Einkauf zum Wertschöpfer: Etablierung eines digitalen End-to-End Procurement Frameworks und Vendor Managements für einen globalen Medizintechnik-Konzern.",
+    "challenge": "Notwendigkeit einer strategischen Neuausrichtung der IT-Beschaffung, um Skalierung zu ermöglichen und direkte Einsparpotenziale durch C-Level-Alignment zu heben.",
+    "solution": "Implementierung eines 'Target Operating Models', Einführung tiefgehender Spend-Analytics zur Identifikation von Kostentreibern und Professionalisierung des Claim Managements.",
+    "results": [
+      "Digitalisierung: Erfolgreiche Etablierung eines End-to-End Procurement Frameworks",
+      "Kosteneffizienz: Realisierung signifikanter Einsparpotenziale durch Spend-Analytics",
+      "Organisationsentwicklung: Aufbau und Coaching eines spezialisierten Einkauf-Teams"
+    ],
+    "techStack": [
+      "Target Operating Model (TOM)",
+      "Spend Analytics",
+      "Vendor Management",
+      "Claim Management"
+    ],
     "coverImage": {
-      "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop",
-      "alt": "Business Meeting Vertragsverhandlung"
+      "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+      "alt": "Medizinische Forschungslabore mit blauer Beleuchtung"
     },
-    "year": "2022",
     "seo": {
-      "metaTitle": "Microsoft EA Verhandlung | Consulting Case Study | Novartum",
-      "metaDescription": "Erfolgreiche Microsoft Enterprise Agreement Verhandlung für Versicherungskonzern. 22% Rabatt erzielt."
+      "metaTitle": "Transformation IT-Einkauf & Sourcing | Novartum",
+      "metaDescription": "Strategische Neuausrichtung des IT-Procurements: Wie wir Vendor Management und Spend Analytics für Paul Hartmann AG optimierten."
     }
   },
   {
     "id": "6",
-    "slug": "b2b-customer-portal",
-    "title": "B2B Self-Service Kundenportal",
-    "clientIndustry": "Großhandel",
-    "category": "Software",
-    "shortDescription": "Digitalisierung des Bestellwesens mit SAP-Integration: 80% weniger manuelle Erfassung.",
-    "challenge": "Kundenbestellungen erfolgten per Fax/Telefon. Hoher manueller Aufwand und Fehlerquote bei der Dateneingabe.",
-    "solution": "Entwicklung eines modernen Web-Portals mit direkter SAP-Anbindung für Bestellungen, Rechnungen und Retouren.",
-    "results": ["80% der Bestellungen nun digital", "Halbierung der Prozesskosten im Vertriebsinnendienst", "Kundenzufriedenheit signifikant gesteigert"],
-    "techStack": ["Angular", ".NET Core", "SAP Integration", "SQL Server"],
+    "slug": "dora-compliance-risk-management",
+    "title": "DORA Readiness: Regulatorisches Risiko-Management",
+    "clientIndustry": "Finanzdienstleistung",
+    "clientName": "BNP Paribas",
+    "category": "IT-Procurement",
+    "richSnippetType": "CaseStudy",
+    "year": "2024",
+    "shortDescription": "Umsetzung der DORA-Anforderungen im Procurement: Systematische Identifikation und Bewertung von IT-/Cyberrisiken bei Drittanbietern.",
+    "challenge": "Erfüllung der strengen regulatorischen Vorgaben des Digital Operational Resilience Act (DORA) hinsichtlich des Risikomanagements von IKT-Drittdienstleistern.",
+    "solution": "Priorisierung DORA-relevanter Lieferanten, Durchführung risikobasierter IT-/Cyber-Risk-Assessments und lückenlose Dokumentation der Ergebnisse in Einkaufstools.",
+    "results": [
+      "Compliance: Etablierung einer vollständig DORA-konformen Lieferantenübersicht",
+      "Transparenz: Vollständige Durchführung aller notwendigen Risk-Assessments",
+      "Resilienz: Erhöhung der digitalen Widerstandsfähigkeit gegenüber Cyber-Risiken"
+    ],
+    "techStack": [
+      "DORA Compliance Framework",
+      "Risk Assessment Tools",
+      "Cyber Security Bewertung"
+    ],
     "coverImage": {
-      "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      "alt": "Tablet B2B Applikation"
+      "url": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80",
+      "alt": "Digitales Sicherheitsschloss auf Display - Symbol für DORA/Cyber Security"
     },
-    "year": "2023",
     "seo": {
-      "metaTitle": "B2B Kundenportal Entwicklung | SAP Integration | Novartum",
-      "metaDescription": "Entwicklung eines Self-Service Portals mit SAP-Anbindung. 80% Digitalisierungsrate der Bestellungen erreicht."
+      "metaTitle": "DORA Compliance Procurement | Novartum",
+      "metaDescription": "Sicherstellung der DORA-Compliance im Einkauf: Risikomanagement für Drittanbieter und Cyber-Risk-Assessments für Banken."
+    }
+  },
+  {
+    "id": "7",
+    "slug": "global-it-sourcing-oil-gas",
+    "title": "Global Sourcing & TCO-Optimierung (Öl & Gas)",
+    "clientIndustry": "Öl- und Gasbranche",
+    "clientName": "Wintershall Dea",
+    "category": "IT-Procurement",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Steuerung der globalen IT-Beschaffung: RFP-Verfahren, massive TCO-Senkung und TSA-Vorbereitung für M&A-Szenarien.",
+    "challenge": "Zentralisierung der Procurement-Strategie über globale Standorte hinweg und Vorbereitung der Vertragsstrukturen für Geschäftsaufspaltungen (TSA).",
+    "solution": "Durchführung globaler RFP-Prozesse, Spend-Analysen zur TCO-Senkung, Verhandlung mit Lieferanten und Implementierung eines Vendor Performance Managements.",
+    "results": [
+      "Kostenführerschaft: TCO-Optimierung durch strategisches Sourcing erreicht",
+      "Effizienz: Reduzierte Lieferantenanzahl durch gezielte Konsolidierung",
+      "M&A Readiness: TSA-ready Vertragsstruktur für Transaktionen geschaffen"
+    ],
+    "techStack": [
+      "RFP-Management",
+      "TCO-Analyse",
+      "TSA (Transitional Service Agreements)",
+      "Vendor Performance Management"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800&q=80",
+      "alt": "Industrielle Raffinerie Anlage - Symbol für Schwerindustrie"
+    },
+    "seo": {
+      "metaTitle": "Globales IT-Procurement & TCO | Novartum",
+      "metaDescription": "Strategisches Procurement in der Öl- & Gasbranche: TCO-Reduktion, Global Sourcing und M&A-Vorbereitung (TSA)."
+    }
+  },
+  {
+    "id": "8",
+    "slug": "eam-agile-leadership-transformation",
+    "title": "EAM & Agile Transformation: TOGAF trifft OKR",
+    "clientIndustry": "IT-Dienstleistung (Bund)",
+    "clientName": "BWI GmbH",
+    "category": "Consulting",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Operationalisierung der IT-Strategie: Verknüpfung von Enterprise Architecture (TOGAF) mit agiler Führung (Kanban/OKR) für Bundes-IT-Dienstleister.",
+    "challenge": "Aufbau einer nachhaltigen Governance-Struktur und eines Architektur-Boards in einem sich transformierenden Umfeld hin zu agilen Arbeitsweisen.",
+    "solution": "Entwicklung eines EAM-Frameworks auf Basis von TOGAF/BAM, Einführung von Kanban Flight Level 2 und OKRs sowie Coaching der CIO-Teams in agiler Führung.",
+    "results": [
+      "Governance: Operatives Architektur-Board und aktives Standards-Management etabliert",
+      "Kulturwandel: Agile Führungskultur in den Teams nachhaltig verankert",
+      "Messbarkeit: Reifegrad durch implementiertes KPI-System transparent gemacht"
+    ],
+    "techStack": [
+      "TOGAF / BAM",
+      "Kanban Flight Level 2",
+      "OKR (Objectives and Key Results)",
+      "Lean Portfolio Management"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80",
+      "alt": "Agiles Team am Whiteboard - Symbol für New Work"
+    },
+    "seo": {
+      "metaTitle": "EAM & Agile Transformation | Novartum Consulting",
+      "metaDescription": "Verbindung von Enterprise Architecture (TOGAF) mit agiler Führung (OKR, Kanban) für IT-Dienstleister des Bundes."
+    }
+  },
+  {
+    "id": "9",
+    "slug": "itsm-transformation-hybrid-cloud-stability",
+    "title": "ITSM-Transformation: Stabilität in der Hybrid-Cloud",
+    "clientIndustry": "Energiewirtschaft",
+    "clientName": "Link Digital GmbH",
+    "category": "ITSM",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Sicherstellung der Betriebsstabilität: Etablierung prozessorientierter IT-Services nach ITIL v4 in einer komplexen hybriden Cloud-Landschaft.",
+    "challenge": "Optimierung der Servicequalität und Gewährleistung der Betriebsstabilität in einem komplexen Umfeld aus On-Premise- und Cloud-Systemen.",
+    "solution": "Vollständige Einführung von ITIL-Prozessen (Incident, Change, Problem), Konzeption des Servicedesk und Steuerung externer Dienstleister über SLAs/OLAs.",
+    "results": [
+      "Prozess-Exzellenz: ITIL-basierte Prozesse und Betriebsmodelle vollständig etabliert",
+      "Service-Level: Servicequalität messbar durch SLA-Monitoring optimiert",
+      "Resilienz: Betriebsstabilität in hybrider IT-Infrastruktur dauerhaft gewährleistet"
+    ],
+    "techStack": [
+      "ITIL v4",
+      "Hybrid Cloud Management",
+      "SLA/OLA Monitoring",
+      "IT-Asset Management"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+      "alt": "Solarpaneele mit digitalem Overlay - Symbol für Energiewirtschaft"
+    },
+    "seo": {
+      "metaTitle": "ITSM Transformation & Cloud | Novartum",
+      "metaDescription": "ITIL v4 Implementierung und Stabilisierung des Cloud-Betriebs für die Energiewirtschaft. Servicequalität messbar verbessern."
+    }
+  },
+  {
+    "id": "10",
+    "slug": "devops-itsm-integration-public-sector",
+    "title": "DevOps trifft ITSM: Container-Orchestrierung & Deployment",
+    "clientIndustry": "Öffentliche Verwaltung",
+    "clientName": "Bundesagentur für Arbeit",
+    "category": "ITSM",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Modernisierung der Service-Transition: Verzahnung von klassischem ITSM mit CI/CD-Pipelines und Kubernetes-Orchestrierung.",
+    "challenge": "Integration von ITSM-Geschäftsprozessen in eine dynamische Continuous Deployment-Umgebung mit klaren Schnittstellen für Release und Architektur.",
+    "solution": "Analyse der Deployment-Pipelines, Konzeption der Systemunterstützung für ITSM-Prozesse und Implementierung von Container-Orchestrierung (Kubernetes/Rancher).",
+    "results": [
+      "Integration: Erfolgreiche Verzahnung von ITSM-Prozessen und DevOps-Methoden",
+      "Modernisierung: Etablierung einer Container-Orchestrierung mit Kubernetes",
+      "Effizienz: Optimierte und dokumentierte Service-Transition-Prozesse"
+    ],
+    "techStack": [
+      "DevOps / CI/CD",
+      "Kubernetes / SUSE Rancher",
+      "ITIL Service Transition",
+      "Redis In-Memory Cache"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1667372393119-c81c0cda0a29?auto=format&fit=crop&w=800&q=80",
+      "alt": "Abstrakte Darstellung von Containern und Code"
+    },
+    "seo": {
+      "metaTitle": "DevOps & ITSM Integration | Novartum",
+      "metaDescription": "Synergie aus ITSM und DevOps: Kubernetes, CI/CD und ITIL-Prozesse in der öffentlichen Verwaltung erfolgreich integriert."
+    }
+  },
+  {
+    "id": "11",
+    "slug": "managed-sam-service-kmu",
+    "title": "Managed SAM Service: Compliance für den Mittelstand",
+    "clientIndustry": "Branchenübergreifend",
+    "clientName": "KMU & Mittelstand",
+    "category": "SAM",
+    "richSnippetType": "CaseStudy",
+    "year": "Seit 2021",
+    "shortDescription": "Skalierbare Sicherheit: Operative und strategische Betreuung mehrerer Mandanten mit Fokus auf standardisierte SAM-Prozesse und DSGVO.",
+    "challenge": "Etablierung professioneller SAM-Strukturen ohne eigenen Headcount-Aufbau bei unterschiedlichen Systemlandschaften und DSGVO-Anforderungen.",
+    "solution": "Einführung standardisierter SAM-Prozesse, operative Nutzung von SNOW/USU Aspera und Übernahme der Pflege von Lizenzdaten (Microsoft, Oracle, IBM, Adobe) als Managed Service.",
+    "results": [
+      "Skalierbarkeit: Standardisierte SAM-Prozesse über mehrere Mandanten etabliert",
+      "Datenschutz: DSGVO-konforme Lizenzdatenverwaltung sichergestellt",
+      "Transparenz: Kontinuierliches Management-Reporting für Projektcontrolling"
+    ],
+    "techStack": [
+      "SNOW License Manager",
+      "USU Aspera",
+      "Managed Service (SaaS)",
+      "DSGVO-Compliance"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
+      "alt": "Business Handshake im Meetingraum - Symbol für Partnerschaft"
+    },
+    "seo": {
+      "metaTitle": "Managed SAM Service Mittelstand | Novartum",
+      "metaDescription": "Skalierbares Lizenzmanagement für KMU: Standardisierte Prozesse, Tool-Betreuung (SNOW/Aspera) und DSGVO-Compliance als Service."
+    }
+  },
+  {
+    "id": "12",
+    "slug": "zentralisierung-lizenzmanagement-banking-sap",
+    "title": "Banking Transformation: Zentrales Lizenzmanagement & Governance",
+    "clientIndustry": "Finanzdienstleistung",
+    "clientName": "Helaba",
+    "category": "Consulting",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Governance-Aufbau: Zentralisierung der Lizenzstrukturen und Implementierung standardisierter Compliance-Prozesse in SAP CuContract.",
+    "challenge": "Strukturelle Aufbereitung von Softwareprodukten und Vertragsprozessen sowie Sicherstellung regulatorischer Compliance (DSGVO/ISMS) nach Bankenstandards.",
+    "solution": "Implementierung einer zentralen Lizenzgovernance, Pflege der Vertragsdaten in SAP CuContract und Durchführung von Lizenz-Clearings für Major-Vendor (Microsoft, Adobe, Oracle).",
+    "results": [
+      "Standardisierung: Einheitliche Verwaltungsprozesse erfolgreich etabliert",
+      "Regulatorik: Compliance (DSGVO/ISMS) vollständig sichergestellt",
+      "Audit-Proof: Prüfungsrelevante Dokumentation und Audit-Readiness aufgebaut"
+    ],
+    "techStack": [
+      "SAP CuContract",
+      "Adobe/Oracle/Microsoft Clearing",
+      "ISMS / DSGVO",
+      "ITIL/SCRUM/PMI"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1565514020176-db936c53e895?auto=format&fit=crop&w=800&q=80",
+      "alt": "Skyline Frankfurt am Main - Symbol für Bankenstandort"
+    },
+    "seo": {
+      "metaTitle": "Zentrales Lizenzmanagement Banken | Novartum",
+      "metaDescription": "Case Study Helaba: Zentralisierung von IT-Prozessen und Lizenzmanagement mit SAP CuContract unter strengen Compliance-Vorgaben."
+    }
+  },
+  {
+    "id": "13",
+    "slug": "vertragsmanagement-emobility-sales-speed",
+    "title": "eMobility Vertragsmanagement: DSGVO & Sales-Acceleration",
+    "clientIndustry": "Energie",
+    "clientName": "EnBW mobility+",
+    "category": "Consulting",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Vertriebsbeschleunigung: Optimierung der Vertragsprozesse zwischen Recht und Vertrieb im dynamischen eMobility-Markt.",
+    "challenge": "Sicherstellung DSGVO-konformer Vertragsstrukturen bei gleichzeitiger Beschleunigung der Abläufe zwischen Recht und Vertrieb in einem schnell wachsenden Markt.",
+    "solution": "Standardisierung von Fristen- und Dokumentationsprozessen in Cloud-PMO-Strukturen, Anpassung von Vertriebsverträgen und Erstellung auditrelevanter Unterlagen.",
+    "results": [
+      "Compliance: DSGVO-konforme Vertragsstrukturen vollständig etabliert",
+      "Time-to-Market: Optimierte und beschleunigte Abläufe zwischen Recht und Vertrieb",
+      "Sicherheit: Audit-sichere Unterlagen und Dokumentationsstandards geschaffen"
+    ],
+    "techStack": [
+      "Cloud PMO",
+      "Vertragsmanagementsysteme",
+      "DSGVO-Compliance-Tools",
+      "Energiewirtschaftliche Prozesse"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80",
+      "alt": "Elektroauto Ladestation Close-up - Symbol für eMobility"
+    },
+    "seo": {
+      "metaTitle": "Vertragsmanagement eMobility | Novartum",
+      "metaDescription": "Optimierung von Vertriebsverträgen und DSGVO-Compliance für EnBW mobility+. Effiziente Prozesse zwischen Legal und Sales."
+    }
+  },
+  {
+    "id": "14",
+    "slug": "sap-cucontract-migration-savings",
+    "title": "SAP Migration & Kostensenkung: Cisco/Microsoft Optimierung",
+    "clientIndustry": "Finanzdienstleistung",
+    "clientName": "BNP PARIBAS",
+    "category": "IT-Procurement",
+    "richSnippetType": "CaseStudy",
+    "year": "2024-2025",
+    "shortDescription": "Nahtlose Migration: Überführung des Vertragsmanagements auf SAP CuContract bei gleichzeitiger Hebung von Einsparpotenzialen.",
+    "challenge": "Strukturierte Überführung der Verträge ohne Betriebsunterbrechung und Identifikation von Einsparungen bei Cisco- und Microsoft-Lizenzen (True-Up).",
+    "solution": "Erstellung von Lizenzbilanzen, Planung kostenoptimierter Angebote (True-Up, Cisco) und Koordination der Migration auf SAP CuContract nach PMP-Methodik.",
+    "results": [
+      "Zero-Downtime: Erfolgreiche Migration ohne Betriebsunterbrechung",
+      "Savings: Identifizierte und realisierte Einsparpotenziale bei Cisco-/Microsoft-Lizenzen",
+      "Transparenz: Vollständige Lizenzbilanz als Basis für Management-Entscheidungen"
+    ],
+    "techStack": [
+      "SAP CuContract",
+      "Synertrade",
+      "Cisco Lizenzierung",
+      "Microsoft True-Up"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80",
+      "alt": "Unterzeichnung eines digitalen Vertrags - Symbol für Contract Management"
+    },
+    "seo": {
+      "metaTitle": "SAP CuContract Migration & Savings | Novartum",
+      "metaDescription": "Case Study: Migration auf SAP CuContract bei BNP Paribas. Realisierung von Einsparungen bei Cisco und Microsoft Lizenzen."
+    }
+  },
+  {
+    "id": "15",
+    "slug": "strategic-it-sourcing-finance-tco",
+    "title": "Strategic Sourcing: TCO-Reduktion & Compliance",
+    "clientIndustry": "Finanzdienstleistung",
+    "clientName": "BNP PARIBAS",
+    "category": "IT-Procurement",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Führung im Einkauf: Leitung des strategischen IT-Einkaufs zur TCO-Reduktion und Umsetzung standardisierter RFX-Prozesse.",
+    "challenge": "Effizienzsteigerung im Lieferantenportfolio und Einhaltung strenger regulatorischer Beschaffungsrichtlinien bei gleichzeitiger Kostensenkung.",
+    "solution": "Durchführung von Marktanalysen, Standardisierung des End-to-End-Beschaffungsprozesses inkl. Risikobewertung und Einführung eines KPI-basierten Trackings.",
+    "results": [
+      "Cost-Cutting: Messbare TCO-Reduktion durch optimierte Sourcing-Strategien",
+      "Prozess-Sicherheit: Standardisierte, audit-sichere Beschaffungsprozesse etabliert",
+      "Risk-Management: Compliance-driven Supplier Selection erfolgreich umgesetzt"
+    ],
+    "techStack": [
+      "RFX-Management",
+      "TCO-Analyse",
+      "Compliance-driven Procurement",
+      "Risk Assessment"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1553484771-371af0474b41?auto=format&fit=crop&w=800&q=80",
+      "alt": "Schachfiguren auf Brett - Symbol für Strategie und Planung"
+    },
+    "seo": {
+      "metaTitle": "Strategic IT Sourcing Banking | Novartum",
+      "metaDescription": "Strategischer IT-Einkauf für Banken: TCO-Reduktion, RFX-Management und Compliance-konforme Lieferantenauswahl."
+    }
+  },
+  {
+    "id": "16",
+    "slug": "cloud-migration-azure-kfw-8000-user",
+    "title": "Azure & M365 Migration: Großprojekt (8.000 User)",
+    "clientIndustry": "Behörde / Bank",
+    "clientName": "KfW Bank",
+    "category": "Software",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Digitale Transformation im großen Stil: Migration von 8.000 Anwendern auf Azure/M365 unter strengsten Security-Vorgaben.",
+    "challenge": "Ablösung bestehender Systeme unter strengen IT-Security- und Datenschutzvorgaben sowie Herstellung der Cloud-Readiness für eine Bank/Behörde.",
+    "solution": "Projektsteuerung nach Prince2/Scrum, Migration von Daten/Anwendungen in Azure AD/SharePoint und Implementierung einer DSGVO-konformen Architektur.",
+    "results": [
+      "Skalierung: Migration von 8.000 Anwendern erfolgreich abgeschlossen",
+      "Cloud-Integration: Vollständige Einbindung von Azure und M365",
+      "Digitalisierung: Modernisierte Beschaffungs- und HR-Prozesse"
+    ],
+    "techStack": [
+      "Microsoft Azure & Azure AD",
+      "M365 & SharePoint",
+      "Prince2 & Scrum",
+      "IT-Security / DSGVO"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1483478550801-ceba96c89ae7?auto=format&fit=crop&w=800&q=80",
+      "alt": "Blaue Cloud-Struktur abstrakt - Symbol für Cloud Computing"
+    },
+    "seo": {
+      "metaTitle": "Cloud Migration KfW Bank | Novartum",
+      "metaDescription": "Großprojekt KfW: Migration von 8.000 Usern in die Azure Cloud. Sichere Digitalisierung von HR- und Beschaffungsprozessen."
+    }
+  },
+  {
+    "id": "17",
+    "slug": "it-infrastruktur-modernisierung-handel-m365",
+    "title": "IT-Modernisierung Handel: M365 & Cloud-Architektur",
+    "clientIndustry": "Handel",
+    "clientName": null,
+    "category": "Software",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Workplace der Zukunft: Unternehmensweite Modernisierung der IT-Landschaft durch Einführung von M365, Cloud-Migration und ITIL.",
+    "challenge": "Überführung einer klassischen Infrastruktur in hybride Cloud-Modelle und Etablierung eines modernen Workplace-Managements.",
+    "solution": "Projektleitung für M365-Rollout (Teams, Exchange, SharePoint), Konzeption von IaaS/PaaS-Betriebsmodellen und Einführung von ITIL-Prozessen für den Betrieb.",
+    "results": [
+      "Workplace-Transformation: Erfolgreiche Umsetzung der M365-Migration",
+      "Flexibilität: Cloud-Betriebsmodelle (IaaS/PaaS/SaaS) implementiert",
+      "Betriebssicherheit: ITIL-Prozesse und Notfall-Konzepte operativ etabliert"
+    ],
+    "techStack": [
+      "Microsoft 365 (Teams, Exchange, SP)",
+      "Azure AD",
+      "IaaS / PaaS / SaaS",
+      "IBM/NetApp Storage"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+      "alt": "Modernes Logistikzentrum mit Paketen - Symbol für Handel und Logistik"
+    },
+    "seo": {
+      "metaTitle": "IT-Modernisierung Handel | Novartum",
+      "metaDescription": "Infrastruktur-Upgrade im Handel: M365 Migration, Cloud-Integration und ITIL-Prozesse für moderne Arbeitsplätze."
+    }
+  },
+  {
+    "id": "18",
+    "slug": "itsm-virtualisierung-high-availability",
+    "title": "ITSM & Virtualisierung: Hochverfügbarkeit im Mittelstand",
+    "clientIndustry": "Konsumgüterindustrie",
+    "clientName": null,
+    "category": "ITSM",
+    "richSnippetType": "CaseStudy",
+    "year": "Laufend",
+    "shortDescription": "Ausfallsicherheit maximieren: Schaffung einer hochverfügbaren Betriebsplattform durch Virtualisierung und Einführung standardisierter ITSM-Tools.",
+    "challenge": "Ablösung veralteter Strukturen zur Gewährleistung von Stabilität und IT-Sicherheit sowie fehlende Prozesssteuerung im Betrieb.",
+    "solution": "Beratung und Umsetzung von ITIL-Prozessen (Service Strategy/Design/Operation), Einführung eines ITSM-Tools und Aufbau von SLA/OLA-Strukturen.",
+    "results": [
+      "Stabilität: Stabile, hochverfügbare Betriebsplattform etabliert",
+      "Steuerung: ITSM-Tool zur Prozesssteuerung erfolgreich eingeführt",
+      "Qualität: SLA/OLA-Strukturen und IT-Sicherheitsstandards operativ"
+    ],
+    "techStack": [
+      "ITIL Processes",
+      "Virtualisierung",
+      "ITSM-Tool",
+      "High Availability Architecture"
+    ],
+    "coverImage": {
+      "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+      "alt": "Industrielle Produktionsanlage - Symbol für Konsumgüterindustrie"
+    },
+    "seo": {
+      "metaTitle": "ITSM & Virtualisierung | Novartum",
+      "metaDescription": "Modernisierung in der Konsumgüterindustrie: Hochverfügbarkeit durch Virtualisierung und professionelles ITSM nach ITIL."
     }
   }
 ]

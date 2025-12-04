@@ -1,0 +1,32 @@
+{
+  "id": "13",
+  "slug": "vertragsmanagement-emobility-sales-speed",
+  "title": "eMobility Vertragsmanagement: DSGVO & Sales-Acceleration",
+  "clientIndustry": "Energie",
+  "clientName": "EnBW mobility+",
+  "category": "Consulting",
+  "richSnippetType": "CaseStudy",
+  "year": "Laufend",
+  "shortDescription": "Vertriebsbeschleunigung: Optimierung der Vertragsprozesse zwischen Recht und Vertrieb im dynamischen eMobility-Markt.",
+  "challenge": "Sicherstellung DSGVO-konformer Vertragsstrukturen bei gleichzeitiger Beschleunigung der Abläufe zwischen Recht und Vertrieb in einem schnell wachsenden Markt.",
+  "solution": "Standardisierung von Fristen- und Dokumentationsprozessen in Cloud-PMO-Strukturen, Anpassung von Vertriebsverträgen und Erstellung auditrelevanter Unterlagen.",
+  "results": [
+    "Compliance: DSGVO-konforme Vertragsstrukturen vollständig etabliert",
+    "Time-to-Market: Optimierte und beschleunigte Abläufe zwischen Recht und Vertrieb",
+    "Sicherheit: Audit-sichere Unterlagen und Dokumentationsstandards geschaffen"
+  ],
+  "techStack": [
+    "Cloud PMO",
+    "Vertragsmanagementsysteme",
+    "DSGVO-Compliance-Tools",
+    "Energiewirtschaftliche Prozesse"
+  ],
+  "coverImage": {
+    "url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80",
+    "alt": "Elektroauto Ladestation Close-up - Symbol für eMobility"
+  },
+  "seo": {
+    "metaTitle": "Vertragsmanagement eMobility | Novartum",
+    "metaDescription": "Optimierung von Vertriebsverträgen und DSGVO-Compliance für EnBW mobility+. Effiziente Prozesse zwischen Legal und Sales."
+  }
+}
