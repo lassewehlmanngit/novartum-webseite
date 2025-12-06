@@ -26,6 +26,7 @@ interface ExpertCTAProps {
   primaryCtaLabel?: string;
   emailCtaLabel?: string;
   phoneCtaLabel?: string;
+  defaultEmailSubject?: string;
   trustBadges?: string[];
   // Kept for backward compatibility if needed, though current design is unified
   variant?: 'compact' | 'wide'; 
@@ -38,6 +39,7 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
   primaryCtaLabel = "Kostenloses Erstgespräch (30 Min.)",
   emailCtaLabel = "E-Mail senden",
   phoneCtaLabel = "Jetzt anrufen",
+  defaultEmailSubject,
   trustBadges = ["✓ Unverbindlich", "✓ Kostenlos", "✓ Diskret"],
   expert: initialExpert,
   expertId
@@ -156,7 +158,7 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                   <Calendar size={18} /> <span data-cc-field="primaryCtaLabel">{primaryCtaLabel}</span>
                 </a>
                 <a 
-                  href={`mailto:${expert.email}`}
+                  href={`mailto:${expert.email}${defaultEmailSubject ? `?subject=${encodeURIComponent(defaultEmailSubject)}` : ''}`}
                   onClick={handleEmailClick}
                   className="w-full flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold py-3 px-6 rounded-xl transition border border-slate-700 hover:border-slate-600"
                   data-cc-field="email"

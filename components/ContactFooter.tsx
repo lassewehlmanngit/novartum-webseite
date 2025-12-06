@@ -7,6 +7,7 @@ import { trackCTAClick, trackEmailClick, trackPhoneClick, trackFormSubmit } from
 const ContactFooter: React.FC<ContactFooterProps> = ({ 
   contactPerson: initialContactPerson,
   contactPersonId,
+  defaultEmailSubject = "Anfrage über Novartum Website",
   links = {
     services: [],
     company: [],
@@ -200,7 +201,7 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                   <div className="space-y-4">
                      {contactPerson?.email && (
                      <a 
-                       href={`mailto:${contactPerson.email}`} 
+                       href={`mailto:${contactPerson.email}${defaultEmailSubject ? `?subject=${encodeURIComponent(defaultEmailSubject)}` : ''}`} 
                        onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
                        className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
                        data-cc-field="contactPerson.email"

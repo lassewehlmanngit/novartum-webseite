@@ -650,6 +650,7 @@ _structures:
           primaryCtaLabel: "Kostenloses Erstgespräch (30 Min.)"
           emailCtaLabel: "E-Mail senden"
           phoneCtaLabel: "Jetzt anrufen"
+          defaultEmailSubject: "Anfrage zu SAM & Lizenzmanagement"
           trustBadges: ["✓ Unverbindlich", "✓ Kostenlos", "✓ Diskret"]
           expertId: ""
         _inputs:
@@ -661,6 +662,10 @@ _structures:
             type: text
           phoneCtaLabel:
             type: text
+          defaultEmailSubject:
+            type: text
+            label: "Standard E-Mail Betreff"
+            comment: "Dieser Betreff wird automatisch in E-Mail-Links verwendet"
           trustBadges:
             type: array
           expertId:

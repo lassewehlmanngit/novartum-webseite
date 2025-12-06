@@ -61,6 +61,7 @@
       "description": "Haben Sie spezifische Fragen zu Oracle-Audits, Microsoft-Verträgen oder Cloud-FinOps? Dr. Weber hat über 20 Jahre Erfahrung in der Abwehr von Nachforderungen und der Optimierung komplexer Lizenzszenarien.",
       "primaryCtaLabel": "Kostenloses Erstgespräch (30 Min.)",
       "emailCtaLabel": "E-Mail senden",
+      "defaultEmailSubject": "Anfrage zu SAM & Lizenzmanagement",
       "phoneCtaLabel": "Jetzt anrufen",
       "trustBadges": [
         "✓ Unverbindlich",

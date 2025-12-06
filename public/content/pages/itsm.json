@@ -163,6 +163,7 @@
       "description": "Ihr Service Desk ist überlastet oder die Anwenderzufriedenheit sinkt? Oft liegt es nicht am Tool, sondern am Prozess. Wir analysieren Ihre Workflows und finden die Flaschenhälse.",
       "primaryCtaLabel": "Kostenloses Erstgespräch (30 Min.)",
       "emailCtaLabel": "E-Mail senden",
+      "defaultEmailSubject": "Anfrage zu IT Service Management",
       "phoneCtaLabel": "Jetzt anrufen",
       "trustBadges": [
         "✓ Unverbindlich",

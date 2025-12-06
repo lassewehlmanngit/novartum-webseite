@@ -119,6 +119,7 @@
       "description": "Sie haben ein Angebot vorliegen? Senden Sie es uns (geschwärzt) zu. Wir geben Ihnen innerhalb von 48 Stunden eine Einschätzung zum Preisniveau und identifizieren fehlende Schutzklauseln.",
       "primaryCtaLabel": "Kostenloses Erstgespräch (30 Min.)",
       "emailCtaLabel": "E-Mail senden",
+      "defaultEmailSubject": "Anfrage zu IT-Einkauf & Procurement",
       "phoneCtaLabel": "Jetzt anrufen",
       "trustBadges": [
         "✓ Unverbindlich",

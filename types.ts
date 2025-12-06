@@ -220,6 +220,7 @@ export interface FooterLinks {
 export interface ContactFooterProps {
   contactPerson?: ContactPerson;
   contactPersonId?: string;
+  defaultEmailSubject?: string;
   links?: FooterLinks;
 }
 
