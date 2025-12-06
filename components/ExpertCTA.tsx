@@ -98,13 +98,13 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
             
             <div className="flex flex-col items-center text-center relative z-10" data-cc-field="expert">
               {expert.image && expert.image.trim() ? (
-                <img
-                  src={expert.image}
-                  alt={expert.name}
-                  className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-slate-700 shadow-2xl"
-                  data-cc-field="image"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
+              <img
+                src={expert.image}
+                alt={expert.name}
+                className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-slate-700 shadow-2xl"
+                data-cc-field="image"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
                     const parent = target.parentElement;
                     if (parent) {
                         target.style.display = 'none';

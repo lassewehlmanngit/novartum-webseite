@@ -167,26 +167,26 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
 
                   <div className="flex items-center gap-5 mb-10">
                     {contactPerson && contactPerson.image && contactPerson.image.trim() ? (
-                      <img 
-                          src={contactPerson.image} 
-                          alt={contactPerson.name} 
-                          className="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-lg"
-                          data-cc-field="contactPerson.image"
-                          onError={(e) => {
-                            const target = e.target as HTMLImageElement;
+                    <img 
+                        src={contactPerson.image} 
+                        alt={contactPerson.name} 
+                        className="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-lg"
+                        data-cc-field="contactPerson.image"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
                             const parent = target.parentElement;
                             if (parent) {
-                                target.style.display = 'none';
+                          target.style.display = 'none';
                                 // Avoid adding duplicate fallbacks
                                 if (parent.querySelector('.fallback-avatar-footer')) return;
                                 
-                                const fallback = document.createElement('div');
+                            const fallback = document.createElement('div');
                                 fallback.className = 'w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 shadow-lg flex items-center justify-center fallback-avatar-footer';
-                                fallback.innerHTML = `<span class="text-2xl text-slate-500 font-bold">${contactPerson?.name ? contactPerson.name.charAt(0) : '?'}</span>`;
-                                parent.insertBefore(fallback, target);
-                            }
-                          }}
-                      />
+                            fallback.innerHTML = `<span class="text-2xl text-slate-500 font-bold">${contactPerson?.name ? contactPerson.name.charAt(0) : '?'}</span>`;
+                            parent.insertBefore(fallback, target);
+                          }
+                        }}
+                    />
                     ) : (
                         <div className="w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 shadow-lg flex items-center justify-center">
                             <span className="text-2xl text-slate-500 font-bold">
