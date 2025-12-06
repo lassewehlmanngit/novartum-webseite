@@ -2,52 +2,20 @@
 title: Impressum
 lastUpdated: 01.03.2025
 ---
+## **Angaben gemäß § 5 TMG:**
 
-### Angaben gemäß § 5 TMG
+**Novartum GmbH & Co. Holding KG**<br>Finkenstraße 4<br>90762 Fürth
 
-**novartum GmbH**  
-Musterstraße 123  
-80331 München  
-Deutschland
+\+49 911 225 060<br>[info@novartum.com](mailto:info@novartum.com)<br>[https://novartum.com/](https://novartum.com/)
 
-### Kontakt
+Geschäftsführer: Dr. Matthias Schuchardt<br>Sitz und Registergericht: Fürth HRA 11625<br>USt-IdNr. gem. § 27 a Umsatzsteuergesetz: DE341270501<br>Wirtschafts-IdNr. gem. § 139 c Abgabenordnung: DE341270501
 
-Telefon: [+49 89 12345678](tel:+498912345678)  
-E-Mail: [info@novartum.com](mailto:info@novartum.com)
+### **Persönlich haftende Gesellschafterin:**
 
-### Vertretungsberechtigte Geschäftsführer
+**novartum Management GmbH<br>‍**Geschäftsführer: Dr. Matthias Schuchardt<br>Sitz und Registergericht: Fürth HRB 21583<br>St.-Nr.: 218 / 133 / 70015
 
-Dr. Michael Weber
+### **Rechtshinweis**
 
-### Registereintrag
+Die Novartum GmbH & Co. Holding KG prüft und aktualisiert die Informationen auf ihren Web-Seiten ständig. Trotz aller Sorgfalt können sich Daten zwischenzeitlich verändert haben. Eine Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit der zur Verfügung gestellten Informationen kann daher nicht übernommen werden. Ebenfalls wird keine Haftung für Schäden übernommen, die sich aus deren Nutzung ergeben. Gleiches gilt auch für alle anderen Websites, auf die mittels Hyperlink verwiesen wird. Die Novartum GmbH & Co. Holding KG ist für die Inhalte der Websites, die auf Grund einer solchen Verbindung erreicht werden, nicht verantwortlich. Des Weiteren behält sich die Novartum GmbH & Co. Holding KG das Recht vor, Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen. Für sämtliche Rechtsbeziehungen gilt deutsches Recht. Gerichtsstand ist Fürth.
 
-Eintragung im Handelsregister.  
-**Registergericht:** Amtsgericht München  
-**Registernummer:** HRB 123456
-
-### Umsatzsteuer-ID
-
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:  
-**DE 123456789**
-
-### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
-
-Dr. Michael Weber  
-Musterstraße 123  
-80331 München
-
----
-
-### Haftungsausschluss (Disclaimer)
-
-#### Haftung für Inhalte
-
-Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-
-#### Haftung für Links
-
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-
-#### Urheberrecht
-
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und grundsätzlich nicht bereit.
