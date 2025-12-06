@@ -45,7 +45,8 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
   const [expert, setExpert] = useState<Expert | undefined>(initialExpert);
 
   useEffect(() => {
-    if (expertId && !initialExpert) {
+    // If expertId is present, ALWAYS fetch it, ignoring initialExpert
+    if (expertId) {
       fetch(`/content/team/members/${expertId}.json`)
         .then(res => res.json())
         .then(data => setExpert(data))
