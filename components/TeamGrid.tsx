@@ -67,17 +67,33 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
                   {JSON.stringify(personSchema)}
                 </script>
                 <div className="relative mb-6 overflow-hidden rounded-xl h-80 w-full bg-slate-200">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  data-cc-field="image"
-                  onError={(e) => {
-                    // Fallback to placeholder if image fails to load
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop';
-                  }}
+                {member.image && member.image.trim() ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    data-cc-field="image"
+                    onError={(e) => {
+                      // Fallback to placeholder if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      const parent = target.parentElement;
+                      if (parent) {
+                        target.style.display = 'none';
+                        const fallback = document.createElement('div');
+                        fallback.className = 'w-full h-full bg-slate-300 flex items-center justify-center';
+                        fallback.innerHTML = `<div class="text-slate-500 text-4xl font-bold">${member.name.charAt(0)}</div>`;
+                        if (!parent.querySelector('.fallback-avatar')) {
+                          fallback.classList.add('fallback-avatar');
+                          parent.appendChild(fallback);
+                        }
+                      }
+                    }}
                   />
+                ) : (
+                  <div className="w-full h-full bg-slate-300 flex items-center justify-center">
+                    <div className="text-slate-500 text-4xl font-bold">{member.name.charAt(0)}</div>
+                  </div>
+                )}
                   {member.linkedin && (
                       <a 
                         href={member.linkedin}
