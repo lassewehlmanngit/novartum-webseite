@@ -1,22 +1,32 @@
 {
+  "_schema": "default",
   "title": "Home",
   "seo": {
     "metaTitle": "Novartum - IT Services & Consulting",
     "metaDescription": "Novartum ist Ihr Partner für Softwareentwicklung, Lizenzmanagement (SAM) und IT-Consulting.",
-    "metaKeywords": ["IT", "Consulting", "Software", "SAM"],
+    "metaKeywords": [
+      "IT",
+      "Consulting",
+      "Software",
+      "SAM"
+    ],
     "ogImage": ""
   },
   "content_blocks": [
     {
       "_type": "hero_slice",
+      "title": "Ihre IT-Zukunft: Maßgeschneidert & Sicher.",
       "tagline": "Novartum IT Services",
-      "title": "Ihre IT-Zukunft: Maßgeschneiderte & Sicher.",
       "description": "Experten für Softwareentwicklung, Lizenzmanagement und IT-Beratung. Seit 20 Jahren Erfahrung.",
       "primaryButtonText": "Gemeinsames Projekt starten",
-      "primaryLink": "#contact"
+      "primaryLink": "#contact",
+      "secondaryButtonText": "Mehr erfahren",
+      "secondaryLink": ""
     },
     {
-      "_type": "trustbar_slice"
+      "_type": "trustbar_slice",
+      "title": "Trust Bar",
+      "clients": []
     },
     {
       "_type": "services_slice",
@@ -52,13 +62,22 @@
     },
     {
       "_type": "about_slice",
-      "subtitle": "Über uns",
       "title": "Wer ist novartum?",
+      "subtitle": "Über uns",
       "text": "<p>Novartum ist Ihr verlässlicher Partner für digitale Transformation. Wir verbinden technologische Exzellenz mit tiefem Verständnis für geschäftliche Prozesse.</p><p>Unser Team aus erfahrenen Beratern und Entwicklern steht für Qualität, Transparenz und nachhaltige Lösungen. Wir sehen uns nicht nur als Dienstleister, sondern als Teil Ihres Teams.</p>",
       "stats": [
-        { "value": "20+", "label": "Jahre Erfahrung" },
-        { "value": "500+", "label": "Projekte" },
-        { "value": "100%", "label": "Inhabergeführt" }
+        {
+          "value": "20+",
+          "label": "Jahre Erfahrung"
+        },
+        {
+          "value": "500+",
+          "label": "Projekte"
+        },
+        {
+          "value": "100%",
+          "label": "Inhabergeführt"
+        }
       ],
       "features": [
         {
@@ -80,8 +99,8 @@
     },
     {
       "_type": "case_studies_slice",
-      "subtitle": "Referenzen",
       "title": "Projekte aus der Praxis",
+      "subtitle": "Referenzen",
       "items": [
         {
           "icon": "Truck",
