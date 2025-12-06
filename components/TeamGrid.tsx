@@ -92,9 +92,11 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
               
               <div className="w-10 h-0.5 bg-slate-200 mb-4 group-hover:bg-orange-500 transition-colors"></div>
               
-              <p className="text-slate-600 text-sm leading-relaxed" data-cc-field="bio">
-                {member.bio}
-              </p>
+              {member.bio && member.bio.trim() && (
+                <p className="text-slate-600 text-sm leading-relaxed" data-cc-field="bio">
+                  {member.bio}
+                </p>
+              )}
             </div>
           );
         })}

@@ -249,7 +249,7 @@ export interface TeamMember {
   name: string;
   role: string;
   image: string;
-  bio: string;
+  bio?: string;
   linkedin?: string;
 }
 
