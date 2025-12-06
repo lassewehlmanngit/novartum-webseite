@@ -219,6 +219,7 @@ export interface FooterLinks {
 
 export interface ContactFooterProps {
   contactPerson?: ContactPerson;
+  contactPersonId?: string;
   links?: FooterLinks;
 }
 

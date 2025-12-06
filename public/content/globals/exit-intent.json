@@ -16,7 +16,8 @@
       "ctaText": "Checkliste herunterladen",
       "ctaLink": "/downloads/lizenz-checkliste.pdf",
       "ctaIconType": "download",
-      "secondaryCta": "Kostenloses Erstgespräch"
+      "secondaryCta": "Kostenloses Erstgespräch",
+      "expertId": "michael-weber"
     },
     {
       "pathKeywords": ["karriere"],

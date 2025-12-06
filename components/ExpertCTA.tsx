@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Calendar, Phone, CheckCircle2 } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 import { trackCTAClick, trackEmailClick, trackPhoneClick } from '../utils/analytics';
@@ -22,6 +22,7 @@ interface ExpertCTAProps {
   title?: string;
   description?: string;
   expert?: Expert;
+  expertId?: string;
   primaryCtaLabel?: string;
   emailCtaLabel?: string;
   phoneCtaLabel?: string;
@@ -38,20 +39,24 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
   emailCtaLabel = "E-Mail senden",
   phoneCtaLabel = "Jetzt anrufen",
   trustBadges = ["✓ Unverbindlich", "✓ Kostenlos", "✓ Diskret"],
-  expert = {
-    name: "Dr. Michael Weber",
-    role: "Head of SAM & Compliance",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
-    bio: "Ehemals auf Herstellerseite, kenne ich die Taktiken der Auditoren genau. Mein Ziel ist es, dieses Wissen zu 100% für den Schutz Ihres Budgets einzusetzen.",
-    email: "michael.weber@novartum.com",
-    calendarLink: "#",
-    phone: "+49 89 12345678",
-    stats: {
-      experience: "20+ Jahre",
-      projects: "100+ Projekte"
-    }
-  }
+  expert: initialExpert,
+  expertId
 }) => {
+  const [expert, setExpert] = useState<Expert | undefined>(initialExpert);
+
+  useEffect(() => {
+    if (expertId && !initialExpert) {
+      fetch(`/content/team/members/${expertId}.json`)
+        .then(res => res.json())
+        .then(data => setExpert(data))
+        .catch(console.error);
+    } else if (initialExpert) {
+      setExpert(initialExpert);
+    }
+  }, [expertId, initialExpert]);
+
+  if (!expert) return null;
+
   const handleCalendarClick = () => {
     trackCTAClick('expert_calendar_booking', 'ExpertCTA');
   };

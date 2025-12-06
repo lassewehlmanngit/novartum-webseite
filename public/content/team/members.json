@@ -1,44 +1,7 @@
 [
-  {
-    "name": "Dr. Michael Weber",
-    "role": "Managing Director & Founder",
-    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
-    "bio": "20 Jahre Erfahrung im IT-Management. Promovierter Informatiker mit dem Blick für wirtschaftliche Zusammenhänge. Passionierter Verhandler.",
-    "linkedin": null
-  },
-  {
-    "name": "Sarah Linder",
-    "role": "Head of Consulting",
-    "image": "https://images.unsplash.com/photo-1573496359-7013ac2bebb6?q=80&w=400&auto=format&fit=crop",
-    "bio": "Expertin für SAM und Lizenzrecht. Hat zuvor Audits für große Softwarehersteller geleitet und kennt die 'andere Seite' des Tisches.",
-    "linkedin": null
-  },
-  {
-    "name": "Thomas Bergmann",
-    "role": "Lead Software Architect",
-    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
-    "bio": "Cloud-Native Enthusiast. Baut skalierbare Architekturen auf Azure und AWS. Liebt Clean Code und DevOps.",
-    "linkedin": null
-  },
-  {
-    "name": "Julia Kobert",
-    "role": "Senior Project Manager",
-    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
-    "bio": "Zertifizierte Scrum Masterin. Hält komplexe Projekte auf Kurs und sorgt dafür, dass Time, Budget und Scope eingehalten werden.",
-    "linkedin": null
-  },
-  {
-    "name": "Markus Klein",
-    "role": "Head of Sales",
-    "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop",
-    "bio": "Kundenversteher. Fokus auf langfristige Partnerschaften statt schnellem Verkauf. Ihr erster Ansprechpartner.",
-    "linkedin": null
-  },
-  {
-    "name": "Elena Rodriguez",
-    "role": "IT-Legal Counsel",
-    "image": "https://images.unsplash.com/photo-1598550874175-4d7112ee7f43?q=80&w=400&auto=format&fit=crop",
-    "bio": "Spezialistin für IT-Vertragsrecht und Datenschutz (DSGVO/NIS2). Sichert unsere Projekte juristisch ab.",
-    "linkedin": null
-  }
+  "matthias-schuchardt",
+  "oliver-winkle",
+  "tobias-wolfermann",
+  "andrea-pichl",
+  "henriette-humml"
 ]

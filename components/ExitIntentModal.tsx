@@ -5,11 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 interface ExitIntentModalProps {
   onClose: () => void;
-  expert?: {
-    name: string;
-    email: string;
-    calendarLink?: string;
-  };
+  // expert prop removed or optional as it is not used in previous implementation
 }
 
 interface IntentContent {
@@ -20,15 +16,23 @@ interface IntentContent {
   ctaLink: string;
   ctaIconType?: 'calendar' | 'download' | 'arrow' | 'mail';
   secondaryCta: string;
+  expertId?: string; // Add expertId
 }
 
 interface RouteConfig extends IntentContent {
   pathKeywords: string[];
 }
 
+interface Expert {
+    name: string;
+    role: string;
+    image: string;
+}
+
 const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ onClose }) => {
   const location = useLocation();
   const [config, setConfig] = useState<{ default: IntentContent, routes: RouteConfig[] } | null>(null);
+  const [expert, setExpert] = useState<Expert | null>(null);
 
   useEffect(() => {
     trackExitIntent();
@@ -53,6 +57,18 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ onClose }) => {
 
     return match || config.default;
   }, [location.pathname, config]);
+
+  // Fetch expert if needed
+  useEffect(() => {
+    if (content?.expertId) {
+        fetch(`/content/team/members/${content.expertId}.json`)
+            .then(res => res.json())
+            .then(setExpert)
+            .catch(console.error);
+    } else {
+        setExpert(null);
+    }
+  }, [content?.expertId]);
 
   const getIcon = (type?: string) => {
     switch(type) {
@@ -99,10 +115,25 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ onClose }) => {
         <div className="md:w-2/5 bg-slate-900 p-8 flex flex-col justify-center relative overflow-hidden text-white">
            <div className="absolute top-0 right-0 w-40 h-40 bg-orange-600/20 blur-[60px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
            <div className="relative z-10">
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-orange-400">
-                 <FileText size={24} />
-              </div>
-              <span className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-2 block" data-cc-field="tagline">{content.tagline}</span>
+              {expert ? (
+                  <div className="mb-6 flex items-center gap-4">
+                      <img 
+                        src={expert.image} 
+                        alt={expert.name} 
+                        className="w-16 h-16 rounded-full border-2 border-orange-500 shadow-lg object-cover"
+                      />
+                      <div>
+                          <p className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-1">{content.tagline}</p>
+                          <p className="text-xs text-slate-400 font-medium">Empfohlen von {expert.name.split(' ')[0]}</p>
+                      </div>
+                  </div>
+              ) : (
+                <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-orange-400">
+                    <FileText size={24} />
+                </div>
+              )}
+              
+              {!expert && <span className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-2 block" data-cc-field="tagline">{content.tagline}</span>}
               <h3 className="text-2xl font-bold leading-tight mb-4" data-cc-field="title">{content.title}</h3>
               <p className="text-slate-300 text-sm leading-relaxed" data-cc-field="description">
                  {content.description}

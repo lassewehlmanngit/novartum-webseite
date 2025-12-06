@@ -1,11 +1,5 @@
 {
-  "contactPerson": {
-    "name": "Dr. Michael Weber",
-    "role": "Senior IT Consultant",
-    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
-    "email": "michael.weber@novartum.com",
-    "phone": "+49 89 12345678"
-  },
+  "contactPersonId": "michael-weber",
   "links": {
     "services": [
       { "label": "Softwareentwicklung", "link": "/software" },

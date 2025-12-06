@@ -14,9 +14,17 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
     if (!initialMembers || initialMembers.length === 0) {
       fetch('/content/team/members.json')
         .then(res => res.json())
-        .then(data => {
-            // Check if data is array or object with members property
-            if (Array.isArray(data)) {
+        .then(async (data) => {
+            // Check if data is array of strings (IDs)
+            if (Array.isArray(data) && typeof data[0] === 'string') {
+                const promises = data.map((id: string) => 
+                  fetch(`/content/team/members/${id}.json`).then(res => res.json())
+                );
+                const loadedMembers = await Promise.all(promises);
+                setMembers(loadedMembers);
+            }
+            // Fallback for old structure (array of objects)
+            else if (Array.isArray(data)) {
                 setMembers(data);
             } else if (data.members) {
                 setMembers(data.members);

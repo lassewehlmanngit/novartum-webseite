@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone, Calendar, CheckCircle, AlertCircle } from 'lucide-react';
-import { ContactFooterProps, FooterLink } from '../types';
+import { ContactFooterProps, FooterLink, ContactPerson } from '../types';
 import { Link } from 'react-router-dom';
 import { trackCTAClick, trackEmailClick, trackPhoneClick, trackFormSubmit } from '../utils/analytics';
 
 const ContactFooter: React.FC<ContactFooterProps> = ({ 
-  contactPerson = {
-    name: "Dr. Michael Weber",
-    role: "Senior IT Consultant",
-    image: "https://picsum.photos/200/200?grayscale",
-    email: "michael.weber@novartum.com",
-    phone: "+49 89 12345678"
-  },
+  contactPerson: initialContactPerson,
+  contactPersonId,
   links = {
     services: [],
     company: [],
@@ -19,6 +14,19 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
     legal: []
   }
 }) => {
+  const [contactPerson, setContactPerson] = useState<ContactPerson | undefined>(initialContactPerson);
+
+  useEffect(() => {
+    if (contactPersonId && !initialContactPerson) {
+      fetch(`/content/team/members/${contactPersonId}.json`)
+        .then(res => res.json())
+        .then(data => setContactPerson(data))
+        .catch(console.error);
+    } else if (initialContactPerson) {
+      setContactPerson(initialContactPerson);
+    }
+  }, [contactPersonId, initialContactPerson]);
+
   // Form State
   const [formData, setFormData] = useState({
     name: '',
