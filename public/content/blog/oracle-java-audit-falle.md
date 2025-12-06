@@ -1,8 +1,8 @@
 ---
 title: "Vorsicht Falle: Die neue Oracle Java Metrik"
 date: "2025-01-15"
-author: "Dr. Michael Weber"
-authorRole: "Senior Consultant"
+author: "Dr. Matthias Schuchardt"
+authorRole: "Head of Business Development"
 category: "Software Asset Management"
 readTime: "4 Min"
 image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1080&auto=format&fit=crop"

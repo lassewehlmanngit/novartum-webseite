@@ -1,8 +1,8 @@
 ---
 title: "Der EU AI Act: Was Software-Hersteller jetzt wissen müssen"
 date: "2025-02-28"
-author: "Sarah Linder"
-authorRole: "Legal Tech Expert"
+author: "Andrea Pichl"
+authorRole: "Head of Business Development"
 category: "Compliance"
 readTime: "7 Min"
 image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1080&auto=format&fit=crop"

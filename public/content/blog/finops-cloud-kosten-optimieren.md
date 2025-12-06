@@ -1,8 +1,8 @@
 ---
 title: "FinOps 2025: Warum Cloud-Kosten explodieren und wie Sie gegensteuern"
 date: "2025-03-12"
-author: "Dr. Michael Weber"
-authorRole: "Senior Consultant"
+author: "Dr. Matthias Schuchardt"
+authorRole: "Head of Business Development"
 category: "Cloud Strategy"
 readTime: "5 Min"
 image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1080&auto=format&fit=crop"
