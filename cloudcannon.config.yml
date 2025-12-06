@@ -35,6 +35,32 @@ collections_config:
     parser: json
     output: false
     name: "Team"
+    _inputs:
+      image:
+        type: image
+        label: "Profilbild"
+        comment: "Laden Sie ein Profilbild für dieses Teammitglied hoch"
+      name:
+        type: text
+        label: "Name"
+      role:
+        type: text
+        label: "Rolle"
+      email:
+        type: text
+        label: "E-Mail"
+      bio:
+        type: textarea
+        label: "Biografie"
+      linkedin:
+        type: text
+        label: "LinkedIn URL"
+      phone:
+        type: text
+        label: "Telefon"
+      department:
+        type: text
+        label: "Abteilung"
 
   partners:
     path: public/content/partners
