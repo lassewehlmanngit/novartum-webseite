@@ -1,10 +1,17 @@
 {
+  "_schema": "default",
   "title": "Einkauf",
+  "seo": {
+    "metaTitle": "",
+    "metaDescription": "",
+    "metaKeywords": [],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",
-      "tagline": "Unabhängiges IT-Sourcing",
       "title": "Ihr Gewinn liegt im Einkauf.",
+      "tagline": "Unabhängiges IT-Sourcing",
       "description": "Wir verhandeln Ihre IT-Verträge nach dem 'Gain-Share'-Prinzip: Wir finanzieren uns aus den erzielten Einsparungen. 100% unabhängig von Systemhäusern und Herstellern.",
       "primaryButtonText": "Kostenlosen Vertrags-Check anfragen",
       "primaryLink": "#contact",
@@ -20,22 +27,26 @@
         {
           "icon": "BadgeEuro",
           "title": "Gain-Share Verhandlungen",
-          "description": "Unser Versprechen: Kein Risiko für Sie. Unser Honorar orientiert sich direkt an der erzielten Einsparung (Savings). Ideal für Software-Renewals."
+          "description": "Unser Versprechen: Kein Risiko für Sie. Unser Honorar orientiert sich direkt an der erzielten Einsparung (Savings). Ideal für Software-Renewals.",
+          "link": "/path"
         },
         {
           "icon": "FileSignature",
           "title": "Vertrags-Checks (Second Opinion)",
-          "description": "Sie haben ein Angebot vorliegen? Wir prüfen in 48h Marktpreise, versteckte Margen und fehlende Schutzklauseln (Price-Caps)."
+          "description": "Sie haben ein Angebot vorliegen? Wir prüfen in 48h Marktpreise, versteckte Margen und fehlende Schutzklauseln (Price-Caps).",
+          "link": "/path"
         },
         {
           "icon": "Briefcase",
           "title": "Ausschreibungs-Management",
-          "description": "Strukturierte RFPs für komplexe Projekte. Wir sorgen für Vergleichbarkeit und Wettbewerb, wo vorher Monopole waren."
+          "description": "Strukturierte RFPs für komplexe Projekte. Wir sorgen für Vergleichbarkeit und Wettbewerb, wo vorher Monopole waren.",
+          "link": "/path"
         },
         {
           "icon": "ShoppingCart",
           "title": "Tail-End Management",
-          "description": "Wir bündeln Ihre C-Lieferanten (Mäuse, Toner, Spezialsoftware). Ein Kreditor, eine Rechnung, minimale Prozesskosten."
+          "description": "Wir bündeln Ihre C-Lieferanten (Mäuse, Toner, Spezialsoftware). Ein Kreditor, eine Rechnung, minimale Prozesskosten.",
+          "link": "/path"
         }
       ]
     },
@@ -43,19 +54,19 @@
       "_type": "synergy_slice",
       "title": "Kaufen Sie nicht nur billiger, sondern richtiger.",
       "subtitle": "Technisch validierte Beschaffung",
-      "description": "<p>Externe Einkaufsberater verhandeln oft nur den Preis, übersehen aber technische Fallstricke. Ein günstiger Vertrag nützt nichts, wenn die Software technisch nicht zu Ihrer Architektur passt oder operative Folgekosten verursacht.</p><p>Da unsere Einkäufer Tür an Tür mit SAM-Experten und Architekten arbeiten, ist jeder Vertrag technisch validiert.</p>",
       "items": [
         {
           "title": "Einkauf + SAM",
-          "icon": "FileCheck",
-          "description": "Wir prüfen vor der Unterschrift, ob die Metriken (User vs. Device vs. CPU) zu Ihrer Architektur passen. Ein günstiger Preis hilft nicht, wenn die Metrik in Ihrer VMware-Umgebung Millionenrisiken auslöst."
+          "description": "Wir prüfen vor der Unterschrift, ob die Metriken (User vs. Device vs. CPU) zu Ihrer Architektur passen. Ein günstiger Preis hilft nicht, wenn die Metrik in Ihrer VMware-Umgebung Millionenrisiken auslöst.",
+          "icon": "FileCheck"
         },
         {
           "title": "Einkauf + ITSM",
-          "icon": "LayoutTemplate",
-          "description": "Wir verhandeln Verträge so, dass sie operativ handhabbar sind. Keine komplexen Portale, die Ihren Service Desk lähmen. Wir sorgen dafür, dass Beschaffungsprozesse automatisiert ablaufen können."
+          "description": "Wir verhandeln Verträge so, dass sie operativ handhabbar sind. Keine komplexen Portale, die Ihren Service Desk lähmen. Wir sorgen dafür, dass Beschaffungsprozesse automatisiert ablaufen können.",
+          "icon": "LayoutTemplate"
         }
-      ]
+      ],
+      "description": "<p>Externe Einkaufsberater verhandeln oft nur den Preis, übersehen aber technische Fallstricke. Ein günstiger Vertrag nützt nichts, wenn die Software technisch nicht zu Ihrer Architektur passt oder operative Folgekosten verursacht.</p><p>Da unsere Einkäufer Tür an Tür mit SAM-Experten und Architekten arbeiten, ist jeder Vertrag technisch validiert.</p>"
     },
     {
       "_type": "vendor_deep_dive_slice",
@@ -68,7 +79,11 @@
           "logo": "Enterprise Agreements",
           "color": "bg-blue-600",
           "label": "Einsparpotenzial: Hoch",
-          "risks": ["Intransparente Bundles (E3 vs E5)", "Versteckte Preiserhöhungen bei Renewal", "Unnötige On-Premise Altlasten"],
+          "risks": [
+            "Intransparente Bundles (E3 vs E5)",
+            "Versteckte Preiserhöhungen bei Renewal",
+            "Unnötige On-Premise Altlasten"
+          ],
           "solution": "Wir nutzen 'Architectural Amendments' zur Vertragsoptimierung. Wir verhandeln Reseller-Margen separat (Cost-Plus) und sichern Price-Protection für die Cloud-Migration."
         },
         {
@@ -76,7 +91,11 @@
           "logo": "Infrastruktur & Clients",
           "color": "bg-slate-700",
           "label": "Einsparpotenzial: Mittel",
-          "risks": ["Mischkalkulationen der Systemhäuser", "Überdimensionierte Hardware-Specs", "Fehlende Open-Book Transparenz"],
+          "risks": [
+            "Mischkalkulationen der Systemhäuser",
+            "Überdimensionierte Hardware-Specs",
+            "Fehlende Open-Book Transparenz"
+          ],
           "solution": "Entbündelung von Hardware und Services. Wir führen Benchmark-Analysen gegen tagesaktuelle Marktpreise durch und verhandeln Rahmenverträge direkt mit Dell, HP oder Lenovo."
         },
         {
@@ -84,7 +103,11 @@
           "logo": "Salesforce / ServiceNow",
           "color": "bg-orange-600",
           "label": "Einsparpotenzial: Sehr Hoch",
-          "risks": ["Automatische 5-10% 'Uplifts' p.a.", "Renewal-Falle durch Auto-Renewal", "Bezahlen für Shelfware (Inaktive User)"],
+          "risks": [
+            "Automatische 5-10% 'Uplifts' p.a.",
+            "Renewal-Falle durch Auto-Renewal",
+            "Bezahlen für Shelfware (Inaktive User)"
+          ],
           "solution": "Durchsetzung von Ramping-Modellen (Zahlen nach Nutzungswachstum) und fixen Uplift-Caps. Bereinigung ungenutzter Lizenzen VOR der Vertragsverlängerung."
         }
       ]
@@ -94,15 +117,21 @@
       "title": "Verhandlungssicher in den nächsten Deal",
       "subtitle": "Kostenloser Erst-Check",
       "description": "Sie haben ein Angebot vorliegen? Senden Sie es uns (geschwärzt) zu. Wir geben Ihnen innerhalb von 48 Stunden eine Einschätzung zum Preisniveau und identifizieren fehlende Schutzklauseln.",
-      "expertId": "matthias-schuchardt"
+      "primaryCtaLabel": "Kostenloses Erstgespräch (30 Min.)",
+      "emailCtaLabel": "E-Mail senden",
+      "phoneCtaLabel": "Jetzt anrufen",
+      "trustBadges": [
+        "✓ Unverbindlich",
+        "✓ Kostenlos",
+        "✓ Diskret"
+      ],
+      "expertId": "tobias-wolfermann"
     },
     {
       "_type": "methodology_slice",
       "title": "Der Weg zum besten Deal",
       "subtitle": "Sourcing Lifecycle",
       "description": "Unser strukturierter Sourcing-Prozess garantiert Objektivität und revisionssichere Ergebnisse.",
-      "qualityTitle": "Ihre Vorteile",
-      "qualityItems": ["Sofortige Kostensenkung", "100% Unabhängigkeit", "Rechtssichere Verträge"],
       "steps": [
         {
           "number": "01",
@@ -134,6 +163,12 @@
           "title": "Review",
           "description": "Laufende Überwachung der Rechnungen und Leistung. Jährliche Reviews verhindern schleichende Preiserhöhungen."
         }
+      ],
+      "qualityTitle": "Ihre Vorteile",
+      "qualityItems": [
+        "Sofortige Kostensenkung",
+        "100% Unabhängigkeit",
+        "Rechtssichere Verträge"
       ]
     },
     {
@@ -142,9 +177,18 @@
       "subtitle": "Das Systemhaus-Dilemma",
       "text": "<p>Ihr Systemhaus ist nicht Ihr Freund. Es lebt von der Marge zwischen Einkauf und Verkauf. Je teurer Sie einkaufen, desto höher oft der Gewinn des Dienstleisters. Zusätzlich finanzieren sich viele 'kostenlose' Beratungen durch versteckte Backend-Rebates (Rückvergütungen) der Hersteller.</p><p><strong>Novartum dreht den Spieß um.</strong> Wir sind 100% unabhängig ('Buy-Side Only'). Wir akzeptieren keine Provisionen von Dritten. Unser Honorar finanziert sich oft komplett aus den Rückvergütungen, die wir für Sie sichtbar machen und an Sie zurückleiten.</p>",
       "stats": [
-        { "value": "0€", "label": "Provisionen von Dritten" },
-        { "value": "Gain-Share", "label": "Erfolgsmodell" },
-        { "value": "Open-Book", "label": "Transparenz" }
+        {
+          "value": "0€",
+          "label": "Provisionen von Dritten"
+        },
+        {
+          "value": "Gain-Share",
+          "label": "Erfolgsmodell"
+        },
+        {
+          "value": "Open-Book",
+          "label": "Transparenz"
+        }
       ],
       "features": [
         {
@@ -166,6 +210,8 @@
     },
     {
       "_type": "faq_slice",
+      "title": "FAQ",
+      "subtitle": "Wissen kompakt",
       "items": [
         {
           "question": "Wie verhandelt man einen Microsoft EA Vertrag optimal?",
