@@ -1,0 +1,13 @@
+{
+  "id": "thomas-bergmann",
+  "name": "Thomas Bergmann",
+  "role": "Lead Software Architect",
+  "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
+  "bio": "Code ist Handwerk. Ich unterstütze Sie dabei, technische Schulden zu vermeiden und skalierbare Lösungen zu bauen, die auch morgen noch wartbar sind.",
+  "email": "thomas.bergmann@novartum.com",
+  "linkedin": "#",
+  "stats": {
+    "experience": "15+ Jahre",
+    "projects": "50+ Systeme"
+  }
+}

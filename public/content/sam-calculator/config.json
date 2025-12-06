@@ -1,11 +1,11 @@
 {
   "contact": {
     "title": "Ihr persönlicher Ansprechpartner",
-    "name": "Dr. Michael Weber",
-    "role": "Senior IT Consultant",
-    "email": "michael.weber@novartum.com",
+    "name": "Dr. Matthias Schuchardt",
+    "role": "Head of Business Development & Vertrieb",
+    "email": "matthias.schuchardt@novartum.com",
     "phone": "+49 89 12345678",
-    "image": "https://picsum.photos/200/200?grayscale"
+    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop"
   },
   "nextSteps": {
     "title": "Empfohlene nächste Schritte",

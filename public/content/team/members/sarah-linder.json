@@ -1,0 +1,13 @@
+{
+  "id": "sarah-linder",
+  "name": "Sarah Linder",
+  "role": "Head of Consulting",
+  "image": "https://images.unsplash.com/photo-1573496359-7013ac2bebb6?q=80&w=400&auto=format&fit=crop",
+  "bio": "Ein Tool ist nur so gut wie der Prozess dahinter. Ich helfe Ihnen, ITIL nicht als Bürokratie, sondern als Enabler für schnellen Support zu leben.",
+  "email": "sarah.linder@novartum.com",
+  "linkedin": "#",
+  "stats": {
+    "experience": "12+ Jahre",
+    "projects": "80+ Implementierungen"
+  }
+}
