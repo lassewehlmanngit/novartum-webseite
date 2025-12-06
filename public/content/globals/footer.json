@@ -1,27 +1,69 @@
 {
-  "contactPersonId": "michael-weber",
+  "contactPersonId": "henriette-humml",
   "links": {
     "services": [
-      { "label": "Softwareentwicklung", "link": "/software" },
-      { "label": "SAM & Lizenzen", "link": "/sam" },
-      { "label": "IT Service Management", "link": "/itsm" },
-      { "label": "IT-Einkauf", "link": "/einkauf" },
-      { "label": "IT-Consulting", "link": "/consulting" }
+      {
+        "label": "Softwareentwicklung",
+        "link": "/software"
+      },
+      {
+        "label": "SAM & Lizenzen",
+        "link": "/sam"
+      },
+      {
+        "label": "IT Service Management",
+        "link": "/itsm"
+      },
+      {
+        "label": "IT-Einkauf",
+        "link": "/einkauf"
+      },
+      {
+        "label": "IT-Consulting",
+        "link": "/consulting"
+      }
     ],
     "resources": [
-      { "label": "Referenzprojekte", "link": "/projekte" },
-      { "label": "Blog", "link": "/blog" }
+      {
+        "label": "Referenzprojekte",
+        "link": "/projekte"
+      },
+      {
+        "label": "Blog",
+        "link": "/blog"
+      }
     ],
     "company": [
-      { "label": "Über uns", "link": "/team" },
-      { "label": "Team", "link": "/team" },
-      { "label": "Karriere", "link": "/karriere" },
-      { "label": "Partner", "link": "/partner" }
+      {
+        "label": "Über uns",
+        "link": "/team"
+      },
+      {
+        "label": "Team",
+        "link": "/team"
+      },
+      {
+        "label": "Karriere",
+        "link": "/karriere"
+      },
+      {
+        "label": "Partner",
+        "link": "/partner"
+      }
     ],
     "legal": [
-      { "label": "Impressum", "link": "/impressum" },
-      { "label": "Datenschutz", "link": "/datenschutz" },
-      { "label": "AGB", "link": "/agb" }
+      {
+        "label": "Impressum",
+        "link": "/impressum"
+      },
+      {
+        "label": "Datenschutz",
+        "link": "/datenschutz"
+      },
+      {
+        "label": "AGB",
+        "link": "/agb"
+      }
     ]
   }
 }
