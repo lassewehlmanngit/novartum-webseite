@@ -97,17 +97,37 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
             <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
             
             <div className="flex flex-col items-center text-center relative z-10" data-cc-field="expert">
-              <img
-                src={expert.image}
-                alt={expert.name}
-                className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-slate-700 shadow-2xl"
-                data-cc-field="image"
-                onError={(e) => {
-                  // Fallback to placeholder if image fails to load
-                  const target = e.target as HTMLImageElement;
-                  target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop';
-                }}
-              />
+              {expert.image && expert.image.trim() ? (
+                <img
+                  src={expert.image}
+                  alt={expert.name}
+                  className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-slate-700 shadow-2xl"
+                  data-cc-field="image"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    // The fallback div will be needed here, but we can't easily inject it into DOM structure cleanly
+                    // simpler to just hide it and let a sibling fallback show, or use state.
+                    // Given this is a functional component, we can't easily force re-render from onError without state.
+                    // A simple CSS approach:
+                    target.parentElement?.classList.add('image-load-error');
+                  }}
+                />
+              ) : (
+                 <div className="w-32 h-32 rounded-full bg-slate-700 flex items-center justify-center mb-6 border-4 border-slate-600 shadow-2xl">
+                    <span className="text-4xl font-bold text-slate-400">{expert.name.charAt(0)}</span>
+                 </div>
+              )}
+              
+              {/* Fallback for onError (hidden by default) */}
+              <div className="hidden image-error-fallback w-32 h-32 rounded-full bg-slate-700 flex items-center justify-center mb-6 border-4 border-slate-600 shadow-2xl">
+                  <span className="text-4xl font-bold text-slate-400">{expert.name.charAt(0)}</span>
+              </div>
+              <style>{`
+                .image-load-error img { display: none; }
+                .image-load-error .image-error-fallback { display: flex; }
+              `}</style>
+
               <h3 className="text-2xl font-bold mb-1" data-cc-field="name">{expert.name}</h3>
               <p className="text-orange-500 font-medium mb-4 text-sm uppercase tracking-wider" data-cc-field="role">{expert.role}</p>
               
