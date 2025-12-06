@@ -1,10 +1,17 @@
 {
+  "_schema": "default",
   "title": "SAM",
+  "seo": {
+    "metaTitle": "",
+    "metaDescription": "",
+    "metaKeywords": [],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",
-      "tagline": "Software Asset Management",
       "title": "Lizenzmanagement & SAM Strategie.",
+      "tagline": "Software Asset Management",
       "description": "Vermeiden Sie Compliance-Risiken und reduzieren Sie Ihre laufenden Softwarekosten. Wir schaffen Transparenz in Ihrem Lizenzportfolio und sichern Sie gegen Hersteller-Audits ab.",
       "primaryButtonText": "SAM-Potenzialanalyse",
       "primaryLink": "#calculator",
@@ -15,26 +22,31 @@
       "_type": "services_slice",
       "title": "SAM Leistungen",
       "subtitle": "Modular & Effektiv",
+      "description": "Beschreibung...",
       "items": [
         {
           "icon": "ShieldCheck",
           "title": "Audit Defense & Compliance",
-          "description": "Professionelle Begleitung bei Hersteller-Audits (Microsoft, Oracle, SAP). Wir wehren unberechtigte Forderungen ab und stellen Compliance her."
+          "description": "Professionelle Begleitung bei Hersteller-Audits (Microsoft, Oracle, SAP). Wir wehren unberechtigte Forderungen ab und stellen Compliance her.",
+          "link": "/path"
         },
         {
           "icon": "BarChart3",
           "title": "Lizenzoptimierung & Einsparung",
-          "description": "Analyse Ihrer Verträge und Nutzung. Wir identifizieren Überlizenzierung (Shelfware) und verhandeln bessere Konditionen."
+          "description": "Analyse Ihrer Verträge und Nutzung. Wir identifizieren Überlizenzierung (Shelfware) und verhandeln bessere Konditionen.",
+          "link": "/path"
         },
         {
           "icon": "Cloud",
           "title": "Cloud FinOps & SaaS",
-          "description": "Kostenkontrolle für Azure, AWS und Microsoft 365. Wir optimieren Ihren Cloud-Spend durch passgenaue Zuweisung und Reserved Instances."
+          "description": "Kostenkontrolle für Azure, AWS und Microsoft 365. Wir optimieren Ihren Cloud-Spend durch passgenaue Zuweisung und Reserved Instances.",
+          "link": "/path"
         },
         {
           "icon": "Settings",
           "title": "Managed SAM Service",
-          "description": "Auslagerung Ihres Lizenzmanagements an unsere Experten. Kontinuierliches Reporting, Compliance-Checks und Beratung zum Festpreis."
+          "description": "Auslagerung Ihres Lizenzmanagements an unsere Experten. Kontinuierliches Reporting, Compliance-Checks und Beratung zum Festpreis.",
+          "link": "/path"
         }
       ]
     },
@@ -47,50 +59,82 @@
       "title": "Sprechen Sie mit dem Experten für SAM",
       "subtitle": "Direkter Draht",
       "description": "Haben Sie spezifische Fragen zu Oracle-Audits, Microsoft-Verträgen oder Cloud-FinOps? Dr. Weber hat über 20 Jahre Erfahrung in der Abwehr von Nachforderungen und der Optimierung komplexer Lizenzszenarien.",
-      "expertId": "michael-weber"
+      "primaryCtaLabel": "Kostenloses Erstgespräch (30 Min.)",
+      "emailCtaLabel": "E-Mail senden",
+      "phoneCtaLabel": "Jetzt anrufen",
+      "trustBadges": [
+        "✓ Unverbindlich",
+        "✓ Kostenlos",
+        "✓ Diskret"
+      ],
+      "expert": {
+        "name": "Dr. Michael Weber",
+        "role": "Head of SAM & Compliance",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
+        "bio": "Ehemals auf Herstellerseite, kenne ich die Taktiken der Auditoren genau. Mein Ziel ist es, dieses Wissen zu 100% für den Schutz Ihres Budgets einzusetzen.",
+        "email": "michael.weber@novartum.com",
+        "calendarLink": "#"
+      },
+      "expertId": "matthias-schuchardt"
     },
     {
       "_type": "synergy_slice",
       "title": "Ein Haus. Kurze Wege. Maximale Wirkung.",
       "subtitle": "Der Novartum Verbund-Vorteil",
-      "description": "<p>Ein Audit-Bericht allein spart kein Geld. Er zeigt nur Risiken auf. Echte Einsparungen entstehen erst, wenn SAM-Daten direkt in die Verhandlungsstrategie des Einkaufs einfließen.</p><p>Bei Novartum arbeiten Lizenz-Auditoren, Einkäufer und ITSM-Architekten Tür an Tür. Wir verhindern 'Stille Post' und übernehmen die Gesamtverantwortung.</p>",
       "items": [
         {
           "title": "SAM + Einkauf",
-          "icon": "ShoppingCart",
-          "description": "Wir verhindern 'Shelfware' (Regalware), indem wir Ihrem Einkauf vor jeder Neubeschaffung Echtzeit-Daten liefern. Warum neu kaufen, wenn Lizenzen im Unternehmen brach liegen?"
+          "description": "Wir verhindern 'Shelfware' (Regalware), indem wir Ihrem Einkauf vor jeder Neubeschaffung Echtzeit-Daten liefern. Warum neu kaufen, wenn Lizenzen im Unternehmen brach liegen?",
+          "icon": "ShoppingCart"
         },
         {
           "title": "SAM + ITSM",
-          "icon": "Activity",
-          "description": "Wir integrieren Compliance-Checks direkt in Ihren Service-Katalog. Eine Software wird gar nicht erst ausgerollt, wenn keine freie Lizenz verfügbar ist (Technical Compliance Enforcement)."
+          "description": "Wir integrieren Compliance-Checks direkt in Ihren Service-Katalog. Eine Software wird gar nicht erst ausgerollt, wenn keine freie Lizenz verfügbar ist (Technical Compliance Enforcement).",
+          "icon": "Activity"
         }
-      ]
+      ],
+      "description": "<p>Ein Audit-Bericht allein spart kein Geld. Er zeigt nur Risiken auf. Echte Einsparungen entstehen erst, wenn SAM-Daten direkt in die Verhandlungsstrategie des Einkaufs einfließen.</p><p>Bei Novartum arbeiten Lizenz-Auditoren, Einkäufer und ITSM-Architekten Tür an Tür. Wir verhindern 'Stille Post' und übernehmen die Gesamtverantwortung.</p>"
     },
     {
       "_type": "vendor_deep_dive_slice",
       "title": "Problemlöser für Top-Hersteller",
+      "subtitle": "Tiefenwissen",
       "description": "Allgemeines Wissen reicht oft nicht. Wir kennen die vertraglichen Fallstricke der großen Player.",
       "vendors": [
         {
           "vendor": "Microsoft",
           "logo": "Microsoft",
           "color": "bg-blue-600",
-          "risks": ["M365 E3 vs E5 Überlizenzierung", "Windows Server Core-Based Licensing", "Indirekte Nutzung über Multiplexing"],
+          "label": "Audit Fokus",
+          "risks": [
+            "M365 E3 vs E5 Überlizenzierung",
+            "Windows Server Core-Based Licensing",
+            "Indirekte Nutzung über Multiplexing"
+          ],
           "solution": "Wir analysieren Ihre Active Directory Nutzerprofile und optimieren Ihre M365 Abonnements. Durch hybride Nutzungsrechte (Azure Hybrid Benefit) senken wir Ihre Cloud-Kosten."
         },
         {
           "vendor": "Oracle",
           "logo": "Oracle",
           "color": "bg-red-600",
-          "risks": ["Java SE kostenpflichtige Subscriptions", "VMware Virtualisierung (Soft-Partitioning)", "Datenbank-Optionen versehentlich aktiviert"],
+          "label": "Audit Fokus",
+          "risks": [
+            "Java SE kostenpflichtige Subscriptions",
+            "VMware Virtualisierung (Soft-Partitioning)",
+            "Datenbank-Optionen versehentlich aktiviert"
+          ],
           "solution": "Wir erstellen eine verlässliche Oracle-Bilanz (ELP) vor dem Audit. Wir prüfen Alternativen zu Oracle Java und isolieren Oracle-Workloads, um Lizenzierungskosten zu begrenzen."
         },
         {
           "vendor": "SAP",
           "logo": "SAP",
           "color": "bg-blue-800",
-          "risks": ["S/4HANA Migration & Contract Conversion", "Indirekte Nutzung (Digital Access)", "Ungenutzte Professional User Lizenzen"],
+          "label": "Audit Fokus",
+          "risks": [
+            "S/4HANA Migration & Contract Conversion",
+            "Indirekte Nutzung (Digital Access)",
+            "Ungenutzte Professional User Lizenzen"
+          ],
           "solution": "Wir simulieren Ihre S/4HANA Lizenzkosten vor dem Umstieg. Durch Vermessung der tatsächlichen Transaktionen identifizieren wir das günstigste Lizenzmodell (Full Use vs. Digital Access)."
         }
       ]
@@ -100,8 +144,6 @@
       "title": "Strukturierte Optimierung",
       "subtitle": "Der SAM-Lifecycle",
       "description": "Unser bewährter Ansatz garantiert rechtssichere Ergebnisse und messbare Einsparungen in vier Phasen.",
-      "qualityTitle": "Ihr Mehrwert",
-      "qualityItems": ["100% Herstellerunabhängig", "Zertifizierte SAM-Consultants", "Erfolgsabhängige Vergütung möglich"],
       "steps": [
         {
           "number": "01",
@@ -123,10 +165,18 @@
           "title": "Governance & Betrieb",
           "description": "Etablierung von Prozessen für Beschaffung und Deployment. Regelmäßige Reviews sichern den Status Quo dauerhaft."
         }
+      ],
+      "qualityTitle": "Ihr Mehrwert",
+      "qualityItems": [
+        "100% Herstellerunabhängig",
+        "Zertifizierte SAM-Consultants",
+        "Erfolgsabhängige Vergütung möglich"
       ]
     },
     {
       "_type": "faq_slice",
+      "title": "FAQ",
+      "subtitle": "Wissen kompakt",
       "items": [
         {
           "question": "Was ist der Unterschied zwischen SAM und Lizenzmanagement?",
@@ -160,9 +210,18 @@
       "subtitle": "Warum novartum?",
       "text": "<p>Im Lizenzmanagement ist Neutralität das höchste Gut. Wir verkaufen keine Lizenzen – wir beraten ausschließlich in Ihrem Interesse. Dies garantiert Ihnen eine objektive Bewertung Ihrer Situation ohne Interessenkonflikte.</p><p>Unsere Berater kommen oft direkt von Herstellern oder Auditoren und kennen die 'Spielregeln' genau. Dieses Insider-Wissen nutzen wir, um für Sie das optimale Ergebnis zu verhandeln.</p>",
       "stats": [
-        { "value": "100 Mio €+", "label": "Betreutes Volumen" },
-        { "value": "30%", "label": "Ø Einsparung" },
-        { "value": "0", "label": "Verkaufte Lizenzen" }
+        {
+          "value": "100 Mio €+",
+          "label": "Betreutes Volumen"
+        },
+        {
+          "value": "30%",
+          "label": "Ø Einsparung"
+        },
+        {
+          "value": "0",
+          "label": "Verkaufte Lizenzen"
+        }
       ],
       "features": [
         {
