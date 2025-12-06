@@ -31,7 +31,7 @@ collections_config:
         path: .cloudcannon/schemas/blog-post.md
 
   team:
-    path: public/content/team
+    path: public/content/team/members
     parser: json
     output: false
     name: "Team"
@@ -109,7 +109,7 @@ _inputs:
         type: textarea
       metaKeywords:
         label: "Keywords"
-        type: list
+        type: array
       ogImage:
         label: "Social Share Image"
         type: image
@@ -204,7 +204,7 @@ _inputs:
             description:
               type: textarea
             pathKeywords:
-              type: list
+              type: array
               comment: "Wenn die URL eines dieser Wörter enthält, wird dieser Banner angezeigt (z.B. 'sam', 'karriere')"
             ctaIconType:
               type: select
@@ -341,7 +341,7 @@ _structures:
                       items: []
                     _inputs:
                       items:
-                        type: list
+                        type: array
                       icon:
                         type: select
                         options:
@@ -359,7 +359,7 @@ _structures:
           description:
             type: textarea
           qualityItems:
-            type: list
+            type: array
           steps:
             type: array
             options:
@@ -421,7 +421,7 @@ _structures:
                       solution:
                         type: textarea
                       risks:
-                        type: list
+                        type: array
                       color:
                         type: select
                         options:
@@ -529,9 +529,9 @@ _structures:
                        description:
                          type: textarea
                        tasks:
-                         type: list
+                         type: array
                        profile:
-                         type: list
+                         type: array
                        type:
                          type: select
                          options:
@@ -569,6 +569,7 @@ _structures:
           emailCtaLabel: "E-Mail senden"
           phoneCtaLabel: "Jetzt anrufen"
           trustBadges: ["✓ Unverbindlich", "✓ Kostenlos", "✓ Diskret"]
+          expertId: ""
           expert:
             name: "Dr. Michael Weber"
             role: "Head of SAM & Compliance"
@@ -586,7 +587,14 @@ _structures:
           phoneCtaLabel:
             type: text
           trustBadges:
-            type: list
+            type: array
+          expertId:
+             type: select
+             options:
+               values: collections.team
+               value_key: id
+               name_key: name
+               empty_value: true
           expert:
             type: object
             fields:
