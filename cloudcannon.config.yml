@@ -3,6 +3,9 @@ visual_editor:
   enabled: true
   js_path: https://cdn.jsdelivr.net/npm/@cloudcannon/visual-editor@1.0.0/dist/index.js
 
+paths:
+  uploads: public/uploads
+
 routing:
   error_pages:
     404: /index.html
@@ -40,6 +43,8 @@ collections_config:
         type: image
         label: "Profilbild"
         comment: "Laden Sie ein Profilbild für dieses Teammitglied hoch"
+        options:
+          public_path: /uploads/
       name:
         type: text
         label: "Name"
@@ -160,6 +165,8 @@ _inputs:
   
   image:
     type: image
+    options:
+      public_path: /uploads/
   logo:
     type: image
 
