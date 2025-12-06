@@ -1,6 +1,6 @@
 ---
 title: Impressum
-lastUpdated: 01.03.2025
+lastUpdated: 06.12.2025
 ---
 ## **Angaben gemäß § 5 TMG:**
 
