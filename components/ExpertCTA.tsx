@@ -105,12 +105,17 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                   data-cc-field="image"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    // The fallback div will be needed here, but we can't easily inject it into DOM structure cleanly
-                    // simpler to just hide it and let a sibling fallback show, or use state.
-                    // Given this is a functional component, we can't easily force re-render from onError without state.
-                    // A simple CSS approach:
-                    target.parentElement?.classList.add('image-load-error');
+                    const parent = target.parentElement;
+                    if (parent) {
+                        target.style.display = 'none';
+                        // Avoid adding duplicate fallbacks
+                        if (parent.querySelector('.fallback-avatar-expert')) return;
+                        
+                        const fallback = document.createElement('div');
+                        fallback.className = 'w-32 h-32 rounded-full bg-slate-700 flex items-center justify-center mb-6 border-4 border-slate-600 shadow-2xl fallback-avatar-expert';
+                        fallback.innerHTML = `<span class="text-4xl font-bold text-slate-400">${expert.name.charAt(0)}</span>`;
+                        parent.insertBefore(fallback, target);
+                    }
                   }}
                 />
               ) : (
@@ -119,15 +124,6 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                  </div>
               )}
               
-              {/* Fallback for onError (hidden by default) */}
-              <div className="hidden image-error-fallback w-32 h-32 rounded-full bg-slate-700 flex items-center justify-center mb-6 border-4 border-slate-600 shadow-2xl">
-                  <span className="text-4xl font-bold text-slate-400">{expert.name.charAt(0)}</span>
-              </div>
-              <style>{`
-                .image-load-error img { display: none; }
-                .image-load-error .image-error-fallback { display: flex; }
-              `}</style>
-
               <h3 className="text-2xl font-bold mb-1" data-cc-field="name">{expert.name}</h3>
               <p className="text-orange-500 font-medium mb-4 text-sm uppercase tracking-wider" data-cc-field="role">{expert.role}</p>
               
