@@ -1,4 +1,4 @@
-# CloudCannon Visual Editor Configuration - Refreshed Cache v2
+# CloudCannon Visual Editor Configuration - Refreshed Cache v3 - Forced Update
 visual_editor:
   enabled: true
   js_path: https://cdn.jsdelivr.net/npm/@cloudcannon/visual-editor@1.0.0/dist/index.js
