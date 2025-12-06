@@ -72,6 +72,11 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members: initialMembers }) => {
                   alt={member.name} 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   data-cc-field="image"
+                  onError={(e) => {
+                    // Fallback to placeholder if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop';
+                  }}
                   />
                   {member.linkedin && (
                       <a 

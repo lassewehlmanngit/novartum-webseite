@@ -171,6 +171,18 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
                         alt={contactPerson.name} 
                         className="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-lg"
                         data-cc-field="contactPerson.image"
+                        onError={(e) => {
+                          // Fallback to placeholder if image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const parent = target.parentElement;
+                          if (parent && !parent.querySelector('.fallback-avatar')) {
+                            const fallback = document.createElement('div');
+                            fallback.className = 'w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 shadow-lg flex items-center justify-center fallback-avatar';
+                            fallback.innerHTML = `<span class="text-2xl text-slate-500 font-bold">${contactPerson?.name ? contactPerson.name.charAt(0) : '?'}</span>`;
+                            parent.insertBefore(fallback, target);
+                          }
+                        }}
                     />
                     ) : (
                         <div className="w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 shadow-lg flex items-center justify-center">

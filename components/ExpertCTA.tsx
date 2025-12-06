@@ -100,6 +100,11 @@ const ExpertCTA: React.FC<ExpertCTAProps> = ({
                 alt={expert.name}
                 className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-slate-700 shadow-2xl"
                 data-cc-field="image"
+                onError={(e) => {
+                  // Fallback to placeholder if image fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop';
+                }}
               />
               <h3 className="text-2xl font-bold mb-1" data-cc-field="name">{expert.name}</h3>
               <p className="text-orange-500 font-medium mb-4 text-sm uppercase tracking-wider" data-cc-field="role">{expert.role}</p>
