@@ -34,66 +34,79 @@ const TrustBar: React.FC<TrustBarProps> = ({
 
   if (!data.clients || data.clients.length === 0) return null;
 
+  // Duplicate clients to create a seamless loop
+  // For <10 clients we repeat 4 times, otherwise 2 times is enough for the scroll effect
+  const repeatCount = data.clients.length < 10 ? 4 : 2;
+  const marqueeClients = Array(repeatCount).fill(data.clients).flat();
+
   const renderClientLogo = (client: { name: string; logo: string }) => {
-     // If logo is a file path (starts with / or http), render image
+     // Image Logo
      if (client.logo.startsWith('/') || client.logo.startsWith('http')) {
-        return <img src={client.logo} alt={client.name} className="h-9 w-auto object-contain grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300" />;
+        return <img src={client.logo} alt={client.name} className="h-8 md:h-10 w-auto object-contain" />;
      }
 
      // Fallback for hardcoded vector logos (for legacy support during migration)
      let logoElement: React.ReactNode;
-     const baseLogoClasses = "h-9 flex items-center transition-all duration-300";
+     const baseLogoClasses = "h-8 md:h-10 flex items-center transition-all duration-300";
      
      switch(client.name) {
        case "DZ BANK":
-         logoElement = <span className={`${baseLogoClasses} text-3xl font-bold tracking-tighter text-slate-800`}>DZ BANK</span>;
+         logoElement = <span className={`${baseLogoClasses} text-2xl md:text-3xl font-bold tracking-tighter text-slate-800`}>DZ BANK</span>;
          break;
        case "Deutsche Telekom":
          logoElement = (
            <div className={`${baseLogoClasses} flex items-center gap-0.5 text-[#e20074]`}>
              <div className="w-2.5 h-2.5 bg-current rounded-sm"></div>
-             <span className="font-black text-4xl leading-none -mt-1">T</span>
+             <span className="font-black text-3xl md:text-4xl leading-none -mt-1">T</span>
              <div className="w-2.5 h-2.5 bg-current rounded-sm"></div>
            </div>
          );
          break;
        case "E.ON":
-         logoElement = <span className={`${baseLogoClasses} text-3xl font-black text-[#E30613] tracking-tighter`}>e.on</span>;
+         logoElement = <span className={`${baseLogoClasses} text-2xl md:text-3xl font-black text-[#E30613] tracking-tighter`}>e.on</span>;
          break;
        case "Lufthansa":
-         logoElement = <span className={`${baseLogoClasses} text-3xl font-serif font-medium text-slate-800`}>Lufthansa</span>;
+         logoElement = <span className={`${baseLogoClasses} text-2xl md:text-3xl font-serif font-medium text-slate-800`}>Lufthansa</span>;
          break;
        case "SAP":
-         logoElement = <span className={`${baseLogoClasses} text-3xl font-bold text-[#008FD3]`}>SAP</span>;
+         logoElement = <span className={`${baseLogoClasses} text-2xl md:text-3xl font-bold text-[#008FD3]`}>SAP</span>;
          break;
        case "Allianz":
-         logoElement = <span className={`${baseLogoClasses} text-3xl font-serif font-bold tracking-wide text-slate-800`}>Allianz</span>;
+         logoElement = <span className={`${baseLogoClasses} text-2xl md:text-3xl font-serif font-bold tracking-wide text-slate-800`}>Allianz</span>;
          break;
        default:
          // Generic text fallback for clients without a logo image or special case
          logoElement = (
-           <span className={`${baseLogoClasses} px-4 py-2 rounded-lg bg-slate-50 border border-slate-100 text-lg font-bold text-slate-600 whitespace-nowrap shadow-sm`}>
-             {client.name}
-           </span>
+            <span className="text-xl font-bold text-slate-800 whitespace-nowrap">
+                {client.name}
+            </span>
          );
          break;
      }
 
-     return (
-        <div className="grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300" title={client.name}>
-          {logoElement}
-        </div>
-     );
+     return logoElement;
   };
 
   return (
     <section className="bg-white relative z-20 rounded-t-[2.5rem] md:rounded-t-[4rem] -mt-16" aria-labelledby="trust-heading">
+      <style>{`
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: scroll 60s linear infinite; /* Slow, smooth speed */
+        }
+        .animate-marquee:hover {
+          animation-play-state: paused; /* Pause on hover for interaction */
+        }
+      `}</style>
       
       {/* Awards Floating Badge */}
       <div className="relative -top-16 md:-top-20 px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 md:gap-12 border border-slate-100">
              
-             {/* Badges Container - NEU: Siegel Bilder */}
+             {/* Badges Container */}
              <div className="flex gap-6 shrink-0 items-center justify-center">
                 <img 
                   src="/images/awards/bvmid-siege-top.png" 
@@ -120,17 +133,27 @@ const TrustBar: React.FC<TrustBarProps> = ({
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-12 text-center mt-4 pb-16">
+      <div className="container mx-auto text-center mt-4 pb-20">
         <h3 id="trust-heading" className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-12" data-cc-field="title">{data.title}</h3>
         
-        <div className="flex flex-wrap justify-center gap-x-12 sm:gap-x-16 gap-y-12 items-center">
-           {data.clients.map((client, idx) => (
-             <React.Fragment key={client.name}>
-               <div data-cc-field={`clients[${idx}]`}>
-                 {renderClientLogo(client)}
-               </div>
-             </React.Fragment>
-           ))}
+        {/* Infinite Marquee Container */}
+        <div className="relative w-full overflow-hidden">
+           
+           {/* Fade Gradients (Left & Right) for that "premium" look */}
+           <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+           <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+           {/* Scrolling Track */}
+           <div className="flex w-max animate-marquee">
+              {marqueeClients.map((client, idx) => (
+                <div 
+                  key={`${client.name}-${idx}`} 
+                  className="mx-8 md:mx-12 shrink-0 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none flex items-center justify-center"
+                >
+                  {renderClientLogo(client)}
+                </div>
+              ))}
+           </div>
         </div>
       </div>
     </section>

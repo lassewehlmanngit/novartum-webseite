@@ -96,6 +96,44 @@ _inputs:
         - trustbar_slice
         - expert_cta_slice
 
+  expertId:
+    type: select
+    options:
+      values: collections.team
+      value_key: id
+      name_key: name
+      empty_value: true
+  
+  contactPersonId:
+    type: select
+    options:
+      values: collections.team
+      value_key: id
+      name_key: name
+      empty_value: true
+
+  # Improved Input Types for Better UX
+  primaryLink:
+    type: link
+  secondaryLink:
+    type: link
+  link:
+    type: link
+  ctaLink:
+    type: link
+  
+  image:
+    type: image
+  logo:
+    type: image
+
+  primaryButtonText:
+    label: "Button Text (Primär)"
+    type: text
+  secondaryButtonText:
+    label: "Button Text (Sekundär)"
+    type: text
+
   seo:
     type: object
     options:
@@ -200,6 +238,7 @@ _inputs:
             ctaLink: "#"
             ctaIconType: calendar
             secondaryCta: Zweiter Link Text
+            expertId: ""
           _inputs:
             description:
               type: textarea
@@ -210,6 +249,13 @@ _inputs:
               type: select
               options:
                 values: [calendar, download, arrow, mail]
+            expertId:
+               type: select
+               options:
+                 values: collections.team
+                 value_key: id
+                 name_key: name
+                 empty_value: true
 
 _structures:
   content_blocks:
