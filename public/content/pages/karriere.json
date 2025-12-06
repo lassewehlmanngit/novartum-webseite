@@ -1,5 +1,18 @@
 {
   "title": "Karriere",
+  "seo": {
+    "metaTitle": "Karriere bei Novartum | IT-Jobs & Stellenangebote",
+    "metaDescription": "Werde Teil unseres Experten-Teams. Wir suchen Talente für Softwareentwicklung und IT-Consulting. Flache Hierarchien, Remote-Option und spannende Projekte.",
+    "metaKeywords": [
+      "IT Jobs",
+      "Karriere IT",
+      "Softwareentwickler Jobs",
+      "IT Consultant Jobs",
+      "Novartum Karriere",
+      "Remote Jobs IT"
+    ],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",

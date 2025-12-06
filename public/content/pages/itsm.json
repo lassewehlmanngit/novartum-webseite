@@ -2,9 +2,17 @@
   "_schema": "default",
   "title": "ITSM",
   "seo": {
-    "metaTitle": "",
-    "metaDescription": "",
-    "metaKeywords": [],
+    "metaTitle": "IT Service Management (ITSM) & ITIL Beratung | Novartum",
+    "metaDescription": "Strukturieren Sie Ihren IT-Betrieb mit ITIL-konformen Prozessen. Von der Strategieberatung bis zum Managed Service für Matrix42 und ServiceNow.",
+    "metaKeywords": [
+      "ITSM",
+      "IT Service Management",
+      "ITIL Beratung",
+      "Matrix42",
+      "ServiceNow",
+      "Managed Services",
+      "Service Desk Optimierung"
+    ],
     "ogImage": ""
   },
   "content_blocks": [

@@ -2,9 +2,17 @@
   "_schema": "default",
   "title": "SAM",
   "seo": {
-    "metaTitle": "",
-    "metaDescription": "",
-    "metaKeywords": [],
+    "metaTitle": "Software Asset Management (SAM) & Lizenzoptimierung | Novartum",
+    "metaDescription": "Vermeiden Sie Compliance-Risiken und reduzieren Sie Softwarekosten. Herstellerunabhängige SAM-Beratung, Audit-Abwehr (Oracle, Microsoft) und Cloud FinOps.",
+    "metaKeywords": [
+      "Software Asset Management",
+      "SAM",
+      "Lizenzmanagement",
+      "Audit Abwehr",
+      "Oracle Lizenzierung",
+      "Microsoft Lizenzierung",
+      "Cloud FinOps"
+    ],
     "ogImage": ""
   },
   "content_blocks": [

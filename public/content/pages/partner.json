@@ -1,5 +1,16 @@
 {
   "title": "Partner",
+  "seo": {
+    "metaTitle": "Partner & Netzwerk | Novartum",
+    "metaDescription": "Gemeinsam stark für Ihren Erfolg. Unser Netzwerk aus führenden Technologie-Partnern und Verbänden garantiert beste Lösungen bei voller Unabhängigkeit.",
+    "metaKeywords": [
+      "Novartum Partner",
+      "IT Partnernetzwerk",
+      "Technologiepartner",
+      "Kooperationen"
+    ],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",

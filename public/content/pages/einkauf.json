@@ -2,9 +2,16 @@
   "_schema": "default",
   "title": "Einkauf",
   "seo": {
-    "metaTitle": "",
-    "metaDescription": "",
-    "metaKeywords": [],
+    "metaTitle": "IT-Einkauf & Beschaffung optimieren | Novartum",
+    "metaDescription": "Senken Sie Ihre IT-Kosten durch strategisches Sourcing und Gain-Share Verhandlungen. Unabhängige Beratung für Hardware, Software und Cloud-Verträge.",
+    "metaKeywords": [
+      "IT-Einkauf",
+      "Beschaffungsmanagement",
+      "Gain-Share",
+      "Software-Einkauf",
+      "Hardware-Beschaffung",
+      "IT-Vertragsoptimierung"
+    ],
     "ogImage": ""
   },
   "content_blocks": [

@@ -1,5 +1,19 @@
 {
   "title": "Softwareentwicklung",
+  "seo": {
+    "metaTitle": "Individuelle Softwareentwicklung & Cloud Solutions | Novartum",
+    "metaDescription": "Maßgeschneiderte Enterprise-Software für den Mittelstand. Java, .NET, Cloud-Native Entwicklung und Legacy Modernisierung aus Expertenhand.",
+    "metaKeywords": [
+      "Softwareentwicklung",
+      "Enterprise Software",
+      "Cloud Native",
+      "Java Entwicklung",
+      ".NET Entwicklung",
+      "App Modernisierung",
+      "Microservices"
+    ],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",

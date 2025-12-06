@@ -1,5 +1,19 @@
 {
   "title": "Consulting",
+  "seo": {
+    "metaTitle": "Strategisches IT-Consulting & Compliance | Novartum",
+    "metaDescription": "Rechtssicherheit und Wirtschaftlichkeit für Ihre IT. Wir beraten auf C-Level zu Audit Defense, Vertragsoptimierung und Regulatory Compliance (NIS2, DORA).",
+    "metaKeywords": [
+      "IT Consulting",
+      "IT-Strategie",
+      "Compliance Beratung",
+      "NIS2",
+      "DORA",
+      "Audit Defense",
+      "CIO Advisory"
+    ],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",

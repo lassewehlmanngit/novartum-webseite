@@ -1,5 +1,17 @@
 {
   "title": "Blog",
+  "seo": {
+    "metaTitle": "IT-Insights & Expertenwissen | Novartum Blog",
+    "metaDescription": "Aktuelle Trends, Analysen und Best Practices aus Enterprise IT, Lizenzmanagement und Softwareentwicklung. Wissen für Entscheider.",
+    "metaKeywords": [
+      "IT Blog",
+      "Tech Trends",
+      "Lizenzmanagement News",
+      "Softwareentwicklung Insights",
+      "IT-Wissen"
+    ],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",

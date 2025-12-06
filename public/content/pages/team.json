@@ -1,5 +1,16 @@
 {
   "title": "Team",
+  "seo": {
+    "metaTitle": "Unser Team & Kultur | Novartum",
+    "metaDescription": "Lernen Sie die Menschen hinter der Technologie kennen. Ein inhabergeführtes Team aus erfahrenen Beratern und Entwicklern mit Leidenschaft für Exzellenz.",
+    "metaKeywords": [
+      "Novartum Team",
+      "IT Experten",
+      "Über uns",
+      "Unternehmenskultur"
+    ],
+    "ogImage": ""
+  },
   "content_blocks": [
     {
       "_type": "hero_slice",
