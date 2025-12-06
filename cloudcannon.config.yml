@@ -155,13 +155,13 @@ _inputs:
 
   # Improved Input Types for Better UX
   primaryLink:
-    type: link
+    type: text
   secondaryLink:
-    type: link
+    type: text
   link:
-    type: link
+    type: text
   ctaLink:
-    type: link
+    type: text
   
   image:
     type: image
