@@ -1,4 +1,4 @@
-# CloudCannon Visual Editor Configuration
+# CloudCannon Visual Editor Configuration - Refreshed Cache
 visual_editor:
   enabled: true
   js_path: https://cdn.jsdelivr.net/npm/@cloudcannon/visual-editor@1.0.0/dist/index.js
@@ -111,6 +111,14 @@ _inputs:
       value_key: id
       name_key: name
       empty_value: true
+
+  # Explicit Array Definitions to prevent 'list' type errors
+  tags:
+    type: array
+  techStack:
+    type: array
+  results:
+    type: array
 
   # Improved Input Types for Better UX
   primaryLink:
