@@ -58,7 +58,9 @@
       "_type": "partner_grid_slice",
       "title": "Starke Partnerschaften",
       "subtitle": "Netzwerk",
-      "description": "Wir arbeiten herstellerunabhängig, pflegen aber enge Partnerschaften mit führenden Technologieanbietern, um Ihnen die besten Lösungen zu bieten. Unsere Loyalität gilt dabei immer Ihnen – dem Kunden."
+      "description": "Wir arbeiten herstellerunabhängig, pflegen aber enge Partnerschaften mit führenden Technologieanbietern, um Ihnen die besten Lösungen zu bieten. Unsere Loyalität gilt dabei immer Ihnen – dem Kunden.",
+      "ctaLink": "/partner",
+      "ctaText": "Unsere Partner ansehen"
     }
   ]
 }

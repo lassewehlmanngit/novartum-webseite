@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { PartnerItem } from '../types';
 import SectionHeader from './SectionHeader';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 interface PartnerGridProps {
   title: string;
   subtitle: string;
   description: string;
   partners?: PartnerItem[];
+  ctaLink?: string;
+  ctaText?: string;
 }
 
-const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description, partners: initialPartners }) => {
+const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description, partners: initialPartners, ctaLink, ctaText }) => {
   const [partners, setPartners] = useState<PartnerItem[]>(initialPartners || []);
 
   useEffect(() => {
-    if (!initialPartners || initialPartners.length === 0) {
+    // Only fetch if we are NOT in CTA mode and have no partners
+    if (!ctaLink && (!initialPartners || initialPartners.length === 0)) {
       fetch('/content/partners/list.json')
         .then(res => res.json())
         .then(data => {
@@ -23,7 +28,29 @@ const PartnerGrid: React.FC<PartnerGridProps> = ({ title, subtitle, description,
         })
         .catch(console.error);
     }
-  }, [initialPartners]);
+  }, [initialPartners, ctaLink]);
+
+  if (ctaLink) {
+    return (
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-4 md:px-12 flex flex-col items-center">
+          <SectionHeader 
+            title={<span data-cc-field="title">{title}</span>}
+            subtitle={<span data-cc-field="subtitle">{subtitle}</span>}
+            description={<span data-cc-field="description">{description}</span>}
+            className="mb-8"
+          />
+          <Link 
+            to={ctaLink} 
+            className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+          >
+            <span data-cc-field="ctaText">{ctaText || "Zu den Partnern"}</span>
+            <ArrowRight size={20} />
+          </Link>
+        </div>
+      </section>
+    );
+  }
 
   if (partners.length === 0) {
       return null;
