@@ -124,7 +124,7 @@ Wird Software auf Datenträgern an den Kunden geliefert, geht – sofern nichts 
 
 ## **Besondere Bedingungen für Dienstleistungen**
 
-## **14\. Vertragsgegenstand und Durchführung der Dienstleistungen**
+### **14\. Vertragsgegenstand und Durchführung der Dienstleistungen**
 
 14\.1 NOVARTUM erbringt die Dienstleistung ausschließlich auf Grundlage des Vertrags und dieser Bedingungen gegen die vertraglich vereinbarte Vergütung.
 
