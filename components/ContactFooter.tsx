@@ -166,12 +166,12 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
 
                   <div className="flex items-center gap-5 mb-10">
                     {contactPerson && contactPerson.image ? (
-                        <img 
-                            src={contactPerson.image} 
-                            alt={contactPerson.name} 
-                            className="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-lg"
-                            data-cc-field="contactPerson.image"
-                        />
+                    <img 
+                        src={contactPerson.image} 
+                        alt={contactPerson.name} 
+                        className="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-lg"
+                        data-cc-field="contactPerson.image"
+                    />
                     ) : (
                         <div className="w-16 h-16 rounded-full bg-slate-800 border-2 border-slate-700 shadow-lg flex items-center justify-center">
                             <span className="text-2xl text-slate-500 font-bold">
@@ -187,31 +187,31 @@ const ContactFooter: React.FC<ContactFooterProps> = ({
 
                   <div className="space-y-4">
                      {contactPerson?.email && (
-                        <a 
-                           href={`mailto:${contactPerson.email}`} 
-                           onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
-                           className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
-                           data-cc-field="contactPerson.email"
-                         >
-                             <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-orange-600 transition-colors">
-                                <Mail size={18} />
-                             </div>
-                             <span className="text-base font-medium break-all">{contactPerson.email}</span>
-                         </a>
+                     <a 
+                       href={`mailto:${contactPerson.email}`} 
+                       onClick={() => trackEmailClick(contactPerson.email, 'ContactFooter')}
+                       className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
+                       data-cc-field="contactPerson.email"
+                     >
+                         <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                            <Mail size={18} />
+                         </div>
+                         <span className="text-base font-medium break-all">{contactPerson.email}</span>
+                     </a>
                      )}
                      
                      {contactPerson?.phone && (
-                        <a 
-                           href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} 
-                           onClick={() => trackPhoneClick(contactPerson.phone, 'ContactFooter')}
-                           className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
-                           data-cc-field="contactPerson.phone"
-                         >
-                             <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-orange-600 transition-colors">
-                                <Phone size={18} />
-                             </div>
-                             <span className="text-base font-medium">{contactPerson.phone}</span>
-                         </a>
+                     <a 
+                       href={`tel:${contactPerson.phone.replace(/\s/g, '')}`} 
+                       onClick={() => trackPhoneClick(contactPerson.phone, 'ContactFooter')}
+                       className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors group"
+                       data-cc-field="contactPerson.phone"
+                     >
+                         <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                            <Phone size={18} />
+                         </div>
+                         <span className="text-base font-medium">{contactPerson.phone}</span>
+                     </a>
                      )}
                   </div>
                </div>

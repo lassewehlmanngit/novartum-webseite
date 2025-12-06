@@ -78,8 +78,8 @@ const TrustBar: React.FC<TrustBarProps> = ({
          // Generic text fallback for clients without a logo image or special case
          logoElement = (
             <span className="text-xl font-bold text-slate-800 whitespace-nowrap">
-                {client.name}
-            </span>
+             {client.name}
+           </span>
          );
          break;
      }
@@ -150,9 +150,9 @@ const TrustBar: React.FC<TrustBarProps> = ({
                   key={`${client.name}-${idx}`} 
                   className="mx-8 md:mx-12 shrink-0 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-default select-none flex items-center justify-center"
                 >
-                  {renderClientLogo(client)}
-                </div>
-              ))}
+                 {renderClientLogo(client)}
+               </div>
+           ))}
            </div>
         </div>
       </div>

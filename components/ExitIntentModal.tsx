@@ -128,9 +128,9 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ onClose }) => {
                       </div>
                   </div>
               ) : (
-                <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-orange-400">
-                    <FileText size={24} />
-                </div>
+              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 text-orange-400">
+                 <FileText size={24} />
+              </div>
               )}
               
               {!expert && <span className="text-orange-400 font-bold text-xs uppercase tracking-widest mb-2 block" data-cc-field="tagline">{content.tagline}</span>}
